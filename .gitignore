@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# R files
+.Rapp.history
+
+# HTML processed files
+*.html
