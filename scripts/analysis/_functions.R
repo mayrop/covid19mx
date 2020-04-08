@@ -86,7 +86,6 @@ slugify <- function(x, alphanum_replace="", space_replace="-", tolower=TRUE) {
 
 
 create_files_lookup <- function(files) {
-  browser()
   files_lookup <- names(files) %>% as.data.frame()
   colnames(files_lookup) <- c("file_id")
   
