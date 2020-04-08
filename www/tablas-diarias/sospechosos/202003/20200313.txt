@@ -1,0 +1,116 @@
+                                                      Identificación de
+N°                                   Fecha de Inicio COVID-19 por RT-                      Fecha del llegada a
+               Estado      Sexo Edad                                        Procedencia
+Caso                                  de síntomas    PCR/Secuencia de                           México
+                                                            DNA*
+
+   1 CIUDAD DE MÉXICO      F        2      29/02/2020 Sospechoso          Contacto         NA
+   2 CIUDAD DE MÉXICO      M       32      16/02/2020 Sospechoso          Contacto         NA
+   3 JALISCO               M       34      06/03/2020 Sospechoso          España           04/03/2020
+  4 JALISCO                F       28      06/03/2020 Sospechoso          Estados Unidos   02/03/2020
+   5 SINALOA               F       29      08/03/2020 Sospechoso          Estados Unidos   08/03/2020
+   6 MÉXICO                F       20      26/02/2020 Sospechoso          Italia           24/02/2020
+   7 BAJA CALIFORNIA       M       33      06/03/2020 Sospechoso          España           08/03/2020
+  8 QUINTANA ROO           M       46      09/03/2020 Sospechoso          Corea del Sur    06/03/2020
+   9 CIUDAD DE MÉXICO      M       48      29/02/2020 Sospechoso          Estados Unidos   23/02/2020
+  10 BAJA CALIFORNIA       M       42      09/03/2020 Sospechoso          Estados Unidos   25/02/2020
+  11 CIUDAD DE MÉXICO      M       45      29/02/2020 Sospechoso          Italia           04/03/2020
+  12 BAJA CALIFORNIA       F       40      02/03/2020 Sospechoso          Estados Unidos   29/02/2020
+  13 QUERETARO             M       25      26/02/2020 Sospechoso          Estados Unidos   09/03/2020
+  14 QUINTANA ROO          F       52      08/03/2020 Sospechoso          España           09/03/2020
+  15 MÉXICO                F       32      26/02/2020 Sospechoso          Alemania         28/02/2020
+  16 CIUDAD DE MÉXICO      F       40      06/03/2020 Sospechoso          España           08/03/2020
+  17 CIUDAD DE MÉXICO      F       50      01/03/2020 Sospechoso          Estados Unidos   08/03/2020
+  18 QUINTANA ROO          F       32      09/03/2020 Sospechoso          Estados Unidos   05/03/2020
+  19 MÉXICO                F       47      06/03/2020 Sospechoso          Contacto         NA
+  20 NUEVO LEÓN            M       42      08/03/2020 Sospechoso          Estados Unidos   05/03/2020
+  21 CIUDAD DE MÉXICO      F       29      27/02/2020 Sospechoso          España           14/02/2020
+  22 BAJA CALIFORNIA SUR   M       20      01/03/2020 Sospechoso          Francia          05/03/2020
+  23 CIUDAD DE MÉXICO      F       25      04/03/2020 Sospechoso          Italia           01/03/2020
+  24 NUEVO LEÓN            M       13      09/03/2020 Sospechoso          España           09/03/2020
+  25 CIUDAD DE MÉXICO      M       26      29/02/2020 Sospechoso          Japón            17/02/2020
+  26 VERACRUZ              F       36      09/03/2020 Sospechoso          Alemania         09/03/2020
+  27 CIUDAD DE MÉXICO      F       22      01/03/2020 Sospechoso          Contacto         NA
+  28 CIUDAD DE MÉXICO      F       21      04/03/2020 Sospechoso          Alemania         03/03/2020
+  29 CIUDAD DE MÉXICO      F       23      06/03/2020 Sospechoso          Italia           06/03/2020
+  30 CIUDAD DE MÉXICO      M       27      04/03/2020 Sospechoso          Italia           29/02/2020
+  31 CIUDAD DE MÉXICO      F       30      29/02/2020 Sospechoso          España           27/02/2020
+  32 HIDALGO               M       46       11/03/2020 Sospechoso         Estados Unidos   07/03/2020
+  33 GUANAJUATO            M        8      10/03/2020 Sospechoso          Contacto         NA
+  34 GUANAJUATO            M       46      09/03/2020 Sospechoso          Contacto         NA
+
+  35 AGUASCALIENTES        M       37      06/03/2020 Sospechoso          España           04/03/2020
+  36 VERACRUZ              M       25      10/03/2020 Sospechoso          Estados Unidos   29/02/2020
+  37 JALISCO               F       33      09/03/2020 Sospechoso          Francia          08/03/2020
+  38 MÉXICO                M       43      02/03/2020 Sospechoso          Estados Unidos   26/02/2020
+  39 MÉXICO                F       33      10/03/2020 Sospechoso          Italia           29/02/2020
+ 40 QUINTANA ROO           F       20      07/03/2020 Sospechoso          Contacto         05/03/2020
+  41 MÉXICO                M       44      01/03/2020 Sospechoso          España           03/03/2020
+  42 MÉXICO                M       34      05/03/2020 Sospechoso          Estados Unidos   01/03/2020
+  43 MÉXICO                M       43      10/03/2020 Sospechoso          Contacto         NA
+44 QUERETARO          M   36   07/03/2020 Sospechoso   Estados Unidos   08/03/2020
+45 GUANAJUATO         F   48   08/03/2020 Sospechoso   Italia           29/02/2020
+46 GUANAJUATO         F   36   07/03/2020 Sospechoso   Contacto         NA
+47 GUANAJUATO         F   35   09/03/2020 Sospechoso   Contacto         NA
+48 QUERETARO          F   36   05/03/2020 Sospechoso   Francia          07/03/2020
+49 CIUDAD DE MÉXICO   M   53   09/03/2020 Sospechoso   España           09/03/2020
+50 NUEVO LEÓN         F   27       43899 Sospechoso    Italia           07/03/2020
+51 ZACATECAS          M   60       43898 Sospechoso    España           08/03/2020
+52 ZACATECAS          F   27       43894 Sospechoso    Contacto         12/03/2020
+53 SAN LUIS POTOSÍ    M   22       43901 Sospechoso    Italia           28/02/2020
+54 ZACATECAS          M   68       43898 Sospechoso    Contacto         12/03/2020
+55 MÉXICO             M   29       43897 Sospechoso    España           29/02/2020
+56 CIUDAD DE MÉXICO   M   15       43900 Sospechoso    Estados Unidos   05/03/2020
+57 SAN LUIS POTOSÍ    F   33       43901 Sospechoso    Estados Unidos   08/03/2020
+58 SAN LUIS POTOSÍ    M   34       43897 Sospechoso    Estados Unidos   29/02/2020
+59 DURANGO            M   32       43899 Sospechoso    España           03/03/2020
+60 VERACRUZ           F   26       43900 Sospechoso    España           11/03/2020
+61 OAXACA             F   62       43898 Sospechoso    Estados Unidos   07/03/2020
+62 SINALOA            M   41       43900 Sospechoso    España           01/03/2020
+63 TABASCO            F   51       43897 Sospechoso    Estados Unidos   28/02/2020
+64 TLAXCALA           M   36       43901 Sospechoso    Francia          28/02/2020
+65 JALISCO            F   54       43900 Sospechoso    España           04/03/2020
+66 JALISCO            F   54       43898 Sospechoso    España           25/02/2020
+67 JALISCO            F   21       43891 Sospechoso    España           09/03/2020
+68 JALISCO            M   33       43892 Sospechoso    Francia          26/02/2020
+69 GUANAJUATO         F   37       43900 Sospechoso    Japón            01/03/2020
+70 JALISCO            F   64       43891 Sospechoso    Alemania         09/03/2020
+71 VERACRUZ           M   28       43900 Sospechoso    Alemania         06/03/2020
+72 JALISCO            M   59       43899 Sospechoso    España           01/03/2020
+73 YUCATÁN            F   60       43900 Sospechoso    España           08/03/2020
+74 PUEBLA             F   21       43900 Sospechoso    Estados Unidos   08/03/2020
+75 GUANAJUATO         F   60       43899 Sospechoso    Estados Unidos   06/03/2020
+76 YUCATÁN            M   39       43899 Sospechoso    Francia          07/03/2020
+77 PUEBLA             F   21       43900 Sospechoso    España           05/03/2020
+78 GUANAJUATO         M   55       43894 Sospechoso    Estados Unidos   03/03/2020
+79 GUANAJUATO         M   53       43894 Sospechoso    Estados Unidos   03/03/2020
+80 GUANAJUATO         M   60       43898 Sospechoso    Italia           25/02/2020
+81 GUANAJUATO         M   84       43902 Sospechoso    Estados Unidos   05/03/2020
+82 CIUDAD DE MÉXICO   F   35       43899 Sospechoso    Alemania         11/03/2020
+83 CIUDAD DE MÉXICO   F   23       43899 Sospechoso    España           07/03/2020
+84 YUCATÁN            M   38       43898 Sospechoso    España           04/03/2020
+85 QUERETARO          M   44       43896 Sospechoso    Alemania         12/03/2020
+86 QUERETARO          M   43       43888 Sospechoso    España           08/03/2020
+87 BAJA CALIFORNIA    M   75       43901 Sospechoso    Estados Unidos   10/03/2020
+88 QUERETARO          F   47       43894 Sospechoso    España           08/03/2020
+89 VERACRUZ           F   43       43902 Sospechoso    Estados Unidos   09/03/2020
+90 SAN LUIS POTOSÍ    F   53       43901 Sospechoso    España           10/03/2020
+     91 BAJA CALIFORNIA                M          34              43890 Sospechoso    Francia          01/03/2020
+    92 QUERETARO                       F           33             43900 Sospechoso    Estados Unidos   06/03/2020
+    93 SAN LUIS POTOSÍ                 M           31             43898 Sospechoso    España           11/03/2020
+    94 QUERETARO                       M           31             43900 Sospechoso    Estados Unidos   06/03/2020
+    95 BAJA CALIFORNIA                 M          60              43898 Sospechoso    Estados Unidos   06/03/2020
+    96 CIUDAD DE MÉXICO                M          30              43890 Sospechoso    España           05/03/2020
+    97 SAN LUIS POTOSÍ                 F           31             43898 Sospechoso    España           11/03/2020
+    98 BAJA CALIFORNIA                 M          24               43901 Sospechoso   Estados Unidos   09/03/2020
+    99 CHIAPAS                         M           35             43893 Sospechoso    Francia          03/03/2020
+   100 CIUDAD DE MÉXICO                M           27              43901 Sospechoso   Francia          02/03/2020
+    101 NUEVO LEÓN                     F           28              43901 Sospechoso   España           09/03/2020
+   102 NUEVO LEÓN                      M           73             43899 Sospechoso    Estados Unidos   10/03/2020
+   103 NUEVO LEÓN                      M           27              43901 Sospechoso   España           09/03/2020
+   104 NUEVO LEÓN                      M           36             43893 Sospechoso    Estados Unidos   24/02/2020
+   105 NUEVO LEÓN                      M          30              43899 Sospechoso    España           07/03/2020
+Fuente: SINAVE/DGE/InDRE- *InDRE
+F: Femenino M: Masculino
+*Recuperado al dar negativo en su muestra a los 14 días de seguimiento
+
