@@ -1,16 +1,24 @@
+import hashlib
 import json
 import pandas as pd
+import os
 import re
-import requests
 import sys
+from helpers import get_iso, strip_accents, request_url
 from datetime import date
 
-# TODO: improve & error handling
+# -------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------
+
+# TODO: Improve, error handling, testing & documentation
 
 def main(args):
     destination = get_destination(parse_args(args))
     
-    df = create_dataframe_from_json(load_contents())
+    contents = load_contents()
+    print(json.dumps(contents, indent=2, sort_keys=True))
+
+    df = create_dataframe_from_json(contents)
 
     #df = append_total_row(df)
     df = append_additional_columns(df)
@@ -29,17 +37,19 @@ def get_destination(dest = None):
     if dest:
         return dest
     
-    today = date.today().strftime("%Y-%m-%d")
-    folder = date.today().strftime("%Y-%m")
+    today = date.today().strftime("%Y%m%d")
 
-    return "federal_{}.csv".format(folder, today)
+    return "federal_{}.csv".format(today)
 
 
 def load_contents(file = None):
     if file:
         return load_from_file(file)
         
-    return parse_json(load_from_url())
+    return parse_json(request_url(
+        'https://ncov.sinave.gob.mx/Mapa.aspx/Grafica22',
+        './cache/mapa/{}'.format(date.today().strftime("%Y%m%d"))
+    ))
 
     
 def load_from_file(file):
@@ -49,24 +59,16 @@ def load_from_file(file):
     
 def parse_json(text):
     contents = json.loads(text)
-    return json.loads(contents['d'])
+    contents = json.loads(contents['d'])
 
-
-def load_from_url(url = 'https://ncov.sinave.gob.mx/Mapa.aspx/Grafica22'):
-    headers = {
-        'Content-Type': 'application/json; charset=UTF-8'
-    }
-
-    response = requests.post(url, headers=headers)
-
-    return response.text
+    return contents
 
 
 def create_dataframe_from_json(text):
     df = pd.DataFrame(text, columns =[
         'D1', 'Estado', 'D2', 'D3', 'Positivos', 'Negativos', 'Sospechosos', 'Defunciones'
     ]) 
-    df = df[['Estado','Positivos','Negativos', 'Sospechosos', 'Defunciones']]
+    df = df[['Estado', 'Positivos', 'Negativos', 'Sospechosos', 'Defunciones']]
     
     return df
 
@@ -89,72 +91,9 @@ def append_additional_columns(df):
     df['Inconsistencias'] = None
     df['Fecha'] = date.today().strftime("%Y-%m-%d")
 
-    df = df[['Estado', 'Fecha', 'Positivos','Negativos', 'Sospechosos', 'Defunciones', 'Inconsistencias']]
+    df = df[['Estado', 'Fecha', 'Positivos', 'Sospechosos', 'Negativos', 'Defunciones', 'Inconsistencias']]
     
     return df
-
-    
-def strip_accents(text):
-    """
-    could have done this:
-    https://stackoverflow.com/questions/517923/what-is-the-best-way-to-remove-accents-in-a-python-unicode-string
-    """
-    
-    rep = {
-        "Á": "A", 
-        "É": "E",
-        "Í": "I",
-        "Ó": "O",
-        "Ú": "U"
-    }
-
-    rep = dict((re.escape(k), v) for k, v in rep.items()) 
-    pattern = re.compile("|".join(rep.keys()))
-
-    text = pattern.sub(lambda m: rep[re.escape(m.group(0))], text)
-
-    return text
-
-
-def get_iso(state):
-
-    # see https://en.wikipedia.org/wiki/Template:Mexico_State-Abbreviation_Codes
-    dictionary = {
-        "AGUASCALIENTES": "AGU",
-        "BAJA CALIFORNIA": "BCN",
-        "BAJA CALIFORNIA SUR": "BCS",
-        "CAMPECHE": "CAM",
-        "CHIAPAS": "CHP",
-        "CHIHUAHUA": "CHH",
-        "COAHUILA": "COA",
-        "COLIMA": "COL",
-        "CIUDAD DE MEXICO": "CMX",
-        "DURANGO": "DUR",
-        "GUANAJUATO": "GUA",
-        "GUERRERO": "GRO",
-        "HIDALGO": "HID",
-        "JALISCO": "JAL",
-        "MEXICO": "MEX",
-        "MICHOACAN": "MIC",
-        "MORELOS": "MOR",
-        "NAYARIT": "NAY",
-        "NUEVO LEON": "NLE",
-        "OAXACA": "OAX",
-        "PUEBLA": "PUE",
-        "QUERETARO": "QUE",
-        "QUINTANA ROO": "ROO",
-        "SAN LUIS POTOSI": "SLP",
-        "SINALOA": "SIN",
-        "SONORA": "SON",
-        "TABASCO": "TAB",
-        "TAMAULIPAS": "TAM",
-        "TLAXCALA": "TLA",
-        "VERACRUZ": "VER",
-        "YUCATAN": "YUC",
-        "ZACATECAS": "ZAC"
-    }
-
-    return dictionary.get(state, state)
 
 
 if __name__ == "__main__":

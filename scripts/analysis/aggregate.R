@@ -18,7 +18,10 @@ generate_all <- function(df, destination) {
 
 generate_all_federal <- function(df, destination) {
   customFun  = function(DF) {
-    write.csv(DF, paste0(destination, "federal/federal_", gsub("-", "", unique(DF$Fecha)),".csv"), row.names = FALSE, na = "")
+    date_file <- gsub("-", "", unique(DF$Fecha))
+    month <- gsub("(\\d{4})(\\d{2})(\\d{2})", "\\1\\2", date_file)
+    
+    write.csv(DF, paste0(destination, "federal/", month, "/federal_", date_file,".csv"), row.names = FALSE, na = "")
     return(DF)
   }
   
