@@ -65,7 +65,11 @@ def fix_lines(lines):
     for key, line in lines.items():
         if len(line) == 1:
             continue
-            
+
+        # on April 7 they changed the format of the files, removing the origin.... :/
+        if len(line) == 6:
+            line.append("NA")
+
         # on April 6 they changed the format of the files, removing the date of arrival
         if len(line) == 7:
             line.append("NA")
@@ -97,7 +101,7 @@ def fix_lines(lines):
         line[1] = normalize_state(line[1])
 
         if line[7] == "" or line[7] == "NA":
-            line[7] = "CONTACTO"
+            line[7] = ""
         
         lines[key] = line
  
