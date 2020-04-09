@@ -11,8 +11,8 @@ from helpers import *
 def main(args):
     source, destination = parse_args(args)
 
-    #source = "../../www/tablas-diarias/sospechosos/202003/20200324.html"
-    #destination = "../../www/tablas-diarias/sospechosos/202003/20200324.csv"
+    #source = '../../www/tablas-diarias/sospechosos/202003/20200324.html'
+    #destination = '../../www/tablas-diarias/sospechosos/202003/20200324.csv'
     
     soup = get_soup(source)
     lines = get_lines(soup)
@@ -42,16 +42,16 @@ def get_soup(source):
 
 
 def get_lines(soup):
-    ids = re.findall(r"id\s*=\s*\"(pf\w+)\"", str(soup.contents))
+    ids = re.findall(r'id\s*=\s*\"(pf\w+)\"', str(soup.contents))
 
     lines = {}
     for div_id in ids:
         pdf_html = soup.find(id=str(div_id))
-        divs_html = pdf_html.find_all("div", class_="c")
+        divs_html = pdf_html.find_all('div', class_='c')
 
         for div in divs_html: 
             # TODO: error handling
-            row_id = str(div_id) + "_" + div["class"][2]
+            row_id = str(div_id) + '_' + div['class'][2]
             
             if row_id not in lines:
                 lines[row_id] = list()
@@ -84,37 +84,38 @@ def normalize_origin(text):
     text = normalize_text(text)
     text = convert_na(text)
         
-    text = re.sub(r"TRIESTE$", "ITALIA", text)
-    text = re.sub(r"REPUBLICA CHECA Y REPUBLICA ESLOVACA$", "REPUBLICA CHECA", text)
-    text = re.sub(r"REPUBLICA DE COSTA RICA$", "COSTA RICA", text)
-    text = re.sub(r"REPUBLICA DE HONDURAS$", "HONDURAS", text)
-    text = re.sub(r"GRAN BRETAÑA \(REINO UNIDO\)$", "GRAN BRETAÑA", text)
-    text = re.sub(r"REPUBLICA$", "REPUBLICA CHECA", text)
-    text = re.sub(r"ARABIA$", "ARABIA SAUDITA", text)
-    text = re.sub(r"ESTADOS UNIDOS DE AMERICA$", "ESTADOS UNIDOS", text)
-    text = re.sub(r"ESTADOS$", "ESTADOS UNIDOS", text)
-    text = re.sub(r"EMIRATOS$", "EMIRATOS ARABES", text)
-    text = re.sub(r"GRAN$", "GRAN BRETAÑA", text)
-    text = re.sub(r"OTRO$", "CONTACTO", text)
-    text = re.sub(r"MEX$", "CONTACTO", text)
-    text = re.sub(r"EMIRATOS ARABES UNIDOS$", "EMIRATOS ARABES", text) 
+    text = re.sub(r'TRIESTE$', 'ITALIA', text)
+    text = re.sub(r'REPUBLICA CHECA Y REPUBLICA ESLOVACA$', 'REPUBLICA CHECA', text)
+    text = re.sub(r'REPUBLICA DE COSTA RICA$', 'COSTA RICA', text)
+    text = re.sub(r'REPUBLICA DE HONDURAS$', 'HONDURAS', text)
+    text = re.sub(r'GRAN BRETAÑA \(REINO UNIDO\)$', 'GRAN BRETAÑA', text)
+    text = re.sub(r'REPUBLICA$', 'REPUBLICA CHECA', text)
+    text = re.sub(r'ARABIA$', 'ARABIA SAUDITA', text)
+    text = re.sub(r'ESTADOS UNIDOS DE AMERICA$', 'ESTADOS UNIDOS', text)
+    text = re.sub(r'ESTADOS$', 'ESTADOS UNIDOS', text)
+    text = re.sub(r'EMIRATOS$', 'EMIRATOS ARABES', text)
+    text = re.sub(r'GRAN$', 'GRAN BRETAÑA', text)
+    text = re.sub(r'OTRO$', 'CONTACTO', text)
+    text = re.sub(r'MEX$', 'CONTACTO', text)
+    text = re.sub(r'EMIRATOS ARABES UNIDOS$', 'EMIRATOS ARABES', text) 
     
     return text
 
 
 def normalize_sex(text):
-    if text == "MASCULINO":
-        return "M"
+    if text == 'MASCULINO':
+        return 'M'
 
-    if text == "FEMENINO":
-        return "F"  
+    if text == 'FEMENINO':
+        return 'F'  
     
     return text
 
 
 
 def normalize_date(text):
-    return re.sub("(\d+)/(\d+)/(\d+)", "\\3-\\2-\\1", text)
+    text = convert_na(text)
+    return re.sub('(\d+)/(\d+)/(\d+)', '\\3-\\2-\\1', text)
 
 
 def normalize_df(df):
@@ -151,16 +152,19 @@ def normalize_df(df):
         df['Procedencia_Normalizado'] = ''
 
     df = df[[
-        'Caso', 'Estado', 'Localidad', 'Sexo', 'Fecha_Sintomas',
-        'Situacion', 'Fecha_Llegada', 'Procedencia',
+        'Caso', 'Estado', 'Localidad', 'Sexo', 'Edad', 'Fecha_Sintomas',
+        'Situacion', 'Procedencia', 'Fecha_Llegada', 
         # then normalized in same order of appereance
         'Estado_Normalizado', 'Localidad_Normalizado', 'Sexo_Normalizado',
         'Fecha_Sintomas_Normalizado', 'Fecha_Sintomas_Corregido',
-        'Situacion_Normalizado', 'Fecha_Llegada_Normalizado', 'Procedencia_Normalizado'
+        'Situacion_Normalizado', 'Procedencia_Normalizado', 'Fecha_Llegada_Normalizado'
     ]]
 
+    casts = {'Caso': 'int32'}
+    df = df.astype(casts)
+
     #np.unique(df.Fecha_Sintomas_Corregido, return_counts=True)
-    return(df)
+    return(df.sort_values(by=['Caso']))
 
 
 #----------------------------------------------------------------
@@ -178,17 +182,17 @@ def get_col_names(df):
         
     if (len(row) == 1):
         headers =  [
-            "Caso", "Estado", "Sexo", "Edad",  "Fecha_Sintomas",  "Situacion"
+            'Caso', 'Estado', 'Sexo', 'Edad',  'Fecha_Sintomas',  'Situacion'
         ]
         
         # as per april 6
         if len(df.columns) == 8:
-            headers.append("Procedencia")
-            headers.append("Fecha_Llegada")
+            headers.append('Procedencia')
+            headers.append('Fecha_Llegada')
             
         # as per april 7
         if len(df.columns) == 7:
-            headers.append("Procedencia")
+            headers.append('Procedencia')
             
         return headers
     
@@ -207,9 +211,9 @@ def get_col_names(df):
         
     if (len(row) == 1):
         return [
-            "Caso", "Estado", "Localidad", "Sexo", "Edad",  
-            "Fecha_Sintomas",  "Situacion", "Procedencia",
-            "Fecha_Llegada"
+            'Caso', 'Estado', 'Localidad', 'Sexo', 'Edad',  
+            'Fecha_Sintomas',  'Situacion', 'Procedencia',
+            'Fecha_Llegada'
         ]    
         
     print(df[df[0].str.contains('Caso', regex=True, na=False)])
@@ -218,5 +222,5 @@ def get_col_names(df):
 
 #----------------------------------------------------------------
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main(sys.argv[1:])

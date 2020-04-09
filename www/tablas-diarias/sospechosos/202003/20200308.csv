@@ -1,25 +1,25 @@
-Caso,Estado,Localidad,Sexo,Fecha_Sintomas,Situacion,Fecha_Llegada,Procedencia,Estado_Normalizado,Localidad_Normalizado,Sexo_Normalizado,Fecha_Sintomas_Normalizado,Fecha_Sintomas_Corregido,Situacion_Normalizado,Fecha_Llegada_Normalizado,Procedencia_Normalizado
-7,Ciudad de México,,M,29/02/2020,Sospechoso,01/03/2020,España,CMX,,M,2020-02-29,False,SOSPECHOSO,2020-03-01,ESPAÑA
-8,México,,F,01/03/2020,Sospechoso,01/03/2020,Italia,MEX,,F,2020-03-01,False,SOSPECHOSO,2020-03-01,ITALIA
-9,Baja California,,M,03/03/2020,Sospechoso,02/03/2020,España,BCN,,M,2020-03-03,False,SOSPECHOSO,2020-03-02,ESPAÑA
-10,Baja California,,M,03/03/2020,Sospechoso,02/03/2020,España,BCN,,M,2020-03-03,False,SOSPECHOSO,2020-03-02,ESPAÑA
-11,Guanajuato,,F,22/02/2020,Sospechoso,29/02/2020,Italia,GUA,,F,2020-02-22,False,SOSPECHOSO,2020-02-29,ITALIA
-12,Baja California,,M,19/02/2020,Sospechoso,19/02/2020,Estados Unidos,BCN,,M,2020-02-19,False,SOSPECHOSO,2020-02-19,ESTADOS UNIDOS
-13,Ciudad de México,,F,29/02/2020,Sospechoso,NA,Contacto,CMX,,F,2020-02-29,False,SOSPECHOSO,NA,CONTACTO
-14,México,,F,02/03/2020,Sospechoso,25/02/2020,Italia,MEX,,F,2020-03-02,False,SOSPECHOSO,2020-02-25,ITALIA
-15,Aguascalientes,,F,03/03/2020,Sospechoso,05/03/2020,Italia,AGU,,F,2020-03-03,False,SOSPECHOSO,2020-03-05,ITALIA
-16,Quintana Roo,,M,05/03/2020,Sospechoso,27/02/2020,Estados Unidos,ROO,,M,2020-03-05,False,SOSPECHOSO,2020-02-27,ESTADOS UNIDOS
-17,Ciudad de México,,M,05/03/2020,Sospechoso,04/03/2020,Japón,CMX,,M,2020-03-05,False,SOSPECHOSO,2020-03-04,JAPON
-18,Michoacán,,M,04/03/2020,Sospechoso,05/03/2020,España,MIC,,M,2020-03-04,False,SOSPECHOSO,2020-03-05,ESPAÑA
-19,México,,M,01/03/2020,Sospechoso,18/02/2020,China,MEX,,M,2020-03-01,False,SOSPECHOSO,2020-02-18,CHINA
-20,México,,F,03/02/2020,Sospechoso,18/02/2020,China,MEX,,F,2020-02-03,False,SOSPECHOSO,2020-02-18,CHINA
-21,México,,M,03/03/2020,Sospechoso,18/02/2020,China,MEX,,M,2020-03-03,False,SOSPECHOSO,2020-02-18,CHINA
-22,Baja California Sur,,M,07/03/2020,Sospechoso,05/03/2020,Estados Unidos,BCS,,M,2020-03-07,False,SOSPECHOSO,2020-03-05,ESTADOS UNIDOS
-23,Hidalgo,,M,06/03/2020,Sospechoso,06/03/2020,Alemania,HID,,M,2020-03-06,False,SOSPECHOSO,2020-03-06,ALEMANIA
-24,Ciudad de México,,F,13/02/2020,Sospechoso,25/02/2020,Italia,CMX,,F,2020-02-13,False,SOSPECHOSO,2020-02-25,ITALIA
-1,Baja California,,F,24/02/2020,Sospechoso,02/03/2020,Italia,BCN,,F,2020-02-24,False,SOSPECHOSO,2020-03-02,ITALIA
-2,Ciudad de México,,M,27/02/2020,Sospechoso,18/02/2020,Italia,CMX,,M,2020-02-27,False,SOSPECHOSO,2020-02-18,ITALIA
-3,Baja California,,F,29/02/2020,Sospechoso,24/02/2020,Francia,BCN,,F,2020-02-29,False,SOSPECHOSO,2020-02-24,FRANCIA
-4,Baja California,,M,01/03/2020,Sospechoso,24/02/2020,Francia,BCN,,M,2020-03-01,False,SOSPECHOSO,2020-02-24,FRANCIA
-5,Ciudad de México,,F,26/02/2020,Sospechoso,26/02/2020,España,CMX,,F,2020-02-26,False,SOSPECHOSO,2020-02-26,ESPAÑA
-6,Ciudad de México,,F,02/03/2020,Sospechoso,26/02/2020,Italia,CMX,,F,2020-03-02,False,SOSPECHOSO,2020-02-26,ITALIA
+Caso,Estado,Localidad,Sexo,Edad,Fecha_Sintomas,Situacion,Procedencia,Fecha_Llegada,Estado_Normalizado,Localidad_Normalizado,Sexo_Normalizado,Fecha_Sintomas_Normalizado,Fecha_Sintomas_Corregido,Situacion_Normalizado,Procedencia_Normalizado,Fecha_Llegada_Normalizado
+1,Baja California,,F,24,24/02/2020,Sospechoso,Italia,02/03/2020,BCN,,F,2020-02-24,False,SOSPECHOSO,ITALIA,2020-03-02
+2,Ciudad de México,,M,30,27/02/2020,Sospechoso,Italia,18/02/2020,CMX,,M,2020-02-27,False,SOSPECHOSO,ITALIA,2020-02-18
+3,Baja California,,F,40,29/02/2020,Sospechoso,Francia,24/02/2020,BCN,,F,2020-02-29,False,SOSPECHOSO,FRANCIA,2020-02-24
+4,Baja California,,M,56,01/03/2020,Sospechoso,Francia,24/02/2020,BCN,,M,2020-03-01,False,SOSPECHOSO,FRANCIA,2020-02-24
+5,Ciudad de México,,F,57,26/02/2020,Sospechoso,España,26/02/2020,CMX,,F,2020-02-26,False,SOSPECHOSO,ESPAÑA,2020-02-26
+6,Ciudad de México,,F,41,02/03/2020,Sospechoso,Italia,26/02/2020,CMX,,F,2020-03-02,False,SOSPECHOSO,ITALIA,2020-02-26
+7,Ciudad de México,,M,24,29/02/2020,Sospechoso,España,01/03/2020,CMX,,M,2020-02-29,False,SOSPECHOSO,ESPAÑA,2020-03-01
+8,México,,F,57,01/03/2020,Sospechoso,Italia,01/03/2020,MEX,,F,2020-03-01,False,SOSPECHOSO,ITALIA,2020-03-01
+9,Baja California,,M,31,03/03/2020,Sospechoso,España,02/03/2020,BCN,,M,2020-03-03,False,SOSPECHOSO,ESPAÑA,2020-03-02
+10,Baja California,,M,31,03/03/2020,Sospechoso,España,02/03/2020,BCN,,M,2020-03-03,False,SOSPECHOSO,ESPAÑA,2020-03-02
+11,Guanajuato,,F,23,22/02/2020,Sospechoso,Italia,29/02/2020,GUA,,F,2020-02-22,False,SOSPECHOSO,ITALIA,2020-02-29
+12,Baja California,,M,35,19/02/2020,Sospechoso,Estados Unidos,19/02/2020,BCN,,M,2020-02-19,False,SOSPECHOSO,ESTADOS UNIDOS,2020-02-19
+13,Ciudad de México,,F,2,29/02/2020,Sospechoso,Contacto,NA,CMX,,F,2020-02-29,False,SOSPECHOSO,CONTACTO,
+14,México,,F,19,02/03/2020,Sospechoso,Italia,25/02/2020,MEX,,F,2020-03-02,False,SOSPECHOSO,ITALIA,2020-02-25
+15,Aguascalientes,,F,24,03/03/2020,Sospechoso,Italia,05/03/2020,AGU,,F,2020-03-03,False,SOSPECHOSO,ITALIA,2020-03-05
+16,Quintana Roo,,M,35,05/03/2020,Sospechoso,Estados Unidos,27/02/2020,ROO,,M,2020-03-05,False,SOSPECHOSO,ESTADOS UNIDOS,2020-02-27
+17,Ciudad de México,,M,52,05/03/2020,Sospechoso,Japón,04/03/2020,CMX,,M,2020-03-05,False,SOSPECHOSO,JAPON,2020-03-04
+18,Michoacán,,M,34,04/03/2020,Sospechoso,España,05/03/2020,MIC,,M,2020-03-04,False,SOSPECHOSO,ESPAÑA,2020-03-05
+19,México,,M,3,01/03/2020,Sospechoso,China,18/02/2020,MEX,,M,2020-03-01,False,SOSPECHOSO,CHINA,2020-02-18
+20,México,,F,31,03/02/2020,Sospechoso,China,18/02/2020,MEX,,F,2020-02-03,False,SOSPECHOSO,CHINA,2020-02-18
+21,México,,M,0,03/03/2020,Sospechoso,China,18/02/2020,MEX,,M,2020-03-03,False,SOSPECHOSO,CHINA,2020-02-18
+22,Baja California Sur,,M,41,07/03/2020,Sospechoso,Estados Unidos,05/03/2020,BCS,,M,2020-03-07,False,SOSPECHOSO,ESTADOS UNIDOS,2020-03-05
+23,Hidalgo,,M,14,06/03/2020,Sospechoso,Alemania,06/03/2020,HID,,M,2020-03-06,False,SOSPECHOSO,ALEMANIA,2020-03-06
+24,Ciudad de México,,F,48,13/02/2020,Sospechoso,Italia,25/02/2020,CMX,,F,2020-02-13,False,SOSPECHOSO,ITALIA,2020-02-25
