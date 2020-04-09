@@ -8,7 +8,7 @@ Información de los casos COVID-19 en México.
 
 Los archivos dentro de la carpeta www son accesibles por medio web a través del dominio https://datos.covid19in.mx/, por ejemplo [20200313.pdf](/www/tablas-diarias/positivos/202003/20200313.pdf) es accesible [aquí](https://datos.covid19in.mx/tablas-diarias/positivos/202003/20200313.pdf).
 
-## Fuentes:
+## :memo: Fuentes:
 * https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
 * http://ncov.sinave.gob.mx/mapa.aspx
 
