@@ -1,7 +1,12 @@
+import datetime
 import re
 import requests
 from pathlib import Path
 
+
+#----------------------------------------------------------------
+# F i l  e s
+#----------------------------------------------------------------
 
 def _get_from_cache(url, name=''):
     file = cache_file(url, name)
@@ -44,6 +49,18 @@ def request_url(url, name='', wait=1):
     return content
 
 
+
+#----------------------------------------------------------------
+# S t r i n g s
+#----------------------------------------------------------------
+
+def convert_na(text):
+    if text == "NA":
+        return ""  
+    
+    return text
+
+
 def strip_accents(text):
     """
     could have done this:
@@ -66,7 +83,51 @@ def strip_accents(text):
     return text
 
 
-def get_iso(state):
+# https://stackoverflow.com/questions/15325182/how-to-filter-rows-in-pandas-by-regex
+def regex_filter(val, regex):
+    if val:
+        mo = re.search(regex, val, re.IGNORECASE)
+        if mo:
+            return True
+        else:
+            return False
+    else:
+        return False    
+
+
+#----------------------------------------------------------------
+# S t r i n g s
+#----------------------------------------------------------------
+
+# replacing excel dates
+# see: https://stackoverflow.com/questions/14271791/converting-date-formats-python-unusual-date-formats-extract-ymd
+def get_fixed_date(text):
+    if not is_date_in_excel_format(text):
+        return text
+    
+    match = re.search(r'(\d{5})', text)
+    m = match.group().replace(" ", "").replace(",","")
+    delta = datetime.timedelta(int(m)-2)
+    date = datetime.date(1900, 1, 1) + delta
+    date = str(date.strftime("%d/%m/%Y"))
+    
+    return date
+
+
+def is_date_in_excel_format(text):
+    match = re.search(r'(\d{5})', text)
+    
+    if match:
+        return True
+    
+    return False
+
+
+#----------------------------------------------------------------
+# C o n t e x t
+#----------------------------------------------------------------
+
+def get_iso_from_state(state):
 
     # see https://en.wikipedia.org/wiki/Template:Mexico_State-Abbreviation_Codes
     dictionary = {
@@ -105,3 +166,4 @@ def get_iso(state):
     }
 
     return dictionary.get(state, state)
+

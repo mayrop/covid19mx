@@ -31,6 +31,7 @@ do
 
     # processing the html file
     if [ ! -f $CSV_FILE ]; then
+        echo "Processing ${CSV_FILE}"
         # TODO double check txt exists
         `python scripts/processing/parse.py "${HTML_FILE}" "${CSV_FILE}"`
     fi
