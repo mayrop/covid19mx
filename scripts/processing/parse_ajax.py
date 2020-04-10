@@ -4,8 +4,10 @@ import pandas as pd
 import os
 import re
 import sys
-from helpers import get_iso, strip_accents, request_url
+from helpers import get_iso_from_state, strip_accents, request_url
 from datetime import date
+
+from utils import *
 
 # -------------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------------
@@ -48,7 +50,7 @@ def load_contents(file = None):
         
     return parse_json(request_url(
         'https://ncov.sinave.gob.mx/Mapa.aspx/Grafica22',
-        './cache/mapa/{}'.format(date.today().strftime("%Y%m%d"))
+        '{}/scripts/cache/mapa/{}'.format(ROOT_DIR, date.today().strftime("%Y%m%d"))
     ))
 
     
@@ -87,7 +89,7 @@ def append_total_row(df):
 
 
 def append_additional_columns(df):
-    df['Estado'] = df['Estado'].apply(lambda x: get_iso(strip_accents(str(x).upper())))
+    df['Estado'] = df['Estado'].apply(lambda x: get_iso_from_state(strip_accents(str(x).upper())))
     df['Inconsistencias'] = None
     df['Fecha'] = date.today().strftime("%Y-%m-%d")
 
