@@ -57,9 +57,9 @@ def append_new_line(line, lines, queue):
 
     parts = line.split(',')
     
-    print("Processing line...{}".format(parts[0]))
-
     if len(queue['states']):
+        print("Appending state to line...{}".format(parts[0]))
+
         state = queue['states'].pop()
 
         # element after first comma is a gender, we insert...
@@ -75,6 +75,8 @@ def append_new_line(line, lines, queue):
             exit("Invalid MX state found {}".format(parts[1]))
 
     if len(queue['countries']):
+        print("Appending country to line...{}".format(parts[0]))
+
         country = queue['countries'].pop()
 
         # if there are 8 elements

@@ -1,23 +1,20 @@
 # Container image that runs your code
-FROM debian:9
-# see: https://tracker.debian.org/pkg/pdf2htmlex
+FROM python:3
 
 RUN apt-get update --fix-missing
 
-RUN apt-get install -y ghostscript poppler-utils \
-    pdf2htmlex python3.5 python3-pip locales && \
-    locale-gen en_US.UTF-8 && \
+RUN apt-get install -y ghostscript poppler-utils && \
     rm -rf /var/lib/apt/lists/*
-  
-# adding symlink
-RUN ln -s /usr/bin/python3.5 /usr/bin/python
 
-# Install Python dependencies
-COPY requirements.txt ./
-RUN pip3 install --no-cache-dir -r requirements.txt
+# upgrade pip
+RUN pip install --upgrade pip
 
-# see https://github.com/docker-library/python/issues/13
-ENV LANG C.UTF-8
+# Set working environment
+COPY . /usr/app
+WORKDIR /usr/app
+
+# install any needed packages specified in requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # docker build --no-cache -t mayrop/myparser .
 # docker run -it -v $(pwd):/usr/app mayrop/myparser bash

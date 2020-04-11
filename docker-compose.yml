@@ -1,0 +1,8 @@
+version: '3.7'
+
+services:
+  mx-covid:
+    build: .
+    image: mx-covid
+    volumes:
+      - .:/usr/app

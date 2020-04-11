@@ -58,7 +58,7 @@ def get_df_from_lines(lines):
     return pd.DataFrame.from_records(lines).T
 
 
-def get_colnames(df, source):
+def get_col_names(df, source):
     if 'html' in source:
         get_col_names_for_html(df)
 
