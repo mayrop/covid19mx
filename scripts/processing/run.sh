@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# see https://stackoverflow.com/questions/18649512/unicodedecodeerror-ascii-codec-cant-decode-byte-0xe2-in-position-13-ordinal
-# see https://github.com/tianon/docker-brew-debian/issues/45
-
 DIRECTORY=$(cd `dirname $0` && pwd)
 ROOT=$(dirname $DIRECTORY)
 ROOT=$(dirname $ROOT)
@@ -15,7 +12,7 @@ cd $ROOT
 python ./scripts/processing/download.py
 
 # processing each pdf file
-for FILE in `find $ROOT_DATA_DIRECTORY -name "*.pdf" | grep -E "sospechosos|positivos"`
+for FILE in `find $ROOT_DATA_DIRECTORY -name "*.pdf" | grep -E "sospechosos|positivos" | grep -v "c.pdf"`
 do
     BASENAME="$(basename -- $FILE)"
     FILE_DIR="$(dirname "${FILE}")"
@@ -40,29 +37,5 @@ done
 # processing each pdf file
 for ORIG_FILE in `find . -iname "*.pdf" -mmin -60 -print`
 do
-    COMPRESSED_FILE=$(echo ${ORIG_FILE} | sed -e "s/\.pdf/compressed.pdf/")
-    echo "Compressing ${ORIG_FILE} into ${COMPRESSED_FILE}"
-
-    # creating the txt file
-    if [ ! -f $COMPRESSED_FILE ]; then
-        gs -q -dNOPAUSE -dBATCH -dSAFER \
-            -sDEVICE=pdfwrite \
-            -dCompatibilityLevel=1.3 \
-            -dPDFSETTINGS=/screen \
-            -dEmbedAllFonts=true \
-            -dSubsetFonts=true \
-            -dColorImageDownsampleType=/Bicubic \
-            -dColorImageResolution=144 \
-            -dGrayImageDownsampleType=/Bicubic \
-            -dGrayImageResolution=144 \
-            -dMonoImageDownsampleType=/Bicubic \
-            -dMonoImageResolution=144 \
-            -sOutputFile=$COMPRESSED_FILE $ORIG_FILE
-
-        echo "Removing ${ORIG_FILE}"
-        # TODO - add file size compression before commiting
-
-        rm $ORIG_FILE
-        mv $COMPRESSED_FILE $ORIG_FILE
-    fi
+    ./scripts/processing/compress.sh -s $ORIG_FILE -o 1
 done

@@ -4,19 +4,22 @@
 while [[ $# -gt 1 ]]
 do
 key="$1"
-echo $key
 case $key in
-    -s|-source)
+    -s|--source)
     SOURCE="$2"; shift;;
+    -o|--overwrite)
+    OVERWRITE="$2"; shift;;  
 esac
 shift
 done 
 
-COMPRESSED_FILE=$(echo ${SOURCE} | sed -e "s/\.pdf/-c.pdf/")
-echo "Compressing ${SOURCE} into ${COMPRESSED_FILE}"
 
-# creating the txt file
-if [ ! -f $COMPRESSED_FILE ]; then
+COMPRESSED=$(echo ${SOURCE} | sed -e "s/\.pdf/-c.pdf/")
+
+# compressing the pdf file if it does not exist
+if [ ! -f $COMPRESSED ]; then
+    echo "Compressing ${SOURCE} into ${COMPRESSED}"
+
     gs -q -dNOPAUSE -dBATCH -dSAFER \
         -sDEVICE=pdfwrite \
         -dCompatibilityLevel=1.3 \
@@ -29,11 +32,21 @@ if [ ! -f $COMPRESSED_FILE ]; then
         -dGrayImageResolution=144 \
         -dMonoImageDownsampleType=/Bicubic \
         -dMonoImageResolution=144 \
-        -sOutputFile=$COMPRESSED_FILE $SOURCE
+        -sOutputFile=$COMPRESSED $SOURCE
 
-    echo "Removing ${SOURCE}"
-    # TODO - add file size compression before commiting
+    SIZE_COMPRESSED=$(du -h "$COMPRESSED" | cut -f1)
+    SIZE_SOURCE=$(du -h "$SOURCE" | cut -f1)
 
-    rm $SOURCE
-    mv $COMPRESSED_FILE $SOURCE
+    echo "Source file size: ${SIZE_SOURCE}" 
+    echo "Compressed file size: ${SIZE_COMPRESSED}"
+fi
+
+
+# overwriting original file if required
+if [[ $OVERWRITE ]]; then
+    if [ -f $COMPRESSED ]; then
+        echo "Overwritring ${SOURCE} with compressed ${COMPRESSED}"
+        rm $SOURCE
+        mv $COMPRESSED $SOURCE
+    fi
 fi
