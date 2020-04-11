@@ -132,7 +132,7 @@ def get_fixed_date(text):
         return text
     
     match = re.search(r'(\d{5})', text)
-    m = match.group().replace(' ', '').replace(',','')
+    m = match.group().replace(' ', '').replace(',', '')
     delta = datetime.timedelta(int(m)-2)
     date = datetime.date(1900, 1, 1) + delta
     date = str(date.strftime('%d/%m/%Y'))
@@ -153,10 +153,13 @@ def is_date_in_excel_format(text):
 # C o n t e x t
 #----------------------------------------------------------------
 
-def get_iso_from_state(state):
+def genders():
+    return ['M', 'F', 'MASCULINO', 'FEMENINO']
 
+
+def mx_states():
     # see https://en.wikipedia.org/wiki/Template:Mexico_State-Abbreviation_Codes
-    dictionary = {
+    return {
         'AGUASCALIENTES': 'AGU',
         'BAJA CALIFORNIA': 'BCN',
         'BAJA CALIFORNIA SUR': 'BCS',
@@ -165,6 +168,7 @@ def get_iso_from_state(state):
         'CHIHUAHUA': 'CHH',
         'COAHUILA': 'COA',
         'COLIMA': 'COL',
+        'CIUDAD DE MÉXICO': 'CMX',
         'CIUDAD DE MEXICO': 'CMX',
         'DISTRITO FEDERAL': 'CMX',
         'DURANGO': 'DUR',
@@ -192,5 +196,27 @@ def get_iso_from_state(state):
         'ZACATECAS': 'ZAC'
     }
 
-    return dictionary.get(state, state)
 
+def world_countries():
+    return [
+        'ESTADOS UNIDOS',
+        'REPUBLICA CHECA'
+    ]
+
+
+def is_mx_state(state):
+    state = strip_accents(state.upper())
+
+    return state in mx_states().keys()
+
+
+def get_iso_from_state(state):
+    state = strip_accents(state.upper())
+    
+    return mx_states().get(state, state)
+
+
+def is_known_country(country):
+    country = strip_accents(country.upper())
+
+    return country in world_countries()

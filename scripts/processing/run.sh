@@ -21,7 +21,6 @@ do
     FILE_DIR="$(dirname "${FILE}")"
 
     TXT_FILE=$(echo ${FILE} | sed -e "s/\.pdf/.txt/")
-    HTML_FILE=$(echo ${FILE} | sed -e "s/\.pdf/.html/")
     CSV_FILE=$(echo ${FILE} | sed -e "s/\.pdf/.csv/")
 
     # creating the txt file
@@ -30,19 +29,11 @@ do
         pdftotext -layout $FILE $TXT_FILE
     fi
 
-    # creating the html file
-    if [ ! -f $HTML_FILE ]; then
-        echo "Creating ${HTML_FILE}"
-        pdf2htmlEX --zoom 1.3 $FILE
-        # pdf2htmlEX creates the file in the root, so we need to move it
-        mv $(basename -- $HTML_FILE) $HTML_FILE
-    fi
-
     # processing the html file
     if [ ! -f $CSV_FILE ]; then
         echo "Creating ${CSV_FILE}"
-        echo "python ./scripts/processing/parse.py \"${HTML_FILE}\" \"${CSV_FILE}\""
-        python ./scripts/processing/parse.py "${HTML_FILE}" "${CSV_FILE}"
+        echo "python ./scripts/processing/parse.py \"${TXT_FILE}\" \"${CSV_FILE}\""
+        python ./scripts/processing/parse_pdf.py "${TXT_FILE}" "${CSV_FILE}"
     fi
 done
 
@@ -50,7 +41,6 @@ done
 for ORIG_FILE in `find . -iname "*.pdf" -mmin -60 -print`
 do
     COMPRESSED_FILE=$(echo ${ORIG_FILE} | sed -e "s/\.pdf/compressed.pdf/")
-    BAK_FILE=$(echo ${ORIG_FILE} | sed -e "s/\.pdf/.pdf.bak/")
     echo "Compressing ${ORIG_FILE} into ${COMPRESSED_FILE}"
 
     # creating the txt file
@@ -72,7 +62,7 @@ do
         echo "Removing ${ORIG_FILE}"
         # TODO - add file size compression before commiting
 
-        mv $ORIG_FILE $BAK_FILE
+        rm $ORIG_FILE
         mv $COMPRESSED_FILE $ORIG_FILE
     fi
 done
