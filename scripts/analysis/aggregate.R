@@ -55,6 +55,9 @@ generate_main_file <- function(destination) {
 
 generate_aggregated_file <- function(df, destination) {
   df <- df %>% 
+    dplyr::mutate(
+      Fecha=as.character(Fecha)
+    ) %>%
     dplyr::group_by(Fecha) %>% 
     dplyr::summarise(
       Positivos=sum(Positivos, na.rm = TRUE),
@@ -64,7 +67,10 @@ generate_aggregated_file <- function(df, destination) {
       Inconsistencias=sum(Inconsistencias, na.rm = TRUE)
     )
   
-  totales_bak <- read.csv("bak/totales.csv")
+  totales_bak <- read.csv("bak/totales.csv") %>%
+    dplyr::mutate(
+      Fecha=as.character(Fecha)
+    )
   
   df <- df %>% 
     dplyr::left_join(totales_bak, by="Fecha") %>% 
@@ -75,8 +81,6 @@ generate_aggregated_file <- function(df, destination) {
     dplyr::select(
       -S, -N
     )
-  
-  df %>% View()
   
   write.csv(df, paste0(destination, "/agregados/totales.csv"), row.names = FALSE)
 }
