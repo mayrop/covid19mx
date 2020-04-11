@@ -50,7 +50,7 @@ generate_main_file <- function(destination) {
   rows <- fix_na_in_rows(rows) %>%
     dplyr::select(-rn)
   
-  write.csv(rows, paste0(destination, "federal.csv"), row.names = FALSE, na = "")
+  write.csv(rows, paste0(destination, "/agregados/federal.csv"), row.names = FALSE, na = "")
 }
 
 generate_aggregated_file <- function(df, destination) {
@@ -64,7 +64,21 @@ generate_aggregated_file <- function(df, destination) {
       Inconsistencias=sum(Inconsistencias, na.rm = TRUE)
     )
   
-  write.csv(df, paste0(destination, "totales.csv"), row.names = FALSE)
+  totales_bak <- read.csv("bak/totales.csv")
+  
+  df <- df %>% 
+    dplyr::left_join(totales_bak, by="Fecha") %>% 
+    dplyr::mutate(
+      Sospechosos=ifelse(Sospechosos==0, S, Sospechosos),
+      Negativos=ifelse(Negativos==0, N, Negativos)
+    ) %>%
+    dplyr::select(
+      -S, -N
+    )
+  
+  df %>% View()
+  
+  write.csv(df, paste0(destination, "/agregados/totales.csv"), row.names = FALSE)
 }
 
 
@@ -77,7 +91,7 @@ generate_main_file(destination)
 
 # Run the following to go from main federal.csv file to write all individual files
 # as well as the aggregated file
-df <- read.csv(paste0(destination, "federal.csv"))
+df <- read.csv(paste0(destination, "agregados/federal.csv"))
 df <- fix_na_in_rows(df)
 generate_all(df, destination)
 generate_aggregated_file(df, destination)

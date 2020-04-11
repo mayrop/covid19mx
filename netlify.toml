@@ -13,3 +13,8 @@
   from = "/"
   to = "https://www.covid19in.mx"
   status = 301
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
