@@ -8,9 +8,15 @@ import sys
 import os
 import datetime
 from pathlib import Path
+from utils import *
+
 
 def main(args):
-
+    modified_df = pd.read_csv(
+        '{}/cache/meta/files.txt'.format(ROOT_DIR),
+        names=['Time', 'File']
+    ) 
+    
     df = pd.DataFrame(columns = ['File', 'Basename', 'Type', 'Subtype', 'Last Modified']) 
 
     for elem in Path('./www/').rglob('*.csv'):
@@ -20,7 +26,7 @@ def main(args):
             os.path.basename(elem).replace('.csv', ''),
             get_file_type(elem),
             get_file_subtype(elem),
-            get_last_modified(elem)
+            get_last_modified(elem, modified_df)
         ]
 
     df['Date'] = [get_file_date(x) for x in df.File]
@@ -28,11 +34,15 @@ def main(args):
     df['State'] = [get_state(x) for x in df.File]
     df['State_Name'] = [get_state_from_iso(x) for x in df.State]
 
-    print("Generating the meta files")
+    print('Generating the meta files')
+
     df.to_csv('./www/meta/files.csv', index=False)
     df.to_json('./www/meta/files.columns.json', orient="columns", indent=2)
     df.to_json('./www/meta/files.index.json', orient="index", indent=2)
     df.to_json('./www/meta/files.values.json', orient="values", indent=2)
+
+    # by group
+    df.groupby('Type').apply(lambda x: x.to_json('./www/meta/{}.json'.format(x.Type.iloc[0]), orient='records'))
 
 
 def get_file_type(elem):
@@ -51,7 +61,15 @@ def get_file_subtype(elem):
     return None
 
 
-def get_last_modified(elem):
+def get_last_modified(elem, df):
+    result = df[df['File'].str.contains(str(elem), regex=False, na=False)]
+
+    if len(result) == 0:
+        return result['Time'].values[0]
+    # if len(result) == 1:
+    #     return str(result['File'])
+    
+    # it works with local but not with CI
     return datetime.datetime.utcfromtimestamp(elem.stat().st_mtime).strftime('%Y-%m-%d %H:%M:%S')
 
 
