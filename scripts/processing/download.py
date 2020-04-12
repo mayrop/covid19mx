@@ -16,13 +16,25 @@ from utils import *
 
 
 def main(args):
+    download_pdf_files()
+    download_map()
+
+
+def download_map()
+            
+    return request_url(
+        'https://ncov.sinave.gob.mx/Mapa.aspx/Grafica22',
+        '{}/cache/mapa/{}'.format(ROOT_DIR, date.today().strftime("%Y%m%d"))
+    )
+
+
+def download_pdf_files():
     domain = 'https://www.gob.mx'
     path = '/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449'
     url = '{}{}'.format(domain, path)
 
     contents = request_url_get(
-        url,
-        '{}/scripts/cache/listings/{}'.format(ROOT_DIR, date.today().strftime("%Y%m%d"))
+        url
     )
 
     soup = get_soup(contents)
@@ -42,8 +54,6 @@ def main(args):
             print('file does not exist, downloading')
             response = requests.get(url)
             file.write_bytes(response.content)
-
-    print(ROOT_DIR)
 
 
 def get_pdf_file(url):
