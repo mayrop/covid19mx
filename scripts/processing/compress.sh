@@ -18,6 +18,7 @@ COMPRESSED=$(echo ${SOURCE} | sed -e "s/\.pdf/-c.pdf/")
 
 # compressing the pdf file if it does not exist
 if [ ! -f $COMPRESSED ]; then
+    # see https://stackoverflow.com/questions/16530510/pdf-compression-like-smallpdf-com-programmatically-in-c-sharp
     echo "Compressing ${SOURCE} into ${COMPRESSED}"
 
     gs -q -dNOPAUSE -dBATCH -dSAFER \
