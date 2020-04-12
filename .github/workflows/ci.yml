@@ -27,7 +27,7 @@ jobs:
           pip install -r requirements.txt
       - name: Add files modification time
         run: |
-          git ls-tree -r --name-only HEAD | while read filename; do echo "$(git log -1 --format="%ci" -- $filename),$filename" >> "./cache/meta/files.txt"; done
+          git ls-tree -r --name-only HEAD | while read filename; do echo "$(git log -1 -- $filename),$filename"; done
       - name: Generate and commit files
         run: |
           echo "Generating tree of files..."
