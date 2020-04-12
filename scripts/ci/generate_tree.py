@@ -11,6 +11,8 @@ from pathlib import Path
 from utils import *
 
 
+#  git ls-tree -r --name-only HEAD | while read filename; do echo "$(git log -1 --format="%ad" -- $filename),$filename" >> "./cache/meta/files.txt"; done
+#  
 def main(args):
     modified_df = pd.read_csv(
         '{}/cache/meta/files.txt'.format(ROOT_DIR),
