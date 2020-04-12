@@ -4,7 +4,9 @@
 DIRECTORY=$(cd `dirname $0` && pwd)
 ROOT=$(dirname $DIRECTORY)
 ROOT=$(dirname $ROOT)
+FILE="./cache/meta/files.txt"
 
 cd $ROOT
-
-git ls-tree -r --name-only HEAD | while read filename; do echo "$(git log -1 --no-merges --format="%ci" -- $filename),$filename" >> "./cache/meta/files.txt"; done
+# empty file
+> $FILE
+git ls-tree -r --name-only HEAD | while read filename; do echo "$(git log -1 --no-merges --format="%ci" -- $filename),$filename" >> $FILE; done
