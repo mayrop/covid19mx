@@ -1,5 +1,6 @@
+rows_to_check = rows[rows$file_date_std > "2020-04-05",]
 
-positive_ids = get_ids_for_type("positivos", rows, files_lookup)
+positive_ids = get_ids_for_type("positivos", rows_to_check)
 
 positive_ids_colnames <- names(positive_ids)
 

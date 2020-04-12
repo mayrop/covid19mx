@@ -12,7 +12,7 @@ rows[grepl("investiga", rows$origin, ignore.case=TRUE), ]
 
 rows[
   rows$patient_id %in% c(
-    "ciudad-de-mexico_m_41_2020-03-09_en-investigacion_NA_1"
+    "cmx_m_41_2020-03-09_en-investigacion_NA_1"
   ) & rows$file_id %in% c(
     "positivos_2020_03_19", "positivos_2020_03_20"
   ), c("origin_fixed")
@@ -20,7 +20,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "ciudad-de-mexico_m_41_2020-03-09_en-investigacion_NA_1"
+    "cmx_m_41_2020-03-09_en-investigacion_NA_1"
   ) & rows$file_id %in% c(
     "positivos_2020_03_19", "positivos_2020_03_20"
   ), c("date_origin_fixed")
@@ -31,8 +31,8 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "ciudad-de-mexico_m_64_2020-03-10_contacto---cuba_2020-03-10_1",
-    "ciudad-de-mexico_m_64_2020-03-10_contacto-cuba_2020-03-10_1"
+    "cmx_m_64_2020-03-10_contacto---cuba_2020-03-10_1",
+    "cmx_m_64_2020-03-10_contacto-cuba_2020-03-10_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_13", "positivos_2020_03_14", "positivos_2020_03_15", 
@@ -42,8 +42,8 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "ciudad-de-mexico_m_64_2020-03-10_contacto---cuba_2020-03-10_1",
-    "ciudad-de-mexico_m_64_2020-03-10_contacto-cuba_2020-03-10_1"
+    "cmx_m_64_2020-03-10_contacto---cuba_2020-03-10_1",
+    "cmx_m_64_2020-03-10_contacto-cuba_2020-03-10_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_13", "positivos_2020_03_14", "positivos_2020_03_15", 
@@ -58,7 +58,7 @@ rows[
 # 287 YUCATÁN M 31 17/03/2020 confirmado Contacto NA
 rows[
   rows$patient_id %in% c(
-    "yucatan_m_0_2020-03-17_contacto_NA_1"
+    "yuc_m_0_2020-03-17_contacto_NA_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_22"
@@ -67,7 +67,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "yucatan_m_0_2020-03-17_contacto_NA_1"
+    "yuc_m_0_2020-03-17_contacto_NA_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_22"
@@ -82,7 +82,7 @@ rows[
 #143    QUINTANA ROO      M   45   15/03/2020   confirmado   Estados Unidos   15/03/2020
 rows[
   rows$patient_id %in% c(
-    "quintana-roo_m_45_2020-03-15_contacto_2020-03-15_1"
+    "roo_m_45_2020-03-15_contacto_2020-03-15_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_20", "positivos_2020_03_21", "positivos_2020_03_22"
@@ -91,7 +91,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "quintana-roo_m_45_2020-03-15_contacto_2020-03-15_1"
+    "roo_m_45_2020-03-15_contacto_2020-03-15_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_20", "positivos_2020_03_21", "positivos_2020_03_22"
@@ -101,13 +101,13 @@ rows[
 
 #http://localhost:1313/data/results/txt/covid-19-resultado-positivos-indre-2020-03-19.txt
 #http://localhost:1313/data/results/txt/covid-19-resultado-positivos-indre-2020-03-20.txt
-# chihuahua_m_30_2020-03-12_alemania_2020-03-12_1
+# chh_m_30_2020-03-12_alemania_2020-03-12_1
 #edad was changed from 30 to 29
 #67      CHIHUAHUA        M   29   12/03/2020   confirmado      Alemania        12/03/2020
 #66    CHIHUAHUA          M   30   12/03/2020 confirmado   Alemania         12/03/2020
 rows[
   rows$patient_id %in% c(
-    "chihuahua_m_30_2020-03-12_alemania_2020-03-12_1"
+    "chh_m_30_2020-03-12_alemania_2020-03-12_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_17", "positivos_2020_03_18", "positivos_2020_03_19"
@@ -116,7 +116,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "chihuahua_m_30_2020-03-12_alemania_2020-03-12_1"
+    "chh_m_30_2020-03-12_alemania_2020-03-12_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_17", "positivos_2020_03_18", "positivos_2020_03_19"
@@ -131,7 +131,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "quintana-roo_m_35_2020-03-15_contacto_2020-03-14_1"
+    "roo_m_35_2020-03-15_contacto_2020-03-14_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_20", "positivos_2020_03_21", "positivos_2020_03_22"
@@ -140,7 +140,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "quintana-roo_m_35_2020-03-15_contacto_2020-03-14_1"
+    "roo_m_35_2020-03-15_contacto_2020-03-14_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_20", "positivos_2020_03_21", "positivos_2020_03_22"
@@ -155,7 +155,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "jalisco_m_56_2020-03-17_estados-unidos_2020-03-04_1"
+    "jal_m_56_2020-03-17_estados-unidos_2020-03-04_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_21", "positivos_2020_03_22", "positivos_2020_03_23", "positivos_2020_03_24",
@@ -165,7 +165,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "jalisco_m_56_2020-03-17_estados-unidos_2020-03-04_1"
+    "jal_m_56_2020-03-17_estados-unidos_2020-03-04_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_21", "positivos_2020_03_22", "positivos_2020_03_23", "positivos_2020_03_24",
@@ -181,7 +181,7 @@ rows[
 #253 JALISCO M 55 09/03/2020 confirmado España 12/03/2020
 rows[
   rows$patient_id %in% c(
-    "jalisco_m_0_2020-03-09_espana_2020-03-12_1"
+    "jal_m_0_2020-03-09_espana_2020-03-12_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_22", "positivos_2020_03_23"
@@ -190,7 +190,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "jalisco_m_0_2020-03-09_espana_2020-03-12_1"
+    "jal_m_0_2020-03-09_espana_2020-03-12_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_22", "positivos_2020_03_23"
@@ -200,13 +200,13 @@ rows[
 
 #http://localhost:1313/data/results/covid-19-resultado-positivos-indre-2020-03-22.pdf
 #http://localhost:1313/data/results/covid-19-resultado-positivos-indre-2020-03-23.pdf
-# jalisco_m_24_2020-03-17_NA_2020-03-15_si1 
+# jal_m_24_2020-03-17_NA_2020-03-15_si1 
 # 304 JALISCO M 24 17/03/2020 confirmado Contacto 15/03/2020
 # 311 JALISCO M 24 17/03/2020 confirmado Estados Unidos 15/03/2020
 
 rows[
   rows$patient_id %in% c(
-    "jalisco_m_24_2020-03-17_contacto_2020-03-15_1"
+    "jal_m_24_2020-03-17_contacto_2020-03-15_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_22"
@@ -215,7 +215,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "jalisco_m_24_2020-03-17_contacto_2020-03-15_1"
+    "jal_m_24_2020-03-17_contacto_2020-03-15_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_22"
@@ -241,7 +241,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "tlaxcala_m_56_2020-03-22_estados-unidos_2020-03-21_1"
+    "tla_m_56_2020-03-22_estados-unidos_2020-03-21_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_27", "positivos_2020_03_28", "positivos_2020_03_29", 
@@ -252,7 +252,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "tlaxcala_m_56_2020-03-22_estados-unidos_2020-03-21_1"
+    "tla_m_56_2020-03-22_estados-unidos_2020-03-21_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_27", "positivos_2020_03_28", "positivos_2020_03_29", 
@@ -269,7 +269,7 @@ rows[
 #1066       COAHUILA         F   76   24/03/2020   confirmado   Estados Unidos   22/03/2020
 rows[
   rows$patient_id %in% c(
-    "coahuila_f_46_2020-03-24_estados-unidos_2020-03-22_1"
+    "coa_f_46_2020-03-24_estados-unidos_2020-03-22_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_30"
@@ -278,7 +278,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "coahuila_f_46_2020-03-24_estados-unidos_2020-03-22_1"
+    "coa_f_46_2020-03-24_estados-unidos_2020-03-22_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_30"
@@ -293,7 +293,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "sinaloa_m_55_2020-03-22_contacto_NA_1"
+    "sin_m_55_2020-03-22_contacto_NA_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_29", "positivos_2020_03_30"
@@ -302,7 +302,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "sinaloa_m_55_2020-03-22_contacto_NA_1"
+    "sin_m_55_2020-03-22_contacto_NA_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_29", "positivos_2020_03_30"
@@ -318,7 +318,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "quintana-roo_f_21_2020-03-18_contacto_2020-03-18_1"
+    "roo_f_21_2020-03-18_contacto_2020-03-18_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_23"
@@ -327,7 +327,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "quintana-roo_f_21_2020-03-18_contacto_2020-03-18_1"
+    "roo_f_21_2020-03-18_contacto_2020-03-18_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_23"
@@ -339,11 +339,11 @@ rows[
 #http://localhost:1313/data/results/txt/covid-19-resultado-positivos-indre-2020-03-22.txt
 #135       MÉXICO         F   52   10/03/2020   confirmado      España        12/03/2020
 #156       MÉXICO         F   52   10/03/2020   Confirmado      España        12/03/2020
-#mexico_f_52_2020-03-10_espana_2020-03-12_1  
+#mex_f_52_2020-03-10_espana_2020-03-12_1  
 
 rows[
   rows$patient_id %in% c(
-    "mexico_f_52_2020-03-10_espana_2020-03-12_1"
+    "mex_f_52_2020-03-10_espana_2020-03-12_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_20",
@@ -361,7 +361,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "puebla_m_47_2020-03-08_italia_2020-03-04_1"
+    "pue_m_47_2020-03-08_italia_2020-03-04_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_15"
@@ -374,7 +374,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "mexico_f_33_2020-03-22_contacto_NA_1"
+    "mex_f_33_2020-03-22_contacto_NA_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_26", "positivos_2020_03_27", "positivos_2020_03_28", 
@@ -388,7 +388,7 @@ rows[
 # http://localhost:1313/data/results/txt/covid-19-resultado-positivos-indre-2020-03-31.txt
 rows[
   rows$patient_id %in% c(
-    "jalisco_m_46_2020-03-17_contacto_NA_1"
+    "jal_m_46_2020-03-17_contacto_NA_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_31"
@@ -402,7 +402,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "chiapas_f_32_2020-03-20_estados-unidos_2020-03-07_1"
+    "chp_f_32_2020-03-20_estados-unidos_2020-03-07_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_27"
@@ -415,7 +415,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "mexico_f_31_2020-03-19_contacto_NA_1"
+    "mex_f_31_2020-03-19_contacto_NA_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_26", "positivos_2020_03_27", "positivos_2020_03_28",
@@ -429,7 +429,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "ciudad-de-mexico_m_60_2020-03-18_contacto_NA_1"
+    "cmx_m_60_2020-03-18_contacto_NA_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_24", "positivos_2020_03_25", "positivos_2020_03_26"
@@ -441,7 +441,7 @@ rows[
 # 302       JALISCO        M   31   18/03/2020   confirmado   Estados Unidos   08/03/2020
 rows[
   rows$patient_id %in% c(
-    "jalisco_m_31_2020-03-18_estados-unidos_2020-03-08_1"
+    "jal_m_31_2020-03-18_estados-unidos_2020-03-08_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_22", "positivos_2020_03_23", "positivos_2020_03_24",
@@ -455,7 +455,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "mexico_f_48_2020-03-16_contacto_NA_1"
+    "mex_f_48_2020-03-16_contacto_NA_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_26", "positivos_2020_03_27", "positivos_2020_03_28",
@@ -469,7 +469,7 @@ rows[
 # 575 MÉXICO  M   60   20/03/2020   confirmado   Contacto      NA
 rows[
   rows$patient_id %in% c(
-    "mexico_m_60_2020-03-20_contacto_NA_1"
+    "mex_m_60_2020-03-20_contacto_NA_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_26", "positivos_2020_03_27", "positivos_2020_03_28",
@@ -483,7 +483,7 @@ rows[
 #http://localhost:1313/data/results/txt/covid-19-resultado-positivos-indre-2020-03-26.txt
 rows[
   rows$patient_id %in% c(
-    "mexico_f_31_2020-03-21_contacto_NA_1"
+    "mex_f_31_2020-03-21_contacto_NA_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_26", "positivos_2020_03_27", "positivos_2020_03_28",
@@ -500,7 +500,7 @@ rows[
 #http://localhost:1313/data/results/covid-19-resultado-positivos-indre-2020-04-04.pdf
 rows[
   rows$patient_id %in% c(
-    "coahuila_f_0_2020-03-28_contacto_NA_1"
+    "coa_f_0_2020-03-28_contacto_NA_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_31", "positivos_2020_04_01", "positivos_2020_04_02",
@@ -510,7 +510,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "coahuila_f_0_2020-03-28_contacto_NA_1"
+    "coa_f_0_2020-03-28_contacto_NA_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_31", "positivos_2020_04_01", "positivos_2020_04_02",
@@ -525,7 +525,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "mexico_m_37_2020-03-21_contacto_NA_1"
+    "mex_m_37_2020-03-21_contacto_NA_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_26", "positivos_2020_03_27", "positivos_2020_03_28",
@@ -540,7 +540,7 @@ rows[
 #http://localhost:1313/data/results/covid-19-resultado-positivos-indre-2020-04-03.pdf
 rows[
   rows$patient_id %in% c(
-    "mexico_f_22_2020-03-24_contacto_NA_1"
+    "mex_f_22_2020-03-24_contacto_NA_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_26", "positivos_2020_03_27", "positivos_2020_03_28",
@@ -554,7 +554,7 @@ rows[
 #http://localhost:1313/data/results/covid-19-resultado-positivos-indre-2020-04-03.pdf
 rows[
   rows$patient_id %in% c(
-    "mexico_f_22_2020-03-16_contacto_2020-03-15_1"
+    "mex_f_22_2020-03-16_contacto_2020-03-15_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_26", "positivos_2020_03_27", "positivos_2020_03_28",
@@ -568,7 +568,7 @@ rows[
 #http://localhost:1313/data/results/covid-19-resultado-positivos-indre-2020-04-03.pdf
 rows[
   rows$patient_id %in% c(
-    "mexico_f_22_2020-03-16_contacto_2020-03-15_1"
+    "mex_f_22_2020-03-16_contacto_2020-03-15_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_26", "positivos_2020_03_27", "positivos_2020_03_28",
@@ -582,7 +582,7 @@ rows[
 # https://covid19in.mx/data/results/txt/covid-19-resultado-positivos-indre-2020-04-04.txt
 rows[
   rows$patient_id %in% c(
-    "jalisco_f_49_2020-03-12_espana_2020-03-09_1"
+    "jal_f_49_2020-03-12_espana_2020-03-09_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_19", "positivos_2020_03_20", "positivos_2020_03_21", 
@@ -599,7 +599,7 @@ rows[
 # https://covid19in.mx/data/results/txt/covid-19-resultado-positivos-indre-2020-04-04.txt
 rows[
   rows$patient_id %in% c(
-    "jalisco_m_49_2020-03-13_estados-unidos_2020-03-08_1"
+    "jal_m_49_2020-03-13_estados-unidos_2020-03-08_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_19", "positivos_2020_03_20", "positivos_2020_03_21", 
@@ -616,7 +616,7 @@ rows[
 # https://covid19in.mx/data/results/txt/covid-19-resultado-positivos-indre-2020-04-04.txt
 rows[
   rows$patient_id %in% c(
-    "ciudad-de-mexico_m_59_2020-03-07_espana_2020-03-04_1"
+    "cmx_m_59_2020-03-07_espana_2020-03-04_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_16", "positivos_2020_03_17", "positivos_2020_03_18", 
@@ -633,7 +633,7 @@ rows[
 # https://covid19in.mx/data/results/txt/covid-19-resultado-positivos-indre-2020-04-04.txt
 rows[
   rows$patient_id %in% c(
-    "ciudad-de-mexico_m_45_2020-03-13_espana_2020-03-19_2"
+    "cmx_m_45_2020-03-13_espana_2020-03-19_2"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_03_31", "positivos_2020_04_01", "positivos_2020_04_02",
@@ -647,7 +647,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "ciudad-de-mexico_m_42_2020-03-09_contacto_NA_1"
+    "cmx_m_42_2020-03-09_contacto_NA_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_04_03", "positivos_2020_04_04"
@@ -659,7 +659,7 @@ rows[
 # https://covid19in.mx/data/results/txt/covid-19-resultado-positivos-indre-2020-04-04.txt
 rows[
   rows$patient_id %in% c(
-    "queretaro_m_49_2020-01-30_contacto_NA_1"
+    "que_m_49_2020-01-30_contacto_NA_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_04_04"
@@ -668,7 +668,7 @@ rows[
 
 rows[
   rows$patient_id %in% c(
-    "queretaro_m_49_2020-01-30_contacto_NA_1"
+    "que_m_49_2020-01-30_contacto_NA_1"
   ) & 
     rows$file_id %in% c(
       "positivos_2020_04_04"

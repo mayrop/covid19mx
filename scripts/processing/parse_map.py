@@ -45,13 +45,7 @@ def get_destination(dest = None):
 
 
 def load_contents(file = None):
-    if file:
-        return load_from_file(file)
-        
-    return parse_json(request_url(
-        'https://ncov.sinave.gob.mx/Mapa.aspx/Grafica22',
-        '{}/scripts/cache/mapa/{}'.format(ROOT_DIR, date.today().strftime("%Y%m%d"))
-    ))
+    return load_from_file(file)
 
     
 def load_from_file(file):

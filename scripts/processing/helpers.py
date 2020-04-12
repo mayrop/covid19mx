@@ -12,14 +12,12 @@ from pathlib import Path
 
 def _get_from_cache(url, name=''):
     file = cache_file(url, name)
-    print(file)    
 
     if file.is_file():
         return file.read_text()
 
 
 def cache_file(url, name=''):
-    print("caching...")
     if not name:
         name = '{}'.format(
             hashlib.sha224(url.encode()).hexdigest()
@@ -43,11 +41,14 @@ def _get_from_remote(url):
     return response.text  
 
 
-def request_url(url, name='', wait=1):
-    content = _get_from_cache(url, name)
+def request_url(url, name='', enable_cache=True):
+    if enable_cache:
+        content = _get_from_cache(url, name)
+        if content:
+            return content
 
-    if not content:
-        content = _get_from_remote(url)
+    content = _get_from_remote(url)
+    if enable_cache:
         cache_file(url, name).write_bytes(content.encode())
 
     return content

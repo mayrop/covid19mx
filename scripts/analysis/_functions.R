@@ -17,11 +17,15 @@ init_files <- function(path) {
     recursive=TRUE,
     full.names=TRUE
   )
-
+  
   indexes <- basename(filenames)
   types <- basename(dirname(dirname(filenames)))
   names(filenames) <- gsub("(\\d{4})(\\d{2})(\\d{2}).csv", "\\1_\\2_\\3", paste(types, indexes, sep="_"))
   
+##  for (filename in filenames) {
+ #   print(filename)
+#    read.csv(filename)
+ # }
   files <- lapply(filenames, read.csv, header=TRUE, na.strings="")
   
   files
@@ -127,10 +131,8 @@ map_tables <- function(today, yesterday, positive_ids) {
 }
 
 
-get_ids_for_type <- function(file_type="positivos", rows, files_lookup) {
-  my_unique_files <- files_lookup %>% 
-    dplyr::filter(type == file_type) %>% 
-    dplyr::pull(file_id) %>% 
+get_ids_for_type <- function(file_type="positivos", rows) {
+  my_unique_files <- rows_to_check$file_id %>%
     unique()
   
   ids_positivos = list()
