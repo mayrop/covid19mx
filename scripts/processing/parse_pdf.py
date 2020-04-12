@@ -11,12 +11,12 @@ from _parse_html import parse_from_html, get_col_names_for_html
 from _parse_txt import parse_from_txt, get_col_names_for_txt
 from _normalize import normalize_df
 
+#source = '../../www/tablas-diarias/sospechosos/202003/20200323.txt'
+#destination = '../../www/tablas-diarias/sospechosos/202003/20200324.csv'
+    
 def main(args):
     source, destination = parse_args(args)
 
-    #source = '../../www/tablas-diarias/sospechosos/202003/20200323.txt'
-    #destination = '../../www/tablas-diarias/sospechosos/202003/20200324.csv'
-    
     if '.html' in source:
         lines = parse_from_html(source)
     elif '.txt' in source:
@@ -24,12 +24,6 @@ def main(args):
         
     # transform to data frame
     df = get_df_from_lines(lines)
-    # assign correct headers
-    df.columns = get_col_names(df, source)
- 
-    # drop heading line!
-    df = df.drop(df[df['Caso'].str.contains('Caso', regex=True, na=False)].index)
-    df = df.astype({'Caso': 'int32'})
     df = normalize_df(df)
 
     df.to_csv(destination, index = False)
@@ -64,8 +58,6 @@ def get_col_names(df, source):
 
     return get_col_names_for_txt(df)
 
-
-#----------------------------------------------------------------
 
 
 #----------------------------------------------------------------
