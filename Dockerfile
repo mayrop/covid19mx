@@ -17,5 +17,6 @@ WORKDIR /usr/app
 RUN pip install --no-cache-dir -r requirements.txt
 
 # docker build --no-cache -t mayrop/myparser .
+# docker build --no-cache -t mayrop/myparser .
 # docker run -it -v $(pwd):/usr/app mayrop/myparser bash
 # docker-compose run --rm mx-covid bash

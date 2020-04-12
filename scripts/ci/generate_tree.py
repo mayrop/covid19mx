@@ -1,3 +1,5 @@
+# coding=utf-8
+
 import re
 import pprint
 import json
@@ -12,7 +14,6 @@ def main(args):
     df = pd.DataFrame(columns = ['File', 'Basename', 'Type', 'Subtype', 'Last Modified']) 
 
     for elem in Path('./www/').rglob('*.csv'):
-        
         # append new 
         df.loc[len(df)] = [
             str(elem).replace('www', ''),
@@ -27,6 +28,7 @@ def main(args):
     df['State'] = [get_state(x) for x in df.File]
     df['State_Name'] = [get_state_from_iso(x) for x in df.State]
 
+    print("Generating the meta files")
     df.to_csv('./www/meta/files.csv', index=False)
     df.to_json('./www/meta/files.columns.json', orient="columns", indent=2)
     df.to_json('./www/meta/files.index.json', orient="index", indent=2)
