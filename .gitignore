@@ -136,3 +136,5 @@ dmypy.json
 # HTML processed files
 *.html
 
+
+cache/ignore/
