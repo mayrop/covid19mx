@@ -33,6 +33,8 @@ def main(args):
     df['State'] = [get_state(x) for x in df.File]
     df['State_Name'] = [get_state_from_iso(x) for x in df.State]
 
+    df = df.sort_values(['Type', 'Date', 'State'], ascending=[True, False, True])
+
     df.to_csv('./www/meta/files.csv', index=False)
     df.to_json('./www/meta/files.columns.json', orient="columns", indent=2)
     df.to_json('./www/meta/files.index.json', orient="index", indent=2)
