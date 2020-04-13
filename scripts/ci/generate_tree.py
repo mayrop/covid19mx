@@ -14,12 +14,7 @@ from utils import *
 #  git ls-tree -r --name-only HEAD | while read filename; do echo "$(git log -1 --format="%ad" -- $filename),$filename" >> "./cache/meta/files.txt"; done
 #  
 def main(args):
-    modified_df = pd.read_csv(
-        '{}/cache/meta/files.txt'.format(ROOT_DIR),
-        names=['Time', 'File']
-    ) 
-    
-    df = pd.DataFrame(columns = ['File', 'Basename', 'Type', 'Subtype', 'Last Modified']) 
+    df = pd.DataFrame(columns = ['File', 'Basename', 'Type', 'Subtype', 'Last_Modified']) 
 
     for elem in Path('./www/').rglob('*.csv'):
         # append new 
@@ -28,7 +23,7 @@ def main(args):
             os.path.basename(elem).replace('.csv', ''),
             get_file_type(elem),
             get_file_subtype(elem),
-            get_last_modified(elem, modified_df)
+            get_last_modified(elem)
         ]
 
     df['Date'] = [get_file_date(x) for x in df.File]
@@ -61,7 +56,7 @@ def get_file_subtype(elem):
     return None
 
 
-def get_last_modified(elem, df):
+def get_last_modified(elem):
     return datetime.datetime.utcfromtimestamp(elem.stat().st_mtime).strftime('%Y-%m-%d %H:%M:%S')
 
 
