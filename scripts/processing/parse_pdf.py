@@ -24,6 +24,10 @@ def main(args):
         
     # transform to data frame
     df = get_df_from_lines(lines)
+
+   # assign correct headers
+    df.columns = get_col_names(df, source)
+
     df = normalize_df(df)
 
     df.to_csv(destination, index = False)

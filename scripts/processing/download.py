@@ -7,6 +7,8 @@ import os
 import codecs
 import pandas as pd
 import requests
+import hashlib
+
 from pathlib import Path
 from datetime import date
         
@@ -16,42 +18,72 @@ from utils import *
 
 
 def main(args):
-    download_pdf_files()
+    print('Downloding map...')
     download_map()
 
+    print('Downloding PDF files...')
+    download_pdf_files()
 
-def download_map()
-            
-    return request_url(
-        'https://ncov.sinave.gob.mx/Mapa.aspx/Grafica22',
-        '{}/cache/mapa/{}'.format(ROOT_DIR, date.today().strftime("%Y%m%d"))
-    )
+
+def download_map():
+    url = URL_MAP
+    headers = {'Content-Type': 'application/json; charset=UTF-8'}
+
+    # TODO - error handling
+    basename = get_map_filename()
+    cache_file = Path('{}{}{}.txt'.format(ROOT_DIR, CACHE_MAP_DIR, basename))
+
+    if (cache_file.is_file()):
+        print('Cache file exists, skipping: {}'.format(basename))
+        return
+    
+    print('New file does not exist, retrieving from json')
+    text = requests.post(url, headers=headers).text
+    cache_file.write_bytes(text.encode())
+
+
+def get_map_filename():
+    content = request_url_get(URL_MAP)
+
+    match = re.search(r'Cierre con corte a las (\d+:\d+) hrs, (\d+) de (\w+) de (\d+)', str(content))
+    if match:
+        time_file = match[1].replace(':', '_')
+        month = es_months().get(match[3].lower(), match[3].lower())
+        date_file = '{}{}{}'.format(match[4], month, match[2])
+        
+        return '{}_{}'.format(date_file, time_file)
+
+    print('Could not get cut off date from map')
+    exit()
 
 
 def download_pdf_files():
     domain = 'https://www.gob.mx'
-    path = '/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449'
-    url = '{}{}'.format(domain, path)
 
-    contents = request_url_get(
-        url
-    )
+    contents = request_url_get(URL_PDFS)
 
     soup = get_soup(contents)
 
     html = soup.find_all('div', {'class': 'table-responsive'})
+
+    if len(html) == 0:
+        print('No links found...')
+        return
+
     links = html[0].find_all('a')
+
+    print('Found {} target files'.format(len(links)))
 
     for link in links:
         url = '{}{}'.format(domain, link.get('href'))
         file = get_pdf_file(url)
 
-        print('processing file {}'.format(str(file)))
+        print('Processing file {}'.format(str(file)))
 
         if file.is_file():
-            print('file exists, skipping')
+            print('File exists, skipping')
         else:
-            print('file does not exist, downloading')
+            print('File does not exist, downloading')
             response = requests.get(url)
             file.write_bytes(response.content)
 

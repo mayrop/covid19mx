@@ -23,35 +23,9 @@ def cache_file(url, name=''):
             hashlib.sha224(url.encode()).hexdigest()
         )
 
-    path = '{}.txt'.format(name)
+    path = 'cache/ignore/{}.txt'.format(name)
     
     return Path(path)
-
-
-def _get_from_remote(url):
-    """
-        This is hardcoded to our needs, need to fix
-    """
-    headers = {
-        'Content-Type': 'application/json; charset=UTF-8'
-    }
-
-    response = requests.post(url, headers=headers)
-
-    return response.text  
-
-
-def request_url(url, name='', enable_cache=True):
-    if enable_cache:
-        content = _get_from_cache(url, name)
-        if content:
-            return content
-
-    content = _get_from_remote(url)
-    if enable_cache:
-        cache_file(url, name).write_bytes(content.encode())
-
-    return content
 
 
 def _get_from_remote_get(url):
@@ -72,7 +46,10 @@ def _get_from_remote_get(url):
 
 
 def request_url_get(url, name='', force=True):
-    content = _get_from_cache(url, name)
+    content = ''
+
+    if not force:
+        content = _get_from_cache(url, name)
 
     if not content:
         content = _get_from_remote_get(url)
@@ -196,6 +173,23 @@ def mx_states():
         'YUCATAN': 'YUC',
         'ZACATECAS': 'ZAC'
     }
+
+
+def es_months():
+    return {
+        'enero': '01',
+        'febrero': '02',
+        'marzo': '03',
+        'abril': '04',
+        'mayo': '05',
+        'junio': '06',
+        'julio': '07',
+        'agosto': '08',
+        'septiembre': '09',
+        'octubre': '10',
+        'noviembre': '11',
+        'diciembre': '12'
+    }    
 
 
 def world_countries():

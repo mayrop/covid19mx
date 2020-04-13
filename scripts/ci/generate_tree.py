@@ -36,8 +36,6 @@ def main(args):
     df['State'] = [get_state(x) for x in df.File]
     df['State_Name'] = [get_state_from_iso(x) for x in df.State]
 
-    print('Generating the meta files')
-
     df.to_csv('./www/meta/files.csv', index=False)
     df.to_json('./www/meta/files.columns.json', orient="columns", indent=2)
     df.to_json('./www/meta/files.index.json', orient="index", indent=2)
@@ -64,14 +62,6 @@ def get_file_subtype(elem):
 
 
 def get_last_modified(elem, df):
-    result = df[df['File'].str.contains(str(elem), regex=False, na=False)]
-
-    if len(result) == 0:
-        return result['Time'].values[0]
-    # if len(result) == 1:
-    #     return str(result['File'])
-    
-    # it works with local but not with CI
     return datetime.datetime.utcfromtimestamp(elem.stat().st_mtime).strftime('%Y-%m-%d %H:%M:%S')
 
 

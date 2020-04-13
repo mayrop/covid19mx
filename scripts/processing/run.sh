@@ -39,3 +39,5 @@ for ORIG_FILE in `find . -iname "*.pdf" -mmin -60 -print`
 do
     ./scripts/processing/compress.sh -s $ORIG_FILE -o 1
 done
+
+python ./scripts/ci/generate_tree.py 

@@ -6,9 +6,7 @@ from helpers import *
 #---------------------------------------------------------------- 
 
 def normalize_df(df):
-    # assign correct headers
-    df.columns = get_col_names(df, source)
- 
+
     # drop heading line!
     df = df.drop(df[df['Caso'].str.contains('Caso', regex=True, na=False)].index)
     df = df.astype({'Caso': 'int32'})
