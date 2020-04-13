@@ -7,8 +7,10 @@ import pandas as pd
 import sys
 import os
 import datetime
+import pytz
 from pathlib import Path
 from utils import *
+
 
 
 #  git ls-tree -r --name-only HEAD | while read filename; do echo "$(git log -1 --format="%ad" -- $filename),$filename" >> "./cache/meta/files.txt"; done
@@ -57,7 +59,11 @@ def get_file_subtype(elem):
 
 
 def get_last_modified(elem):
-    return datetime.datetime.utcfromtimestamp(elem.stat().st_mtime).strftime('%Y-%m-%d %H:%M:%S')
+
+    file_utc = datetime.datetime.utcfromtimestamp(elem.stat().st_mtime)
+    tz = pytz.timezone('America/Mexico_City')
+
+    return file_utc.replace(tzinfo=pytz.utc).astimezone(tz).strftime('%Y-%m-%d %H:%M:%S')
 
 
 def get_file_date(column):
