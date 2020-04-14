@@ -4,7 +4,7 @@
     "files",
     "meta",
     "files",
-    "2020-04-13 19:45:20",
+    "2020-04-13 19:58:11",
     null,
     null,
     null,
@@ -920,6 +920,28 @@
     "2020-04-13 19:53:23",
     null,
     null,
+    null,
+    null
+  ],
+  [
+    "\/tablas-diarias\/positivos\/202004\/20200413.csv",
+    "20200413",
+    "tablas_diarias",
+    "positivos",
+    "2020-04-13 19:59:41",
+    "2020-04-13",
+    "04",
+    null,
+    null
+  ],
+  [
+    "\/tablas-diarias\/sospechosos\/202004\/20200413.csv",
+    "20200413",
+    "tablas_diarias",
+    "sospechosos",
+    "2020-04-13 19:59:45",
+    "2020-04-13",
+    "04",
     null,
     null
   ],

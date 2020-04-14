@@ -4,13 +4,13 @@
     "Basename":"files",
     "Type":"meta",
     "Subtype":"files",
-    "Last_Modified":"2020-04-13 19:45:20",
+    "Last_Modified":"2020-04-13 19:58:11",
     "Date":null,
     "Month":null,
     "State":null,
     "State_Name":null
   },
-  "147":{
+  "149":{
     "File":"\/otros\/estados.csv",
     "Basename":"estados",
     "Type":"otros",
@@ -21,7 +21,7 @@
     "State":null,
     "State_Name":null
   },
-  "148":{
+  "150":{
     "File":"\/otros\/positivos.csv",
     "Basename":"positivos",
     "Type":"otros",
@@ -923,6 +923,28 @@
     "State":null,
     "State_Name":null
   },
+  "84":{
+    "File":"\/tablas-diarias\/positivos\/202004\/20200413.csv",
+    "Basename":"20200413",
+    "Type":"tablas_diarias",
+    "Subtype":"positivos",
+    "Last_Modified":"2020-04-13 19:59:41",
+    "Date":"2020-04-13",
+    "Month":"04",
+    "State":null,
+    "State_Name":null
+  },
+  "116":{
+    "File":"\/tablas-diarias\/sospechosos\/202004\/20200413.csv",
+    "Basename":"20200413",
+    "Type":"tablas_diarias",
+    "Subtype":"sospechosos",
+    "Last_Modified":"2020-04-13 19:59:45",
+    "Date":"2020-04-13",
+    "Month":"04",
+    "State":null,
+    "State_Name":null
+  },
   "83":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200412.csv",
     "Basename":"20200412",
@@ -934,7 +956,7 @@
     "State":null,
     "State_Name":null
   },
-  "114":{
+  "115":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200412.csv",
     "Basename":"20200412",
     "Type":"tablas_diarias",
@@ -945,7 +967,7 @@
     "State":null,
     "State_Name":null
   },
-  "85":{
+  "86":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200411.csv",
     "Basename":"20200411",
     "Type":"tablas_diarias",
@@ -956,7 +978,7 @@
     "State":null,
     "State_Name":null
   },
-  "116":{
+  "118":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200411.csv",
     "Basename":"20200411",
     "Type":"tablas_diarias",
@@ -967,7 +989,7 @@
     "State":null,
     "State_Name":null
   },
-  "88":{
+  "89":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200410.csv",
     "Basename":"20200410",
     "Type":"tablas_diarias",
@@ -978,7 +1000,7 @@
     "State":null,
     "State_Name":null
   },
-  "119":{
+  "121":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200410.csv",
     "Basename":"20200410",
     "Type":"tablas_diarias",
@@ -989,7 +1011,7 @@
     "State":null,
     "State_Name":null
   },
-  "92":{
+  "93":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200409.csv",
     "Basename":"20200409",
     "Type":"tablas_diarias",
@@ -1000,7 +1022,7 @@
     "State":null,
     "State_Name":null
   },
-  "123":{
+  "125":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200409.csv",
     "Basename":"20200409",
     "Type":"tablas_diarias",
@@ -1011,7 +1033,7 @@
     "State":null,
     "State_Name":null
   },
-  "93":{
+  "94":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200408.csv",
     "Basename":"20200408",
     "Type":"tablas_diarias",
@@ -1022,7 +1044,7 @@
     "State":null,
     "State_Name":null
   },
-  "124":{
+  "126":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200408.csv",
     "Basename":"20200408",
     "Type":"tablas_diarias",
@@ -1033,7 +1055,7 @@
     "State":null,
     "State_Name":null
   },
-  "84":{
+  "85":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200407.csv",
     "Basename":"20200407",
     "Type":"tablas_diarias",
@@ -1044,7 +1066,7 @@
     "State":null,
     "State_Name":null
   },
-  "115":{
+  "117":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200407.csv",
     "Basename":"20200407",
     "Type":"tablas_diarias",
@@ -1066,7 +1088,7 @@
     "State":null,
     "State_Name":null
   },
-  "113":{
+  "114":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200406.csv",
     "Basename":"20200406",
     "Type":"tablas_diarias",
@@ -1077,7 +1099,7 @@
     "State":null,
     "State_Name":null
   },
-  "86":{
+  "87":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200405.csv",
     "Basename":"20200405",
     "Type":"tablas_diarias",
@@ -1088,7 +1110,7 @@
     "State":null,
     "State_Name":null
   },
-  "117":{
+  "119":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200405.csv",
     "Basename":"20200405",
     "Type":"tablas_diarias",
@@ -1099,7 +1121,7 @@
     "State":null,
     "State_Name":null
   },
-  "87":{
+  "88":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200404.csv",
     "Basename":"20200404",
     "Type":"tablas_diarias",
@@ -1110,7 +1132,7 @@
     "State":null,
     "State_Name":null
   },
-  "118":{
+  "120":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200404.csv",
     "Basename":"20200404",
     "Type":"tablas_diarias",
@@ -1121,7 +1143,7 @@
     "State":null,
     "State_Name":null
   },
-  "90":{
+  "91":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200403.csv",
     "Basename":"20200403",
     "Type":"tablas_diarias",
@@ -1132,7 +1154,7 @@
     "State":null,
     "State_Name":null
   },
-  "121":{
+  "123":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200403.csv",
     "Basename":"20200403",
     "Type":"tablas_diarias",
@@ -1143,7 +1165,7 @@
     "State":null,
     "State_Name":null
   },
-  "91":{
+  "92":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200402.csv",
     "Basename":"20200402",
     "Type":"tablas_diarias",
@@ -1154,7 +1176,7 @@
     "State":null,
     "State_Name":null
   },
-  "122":{
+  "124":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200402.csv",
     "Basename":"20200402",
     "Type":"tablas_diarias",
@@ -1165,7 +1187,7 @@
     "State":null,
     "State_Name":null
   },
-  "89":{
+  "90":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200401.csv",
     "Basename":"20200401",
     "Type":"tablas_diarias",
@@ -1176,7 +1198,7 @@
     "State":null,
     "State_Name":null
   },
-  "120":{
+  "122":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200401.csv",
     "Basename":"20200401",
     "Type":"tablas_diarias",
@@ -1187,7 +1209,7 @@
     "State":null,
     "State_Name":null
   },
-  "110":{
+  "111":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200331.csv",
     "Basename":"20200331",
     "Type":"tablas_diarias",
@@ -1198,7 +1220,7 @@
     "State":null,
     "State_Name":null
   },
-  "144":{
+  "146":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200331.csv",
     "Basename":"20200331",
     "Type":"tablas_diarias",
@@ -1209,7 +1231,7 @@
     "State":null,
     "State_Name":null
   },
-  "105":{
+  "106":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200330.csv",
     "Basename":"20200330",
     "Type":"tablas_diarias",
@@ -1220,7 +1242,7 @@
     "State":null,
     "State_Name":null
   },
-  "139":{
+  "141":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200330.csv",
     "Basename":"20200330",
     "Type":"tablas_diarias",
@@ -1231,7 +1253,7 @@
     "State":null,
     "State_Name":null
   },
-  "99":{
+  "100":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200329.csv",
     "Basename":"20200329",
     "Type":"tablas_diarias",
@@ -1242,7 +1264,7 @@
     "State":null,
     "State_Name":null
   },
-  "130":{
+  "132":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200329.csv",
     "Basename":"20200329",
     "Type":"tablas_diarias",
@@ -1253,7 +1275,7 @@
     "State":null,
     "State_Name":null
   },
-  "96":{
+  "97":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200328.csv",
     "Basename":"20200328",
     "Type":"tablas_diarias",
@@ -1264,7 +1286,7 @@
     "State":null,
     "State_Name":null
   },
-  "127":{
+  "129":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200328.csv",
     "Basename":"20200328",
     "Type":"tablas_diarias",
@@ -1275,7 +1297,7 @@
     "State":null,
     "State_Name":null
   },
-  "111":{
+  "112":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200327.csv",
     "Basename":"20200327",
     "Type":"tablas_diarias",
@@ -1286,7 +1308,7 @@
     "State":null,
     "State_Name":null
   },
-  "145":{
+  "147":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200327.csv",
     "Basename":"20200327",
     "Type":"tablas_diarias",
@@ -1297,7 +1319,7 @@
     "State":null,
     "State_Name":null
   },
-  "112":{
+  "113":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200326.csv",
     "Basename":"20200326",
     "Type":"tablas_diarias",
@@ -1308,7 +1330,7 @@
     "State":null,
     "State_Name":null
   },
-  "146":{
+  "148":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200326.csv",
     "Basename":"20200326",
     "Type":"tablas_diarias",
@@ -1319,7 +1341,7 @@
     "State":null,
     "State_Name":null
   },
-  "109":{
+  "110":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200325.csv",
     "Basename":"20200325",
     "Type":"tablas_diarias",
@@ -1330,7 +1352,7 @@
     "State":null,
     "State_Name":null
   },
-  "143":{
+  "145":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200325.csv",
     "Basename":"20200325",
     "Type":"tablas_diarias",
@@ -1341,7 +1363,7 @@
     "State":null,
     "State_Name":null
   },
-  "106":{
+  "107":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200324.csv",
     "Basename":"20200324",
     "Type":"tablas_diarias",
@@ -1352,7 +1374,7 @@
     "State":null,
     "State_Name":null
   },
-  "140":{
+  "142":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200324.csv",
     "Basename":"20200324",
     "Type":"tablas_diarias",
@@ -1363,7 +1385,7 @@
     "State":null,
     "State_Name":null
   },
-  "102":{
+  "103":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200323.csv",
     "Basename":"20200323",
     "Type":"tablas_diarias",
@@ -1374,7 +1396,7 @@
     "State":null,
     "State_Name":null
   },
-  "135":{
+  "137":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200323.csv",
     "Basename":"20200323",
     "Type":"tablas_diarias",
@@ -1385,7 +1407,7 @@
     "State":null,
     "State_Name":null
   },
-  "101":{
+  "102":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200322.csv",
     "Basename":"20200322",
     "Type":"tablas_diarias",
@@ -1396,7 +1418,7 @@
     "State":null,
     "State_Name":null
   },
-  "134":{
+  "136":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200322.csv",
     "Basename":"20200322",
     "Type":"tablas_diarias",
@@ -1407,7 +1429,7 @@
     "State":null,
     "State_Name":null
   },
-  "103":{
+  "104":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200321.csv",
     "Basename":"20200321",
     "Type":"tablas_diarias",
@@ -1418,7 +1440,7 @@
     "State":null,
     "State_Name":null
   },
-  "136":{
+  "138":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200321.csv",
     "Basename":"20200321",
     "Type":"tablas_diarias",
@@ -1429,7 +1451,7 @@
     "State":null,
     "State_Name":null
   },
-  "104":{
+  "105":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200320.csv",
     "Basename":"20200320",
     "Type":"tablas_diarias",
@@ -1440,7 +1462,7 @@
     "State":null,
     "State_Name":null
   },
-  "137":{
+  "139":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200320.csv",
     "Basename":"20200320",
     "Type":"tablas_diarias",
@@ -1451,7 +1473,7 @@
     "State":null,
     "State_Name":null
   },
-  "108":{
+  "109":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200319.csv",
     "Basename":"20200319",
     "Type":"tablas_diarias",
@@ -1462,7 +1484,7 @@
     "State":null,
     "State_Name":null
   },
-  "142":{
+  "144":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200319.csv",
     "Basename":"20200319",
     "Type":"tablas_diarias",
@@ -1473,7 +1495,7 @@
     "State":null,
     "State_Name":null
   },
-  "107":{
+  "108":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200318.csv",
     "Basename":"20200318",
     "Type":"tablas_diarias",
@@ -1484,7 +1506,7 @@
     "State":null,
     "State_Name":null
   },
-  "141":{
+  "143":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200318.csv",
     "Basename":"20200318",
     "Type":"tablas_diarias",
@@ -1495,7 +1517,7 @@
     "State":null,
     "State_Name":null
   },
-  "94":{
+  "95":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200317.csv",
     "Basename":"20200317",
     "Type":"tablas_diarias",
@@ -1506,7 +1528,7 @@
     "State":null,
     "State_Name":null
   },
-  "125":{
+  "127":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200317.csv",
     "Basename":"20200317",
     "Type":"tablas_diarias",
@@ -1517,7 +1539,7 @@
     "State":null,
     "State_Name":null
   },
-  "95":{
+  "96":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200316.csv",
     "Basename":"20200316",
     "Type":"tablas_diarias",
@@ -1528,7 +1550,7 @@
     "State":null,
     "State_Name":null
   },
-  "126":{
+  "128":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200316.csv",
     "Basename":"20200316",
     "Type":"tablas_diarias",
@@ -1539,7 +1561,7 @@
     "State":null,
     "State_Name":null
   },
-  "98":{
+  "99":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200315.csv",
     "Basename":"20200315",
     "Type":"tablas_diarias",
@@ -1550,7 +1572,7 @@
     "State":null,
     "State_Name":null
   },
-  "129":{
+  "131":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200315.csv",
     "Basename":"20200315",
     "Type":"tablas_diarias",
@@ -1561,7 +1583,7 @@
     "State":null,
     "State_Name":null
   },
-  "97":{
+  "98":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200314.csv",
     "Basename":"20200314",
     "Type":"tablas_diarias",
@@ -1572,7 +1594,7 @@
     "State":null,
     "State_Name":null
   },
-  "128":{
+  "130":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200314.csv",
     "Basename":"20200314",
     "Type":"tablas_diarias",
@@ -1583,7 +1605,7 @@
     "State":null,
     "State_Name":null
   },
-  "100":{
+  "101":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200313.csv",
     "Basename":"20200313",
     "Type":"tablas_diarias",
@@ -1594,7 +1616,7 @@
     "State":null,
     "State_Name":null
   },
-  "133":{
+  "135":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200313.csv",
     "Basename":"20200313",
     "Type":"tablas_diarias",
@@ -1605,7 +1627,7 @@
     "State":null,
     "State_Name":null
   },
-  "132":{
+  "134":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200312.csv",
     "Basename":"20200312",
     "Type":"tablas_diarias",
@@ -1616,7 +1638,7 @@
     "State":null,
     "State_Name":null
   },
-  "131":{
+  "133":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200311.csv",
     "Basename":"20200311",
     "Type":"tablas_diarias",
@@ -1627,7 +1649,7 @@
     "State":null,
     "State_Name":null
   },
-  "138":{
+  "140":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200308.csv",
     "Basename":"20200308",
     "Type":"tablas_diarias",

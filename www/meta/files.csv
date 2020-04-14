@@ -1,5 +1,5 @@
 File,Basename,Type,Subtype,Last_Modified,Date,Month,State,State_Name
-/meta/files.csv,files,meta,files,2020-04-13 19:45:20,,,,
+/meta/files.csv,files,meta,files,2020-04-13 19:58:11,,,,
 /otros/estados.csv,estados,otros,estados,2020-04-08 17:57:22,,,,
 /otros/positivos.csv,positivos,otros,positivos,2020-04-06 21:39:56,,,,
 /series-de-tiempo/federal/202004/federal_20200413.csv,federal_20200413,series_de_tiempo,federal,2020-04-13 19:53:23,2020-04-13,04,,
@@ -83,6 +83,8 @@ File,Basename,Type,Subtype,Last_Modified,Date,Month,State,State_Name
 /series-de-tiempo/estatal/estatal_zac.csv,estatal_zac,series_de_tiempo,estatal,2020-04-13 19:53:23,,,zac,Zacatecas
 /series-de-tiempo/agregados/federal.csv,federal,series_de_tiempo,agregados,2020-04-13 19:53:22,,,,
 /series-de-tiempo/agregados/totales.csv,totales,series_de_tiempo,agregados,2020-04-13 19:53:23,,,,
+/tablas-diarias/positivos/202004/20200413.csv,20200413,tablas_diarias,positivos,2020-04-13 19:59:41,2020-04-13,04,,
+/tablas-diarias/sospechosos/202004/20200413.csv,20200413,tablas_diarias,sospechosos,2020-04-13 19:59:45,2020-04-13,04,,
 /tablas-diarias/positivos/202004/20200412.csv,20200412,tablas_diarias,positivos,2020-04-12 19:10:19,2020-04-12,04,,
 /tablas-diarias/sospechosos/202004/20200412.csv,20200412,tablas_diarias,sospechosos,2020-04-12 19:10:21,2020-04-12,04,,
 /tablas-diarias/positivos/202004/20200411.csv,20200411,tablas_diarias,positivos,2020-04-11 19:12:54,2020-04-11,04,,
