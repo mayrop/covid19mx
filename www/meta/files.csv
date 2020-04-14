@@ -1,5 +1,5 @@
 File,Basename,Type,Subtype,Last_Modified,Date,Month,State,State_Name
-/meta/files.csv,files,meta,files,2020-04-12 20:30:44,,,,
+/meta/files.csv,files,meta,files,2020-04-13 19:44:57,,,,
 /otros/estados.csv,estados,otros,estados,2020-04-08 17:57:22,,,,
 /otros/positivos.csv,positivos,otros,positivos,2020-04-06 21:39:56,,,,
 /series-de-tiempo/federal/202004/federal_20200412.csv,federal_20200412,series_de_tiempo,federal,2020-04-12 19:11:19,2020-04-12,04,,
@@ -147,4 +147,3 @@ File,Basename,Type,Subtype,Last_Modified,Date,Month,State,State_Name
 /tablas-diarias/sospechosos/202003/20200312.csv,20200312,tablas_diarias,sospechosos,2020-04-09 01:51:40,2020-03-12,03,,
 /tablas-diarias/sospechosos/202003/20200311.csv,20200311,tablas_diarias,sospechosos,2020-04-09 01:51:40,2020-03-11,03,,
 /tablas-diarias/sospechosos/202003/20200308.csv,20200308,tablas_diarias,sospechosos,2020-04-09 01:51:40,2020-03-08,03,,
-/tablas-diarias/sospechosos/202003/20200301.csv,20200301,tablas_diarias,sospechosos,2020-04-12 16:09:16,2020-03-01,03,,
