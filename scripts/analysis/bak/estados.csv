@@ -1,0 +1,33 @@
+CLAVE,NOMBRE,NOMBRE_MAYUSCULA,NOMBRE_COMPLETO,ABREVIATURA,ISO_3,ISO_2
+1,Aguascalientes,AGUASCALIENTES,Aguascalientes,Ags.,AGU,AS
+2,Baja California,BAJA CALIFORNIA,Baja California,B. C.,BCN,BC
+3,Baja California Sur,BAJA CALIFORNIA SUR,Baja California Sur,B. C. S.,BCS,BS
+4,Campeche,CAMPECHE,Campeche,Camp.,CAM,CC
+5,Coahuila,COAHUILA,Coahuila de Zaragoza,Coah.,COA,CL
+6,Colima,COLIMA,Colima,Col.,COL,CM
+7,Chiapas,CHIAPAS,Chiapas,Chis.,CHP,CS
+8,Chihuahua,CHIHUAHUA,Chihuahua,Chih.,CHH,CH
+9,Ciudad de México,CIUDAD DE MEXICO,Ciudad de México,CDMX,CMX,DF
+10,Durango,DURANGO,Durango,Dgo.,DUR,DG
+11,Guanajuato,GUANAJUATO,Guanajuato,Gto.,GUA,GT
+12,Guerrero,GUERRERO,Guerrero,Gro.,GRO,GR
+13,Hidalgo,HIDALGO,Hidalgo,Hgo.,HID,HG
+14,Jalisco,JALISCO,Jalisco,Jal.,JAL,JC
+15,Edo. de México,MEXICO,Estado de México,Méx.,MEX,MC
+16,Michoacán,MICHOACAN,Michoacán de Ocampo,Mich.,MIC,MN
+17,Morelos,MORELOS,Morelos,Mor.,MOR,MS
+18,Nayarit,NAYARIT,Nayarit,Nay.,NAY,NT
+19,Nuevo León,NUEVO LEON,Nuevo León,N. L.,NLE,NL
+20,Oaxaca,OAXACA,Oaxaca,Oax.,OAX,OC
+21,Puebla,PUEBLA,Puebla,Pue.,PUE,PL
+22,Querétaro,QUERETARO,Querétaro,Qro.,QUE,QT
+23,Quintana Roo,QUINTANA ROO,Quintana Roo,Q. R.,ROO,QR
+24,San Luis Potosí,SAN LUIS POTOSI,San Luis Potosí,S. L. P.,SLP,SP
+25,Sinaloa,SINALOA,Sinaloa,Sin.,SIN,SL
+26,Sonora,SONORA,Sonora,Son.,SON,SR
+27,Tabasco,TABASCO,Tabasco,Tab.,TAB,TC
+28,Tamaulipas,TAMAULIPAS,Tamaulipas,Tamps.,TAM,TS
+29,Tlaxcala,TLAXCALA,Tlaxcala,Tlax.,TLA,TL
+30,Veracruz,VERACRUZ,Veracruz de Ignacio de la Llave,Ver.,VER,VZ
+31,Yucatán,YUCATAN,Yucatán,Yuc.,YUC,YN
+32,Zacatecas,ZACATECAS,Zacatecas,Zac.,ZAC,ZS

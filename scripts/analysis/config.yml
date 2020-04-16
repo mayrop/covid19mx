@@ -1,0 +1,54 @@
+default:
+  seed: 2019
+  n_resampling: 10 
+  print: TRUE
+  data:
+    daily_tables_folder: "../../www/tablas-diarias"
+    covid_folder: "../../www/datos-abiertos/diarios"
+    covid_descriptions: "../../www/datos-abiertos/descriptores.yaml"
+    geo:
+      state: "../../data/geo/conjunto_de_datos/areas_geoestadisticas_estatales.shp"
+      city: "../../data/geo/conjunto_de_datos/areas_geoestadisticas_municipales.shp"
+    summary:
+      cities: "../../www/otros/ciudades.csv"
+      cities_segregated: "../../www/otros/ciudades_segregados.csv"
+      states: "../../www/otros/estados.csv"
+      states_segregated: "../../www/otros/estados_segregados.csv"
+  settings:
+    libraries: !expr c(
+        "tidyverse",
+        "plyr",
+        "sf",
+        "rjson",
+        "data.table",
+        "data.table",
+        "forcats",
+        "lubridate",
+        "rgeos",
+        "rgdal",
+        "config"
+      )
+    github: !expr c(
+        "mayrop/covid19mx"
+      )
+    sources: !expr c()
+  theme:
+    font_family: "Arial"
+    font_color: "#4e4d47"
+    bg_color: "#f5f5f2"
+    border_color: "#e8e8e5"
+    # https://davidmathlogic.com/colorblind/
+    plots: !expr c("#D81B1B", "#1E88E5", "#FFC107", "#025446")
+    # display.brewer.pal(n = 8, name = 'Set1')
+    plots_2: !expr c("#D81B1B", "#1E88E5", "#4DAF4A", "#984EA3", "#FF7F00", "#FFFF33")
+    parties_colors: !expr c("#105099", "#d93334")
+    # library(RColorBrewer)
+    # brewer.pal(n=10, name="RdYlBu")
+    # caching...
+    correlations: !expr c(
+        "#A50026", "#D73027", 
+        "#F46D43", "#FDAE61", 
+        "#FEE090", "#E0F3F8", 
+        "#ABD9E9", "#74ADD1", 
+        "#4575B4", "#313695"
+      )
