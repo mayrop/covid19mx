@@ -3,7 +3,7 @@ FROM python:3
 
 RUN apt-get update --fix-missing
 
-RUN apt-get install -y ghostscript poppler-utils && \
+RUN apt-get install -y ghostscript poppler-utils unzip zip && \
     rm -rf /var/lib/apt/lists/*
 
 # upgrade pip
