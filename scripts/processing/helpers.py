@@ -58,6 +58,15 @@ def request_url_get(url, name='', force=True):
     return content  
 
 
+# https://stackoverflow.com/questions/9419162/download-returned-zip-file-from-url
+def request_zip(url, save_path, chunk_size=128):
+    r = requests.get(url, stream=True)
+    with open(save_path, 'wb') as fd:
+        for chunk in r.iter_content(chunk_size=chunk_size):
+            fd.write(chunk)
+
+
+
 #----------------------------------------------------------------
 # S t r i n g s
 #----------------------------------------------------------------

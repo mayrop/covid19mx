@@ -11,7 +11,24 @@ cd $ROOT
 
 python ./scripts/processing/download.py
 find cache/mapa/ -iname "*.txt"  -mmin -60 -print | grep -v "tasas" | xargs -I{}  python ./scripts/processing/parse_map.py {} federal.csv
-mv federal.csv www/series-de-tiempo/federal/202004/federal_20200415.csv
+# mv federal.csv www/series-de-tiempo/federal/202004/federal_20200415.csv
+
+# processing each pdf file
+for FILE in `find $ROOT -maxdepth 1 -name "*.zip"`
+do
+    echo "Unziping...${FILE}"
+    BASENAME="$(basename -- $FILE)"
+    DEST=$(echo ${FILE} | sed -e "s/\.zip//")
+    CSV=$(echo ${BASENAME} | sed -e "s/\.zip/\.csv/")
+    unzip $FILE
+    mv $FILE "${FILE}.bak"
+
+    mkdir -p zip
+    rm -rfv zip/*
+    mv *.csv $CSV
+
+    zip -9 -r $FILE $CSV
+done
 
 # processing each pdf file
 for FILE in `find $ROOT_DATA_DIRECTORY -name "*.pdf" | grep -E "sospechosos|positivos" | grep -v "c.pdf"`

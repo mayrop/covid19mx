@@ -19,64 +19,64 @@ from utils import *
 
 def main(args):
     print('Downloding map...')
-    download_map()
+    download_map(URL_MAP)
 
     print('Downloding map...')
-    download_map_mortality()    
+    url = 'https://ncov.sinave.gob.mx/MapaTasas.aspx/Grafica22'
+    download_map(url, 'tasas/')    
 
     print('Downloding PDF files...')
     download_pdf_files()
 
+    print('Downloding ZIP...')
+    download_zip()
 
-def download_map():
+
+def download_map(url, suffix = ''):
     url = URL_MAP
     headers = {'Content-Type': 'application/json; charset=UTF-8'}
 
-    # TODO - error handling
-    basename = get_map_filename()
-    cache_file = Path('{}{}{}.txt'.format(ROOT_DIR, CACHE_MAP_DIR, basename))
+    text = requests.post(url, headers=headers).text
+    basename = get_map_basename(text)
+
+    cache_file = Path('{}{}{}{}.txt'.format(ROOT_DIR, CACHE_MAP_DIR, suffix, basename))
 
     if (cache_file.is_file()):
         print('Cache file exists, skipping: {}'.format(basename))
         return
     
     print('New file does not exist, retrieving from json')
-    text = requests.post(url, headers=headers).text
     cache_file.write_bytes(text.encode())
 
 
-def download_map_mortality():
-    url = 'https://ncov.sinave.gob.mx/MapaTasas.aspx/Grafica22'
-    headers = {'Content-Type': 'application/json; charset=UTF-8'}
+def get_map_basename(text):
+    time = get_map_time(text)
+    day = get_map_day(text)
 
-    # TODO - error handling
-    basename = get_map_filename()
-    cache_file = Path('{}{}{}{}.txt'.format(ROOT_DIR, CACHE_MAP_DIR, 'tasas/', basename))
-
-    if (cache_file.is_file()):
-        print('Cache file exists, skipping: {}'.format(basename))
-        return
-    
-    print('New file does not exist, retrieving from json')
-    text = requests.post(url, headers=headers).text
-    cache_file.write_bytes(text.encode())
+    return '{}_{}'.format(day, time)
 
 
+def get_map_time(text):
+    match = re.search(r'Cierre con corte a las (\d+:\d+) hrs', str(text))
 
-def get_map_filename():
-    content = request_url_get(URL_MAP)
-
-    return '20200415_14_00'
-
-    match = re.search(r'Cierre con corte a las (\d+:\d+) hrs, (\d+) de (\w+) de (\d+)', str(content))
     if match:
+        print('Time found in the map')
         time_file = match[1].replace(':', '_')
-        month = es_months().get(match[3].lower(), match[3].lower())
-        date_file = '{}{}{}'.format(match[4], month, match[2])
-        
-        return '{}_{}'.format(date_file, time_file)
+    else:
+        print('Time not found in the map defaulting to: 14_00')
+        time_file = '14_00'
 
-    print('Could not get cut off date from map')
+    return time_file
+
+
+def get_map_day(text):
+    match = re.search(r'(\w+) de (\w+) de (\d+)', text)
+    
+    if match:
+        month = es_months().get(match[2].lower(), match[2].lower())
+        return '{}{}{}'.format(match[3], month, match[1])
+
+    print('No date found in text')
     exit()
 
 
@@ -135,11 +135,29 @@ def get_type(text):
 
 
 def get_basename(text):
-    return re.sub('.*?(\d{4})[.-](\d{2})[.-](\d{2})', '\\1\\2/\\1\\2\\3', text)
+    return re.sub(r'.*?(\d{4})[.-](\d{2})[.-](\d{2})', '\\1\\2/\\1\\2\\3', text)
 
 
 def get_soup(contents):
     return BeautifulSoup(contents, 'html.parser')
+
+
+def download_zip():
+    contents = request_url_get(URL_ZIP)
+
+    match = re.search(r'<p>(\d{2})/(\d{2})/(\d{2})</p>.*?<a href="([^"]+\.zip)">VER</a>', str(contents))
+    
+    if match:
+        url = match[4]
+        filepath = '{}20{}{}.zip'.format(match[3], match[2], match[1])
+
+        print('Url to download from: {}'.format(url))
+        print('Downloading zip! to {}'.format(filepath))
+        request_zip(url, filepath)
+        return
+
+    print('no match found for zip!')
+    exit()
 
 
 if __name__ == '__main__':
