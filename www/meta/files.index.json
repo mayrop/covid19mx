@@ -1,7 +1,43 @@
 {
+  "10":{
+    "File":"\/abiertos\/todos\/202004\/20200415.zip",
+    "Basename":"20200415",
+    "Extension":"zip",
+    "Type":"abiertos",
+    "Subtype":"todos",
+    "Last_Modified":"2020-04-15 19:08:44",
+    "Date":"2020-04-15",
+    "Month":"04",
+    "State":null,
+    "State_Name":null
+  },
+  "11":{
+    "File":"\/abiertos\/todos\/202004\/20200414.zip",
+    "Basename":"20200414",
+    "Extension":"zip",
+    "Type":"abiertos",
+    "Subtype":"todos",
+    "Last_Modified":"2020-04-15 19:08:37",
+    "Date":"2020-04-14",
+    "Month":"04",
+    "State":null,
+    "State_Name":null
+  },
+  "12":{
+    "File":"\/abiertos\/todos\/202004\/20200413.zip",
+    "Basename":"20200413",
+    "Extension":"zip",
+    "Type":"abiertos",
+    "Subtype":"todos",
+    "Last_Modified":"2020-04-15 19:08:20",
+    "Date":"2020-04-13",
+    "Month":"04",
+    "State":null,
+    "State_Name":null
+  },
   "0":{
     "File":"\/abiertos\/catalogo.csv",
-    "Basename":"www\/abiertos\/catalogo",
+    "Basename":"catalogo",
     "Extension":"csv",
     "Type":"abiertos",
     "Subtype":"catalogo",
@@ -13,7 +49,7 @@
   },
   "1":{
     "File":"\/abiertos\/descriptores\/sexo.csv",
-    "Basename":"www\/abiertos\/descriptores\/sexo",
+    "Basename":"sexo",
     "Extension":"csv",
     "Type":"abiertos",
     "Subtype":"descriptores",
@@ -25,7 +61,7 @@
   },
   "2":{
     "File":"\/abiertos\/descriptores\/nacionalidad.csv",
-    "Basename":"www\/abiertos\/descriptores\/nacionalidad",
+    "Basename":"nacionalidad",
     "Extension":"csv",
     "Type":"abiertos",
     "Subtype":"descriptores",
@@ -37,7 +73,7 @@
   },
   "3":{
     "File":"\/abiertos\/descriptores\/sector.csv",
-    "Basename":"www\/abiertos\/descriptores\/sector",
+    "Basename":"sector",
     "Extension":"csv",
     "Type":"abiertos",
     "Subtype":"descriptores",
@@ -49,7 +85,7 @@
   },
   "4":{
     "File":"\/abiertos\/descriptores\/tipo_paciente.csv",
-    "Basename":"www\/abiertos\/descriptores\/tipo_paciente",
+    "Basename":"tipo_paciente",
     "Extension":"csv",
     "Type":"abiertos",
     "Subtype":"descriptores",
@@ -61,7 +97,7 @@
   },
   "5":{
     "File":"\/abiertos\/descriptores\/entidades.csv",
-    "Basename":"www\/abiertos\/descriptores\/entidades",
+    "Basename":"entidades",
     "Extension":"csv",
     "Type":"abiertos",
     "Subtype":"descriptores",
@@ -73,7 +109,7 @@
   },
   "6":{
     "File":"\/abiertos\/descriptores\/municipios.csv",
-    "Basename":"www\/abiertos\/descriptores\/municipios",
+    "Basename":"municipios",
     "Extension":"csv",
     "Type":"abiertos",
     "Subtype":"descriptores",
@@ -85,7 +121,7 @@
   },
   "7":{
     "File":"\/abiertos\/descriptores\/origen.csv",
-    "Basename":"www\/abiertos\/descriptores\/origen",
+    "Basename":"origen",
     "Extension":"csv",
     "Type":"abiertos",
     "Subtype":"descriptores",
@@ -97,7 +133,7 @@
   },
   "8":{
     "File":"\/abiertos\/descriptores\/resultado.csv",
-    "Basename":"www\/abiertos\/descriptores\/resultado",
+    "Basename":"resultado",
     "Extension":"csv",
     "Type":"abiertos",
     "Subtype":"descriptores",
@@ -109,7 +145,7 @@
   },
   "9":{
     "File":"\/abiertos\/descriptores\/si_no.csv",
-    "Basename":"www\/abiertos\/descriptores\/si_no",
+    "Basename":"si_no",
     "Extension":"csv",
     "Type":"abiertos",
     "Subtype":"descriptores",
@@ -119,49 +155,13 @@
     "State":null,
     "State_Name":null
   },
-  "10":{
-    "File":"\/abiertos\/todos\/202004\/20200415.zip",
-    "Basename":"www\/abiertos\/todos\/202004\/20200415",
-    "Extension":"zip",
-    "Type":"abiertos",
-    "Subtype":"todos",
-    "Last_Modified":"2020-04-15 19:08:44",
-    "Date":null,
-    "Month":null,
-    "State":null,
-    "State_Name":null
-  },
-  "11":{
-    "File":"\/abiertos\/todos\/202004\/20200414.zip",
-    "Basename":"www\/abiertos\/todos\/202004\/20200414",
-    "Extension":"zip",
-    "Type":"abiertos",
-    "Subtype":"todos",
-    "Last_Modified":"2020-04-15 19:08:37",
-    "Date":null,
-    "Month":null,
-    "State":null,
-    "State_Name":null
-  },
-  "12":{
-    "File":"\/abiertos\/todos\/202004\/20200413.zip",
-    "Basename":"www\/abiertos\/todos\/202004\/20200413",
-    "Extension":"zip",
-    "Type":"abiertos",
-    "Subtype":"todos",
-    "Last_Modified":"2020-04-15 19:08:20",
-    "Date":null,
-    "Month":null,
-    "State":null,
-    "State_Name":null
-  },
   "96":{
     "File":"\/meta\/files.csv",
-    "Basename":"www\/meta\/files",
+    "Basename":"files",
     "Extension":"csv",
     "Type":"meta",
     "Subtype":"files",
-    "Last_Modified":"2020-04-15 19:26:21",
+    "Last_Modified":"2020-04-15 19:44:44",
     "Date":null,
     "Month":null,
     "State":null,
@@ -169,7 +169,7 @@
   },
   "168":{
     "File":"\/otros\/estados.csv",
-    "Basename":"www\/otros\/estados",
+    "Basename":"estados",
     "Extension":"csv",
     "Type":"otros",
     "Subtype":"estados",
@@ -181,7 +181,7 @@
   },
   "169":{
     "File":"\/otros\/positivos.csv",
-    "Basename":"www\/otros\/positivos",
+    "Basename":"positivos",
     "Extension":"csv",
     "Type":"otros",
     "Subtype":"positivos",
@@ -193,7 +193,7 @@
   },
   "23":{
     "File":"\/series-de-tiempo\/federal\/202004\/federal_20200415.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202004\/federal_20200415",
+    "Basename":"federal_20200415",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -205,7 +205,7 @@
   },
   "25":{
     "File":"\/series-de-tiempo\/federal\/202004\/federal_20200414.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202004\/federal_20200414",
+    "Basename":"federal_20200414",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -217,7 +217,7 @@
   },
   "18":{
     "File":"\/series-de-tiempo\/federal\/202004\/federal_20200413.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202004\/federal_20200413",
+    "Basename":"federal_20200413",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -229,7 +229,7 @@
   },
   "19":{
     "File":"\/series-de-tiempo\/federal\/202004\/federal_20200412.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202004\/federal_20200412",
+    "Basename":"federal_20200412",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -241,7 +241,7 @@
   },
   "16":{
     "File":"\/series-de-tiempo\/federal\/202004\/federal_20200411.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202004\/federal_20200411",
+    "Basename":"federal_20200411",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -253,7 +253,7 @@
   },
   "13":{
     "File":"\/series-de-tiempo\/federal\/202004\/federal_20200410.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202004\/federal_20200410",
+    "Basename":"federal_20200410",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -265,7 +265,7 @@
   },
   "27":{
     "File":"\/series-de-tiempo\/federal\/202004\/federal_20200409.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202004\/federal_20200409",
+    "Basename":"federal_20200409",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -277,7 +277,7 @@
   },
   "26":{
     "File":"\/series-de-tiempo\/federal\/202004\/federal_20200408.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202004\/federal_20200408",
+    "Basename":"federal_20200408",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -289,7 +289,7 @@
   },
   "17":{
     "File":"\/series-de-tiempo\/federal\/202004\/federal_20200407.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202004\/federal_20200407",
+    "Basename":"federal_20200407",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -301,7 +301,7 @@
   },
   "20":{
     "File":"\/series-de-tiempo\/federal\/202004\/federal_20200406.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202004\/federal_20200406",
+    "Basename":"federal_20200406",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -313,7 +313,7 @@
   },
   "15":{
     "File":"\/series-de-tiempo\/federal\/202004\/federal_20200405.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202004\/federal_20200405",
+    "Basename":"federal_20200405",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -325,7 +325,7 @@
   },
   "14":{
     "File":"\/series-de-tiempo\/federal\/202004\/federal_20200404.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202004\/federal_20200404",
+    "Basename":"federal_20200404",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -337,7 +337,7 @@
   },
   "22":{
     "File":"\/series-de-tiempo\/federal\/202004\/federal_20200403.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202004\/federal_20200403",
+    "Basename":"federal_20200403",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -349,7 +349,7 @@
   },
   "21":{
     "File":"\/series-de-tiempo\/federal\/202004\/federal_20200402.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202004\/federal_20200402",
+    "Basename":"federal_20200402",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -361,7 +361,7 @@
   },
   "24":{
     "File":"\/series-de-tiempo\/federal\/202004\/federal_20200401.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202004\/federal_20200401",
+    "Basename":"federal_20200401",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -373,7 +373,7 @@
   },
   "53":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200331.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200331",
+    "Basename":"federal_20200331",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -385,7 +385,7 @@
   },
   "58":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200330.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200330",
+    "Basename":"federal_20200330",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -397,7 +397,7 @@
   },
   "28":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200329.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200329",
+    "Basename":"federal_20200329",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -409,7 +409,7 @@
   },
   "32":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200328.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200328",
+    "Basename":"federal_20200328",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -421,7 +421,7 @@
   },
   "52":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200327.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200327",
+    "Basename":"federal_20200327",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -433,7 +433,7 @@
   },
   "51":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200326.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200326",
+    "Basename":"federal_20200326",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -445,7 +445,7 @@
   },
   "54":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200325.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200325",
+    "Basename":"federal_20200325",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -457,7 +457,7 @@
   },
   "57":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200324.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200324",
+    "Basename":"federal_20200324",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -469,7 +469,7 @@
   },
   "49":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200323.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200323",
+    "Basename":"federal_20200323",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -481,7 +481,7 @@
   },
   "50":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200322.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200322",
+    "Basename":"federal_20200322",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -493,7 +493,7 @@
   },
   "47":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200321.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200321",
+    "Basename":"federal_20200321",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -505,7 +505,7 @@
   },
   "46":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200320.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200320",
+    "Basename":"federal_20200320",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -517,7 +517,7 @@
   },
   "55":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200319.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200319",
+    "Basename":"federal_20200319",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -529,7 +529,7 @@
   },
   "56":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200318.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200318",
+    "Basename":"federal_20200318",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -541,7 +541,7 @@
   },
   "35":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200317.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200317",
+    "Basename":"federal_20200317",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -553,7 +553,7 @@
   },
   "34":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200316.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200316",
+    "Basename":"federal_20200316",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -565,7 +565,7 @@
   },
   "29":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200315.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200315",
+    "Basename":"federal_20200315",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -577,7 +577,7 @@
   },
   "31":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200314.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200314",
+    "Basename":"federal_20200314",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -589,7 +589,7 @@
   },
   "38":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200313.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200313",
+    "Basename":"federal_20200313",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -601,7 +601,7 @@
   },
   "39":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200312.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200312",
+    "Basename":"federal_20200312",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -613,7 +613,7 @@
   },
   "44":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200311.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200311",
+    "Basename":"federal_20200311",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -625,7 +625,7 @@
   },
   "41":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200310.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200310",
+    "Basename":"federal_20200310",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -637,7 +637,7 @@
   },
   "48":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200309.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200309",
+    "Basename":"federal_20200309",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -649,7 +649,7 @@
   },
   "45":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200308.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200308",
+    "Basename":"federal_20200308",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -661,7 +661,7 @@
   },
   "37":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200307.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200307",
+    "Basename":"federal_20200307",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -673,7 +673,7 @@
   },
   "40":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200306.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200306",
+    "Basename":"federal_20200306",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -685,7 +685,7 @@
   },
   "43":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200305.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200305",
+    "Basename":"federal_20200305",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -697,7 +697,7 @@
   },
   "42":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200304.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200304",
+    "Basename":"federal_20200304",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -709,7 +709,7 @@
   },
   "36":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200303.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200303",
+    "Basename":"federal_20200303",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -721,7 +721,7 @@
   },
   "33":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200302.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200302",
+    "Basename":"federal_20200302",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -733,7 +733,7 @@
   },
   "30":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200301.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202003\/federal_20200301",
+    "Basename":"federal_20200301",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -745,7 +745,7 @@
   },
   "59":{
     "File":"\/series-de-tiempo\/federal\/202002\/federal_20200229.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202002\/federal_20200229",
+    "Basename":"federal_20200229",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -757,7 +757,7 @@
   },
   "60":{
     "File":"\/series-de-tiempo\/federal\/202002\/federal_20200228.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202002\/federal_20200228",
+    "Basename":"federal_20200228",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -769,7 +769,7 @@
   },
   "61":{
     "File":"\/series-de-tiempo\/federal\/202002\/federal_20200227.csv",
-    "Basename":"www\/series-de-tiempo\/federal\/202002\/federal_20200227",
+    "Basename":"federal_20200227",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
@@ -781,7 +781,7 @@
   },
   "66":{
     "File":"\/series-de-tiempo\/estatal\/estatal_agu.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_agu",
+    "Basename":"estatal_agu",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -793,7 +793,7 @@
   },
   "71":{
     "File":"\/series-de-tiempo\/estatal\/estatal_bcn.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_bcn",
+    "Basename":"estatal_bcn",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -805,7 +805,7 @@
   },
   "93":{
     "File":"\/series-de-tiempo\/estatal\/estatal_bcs.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_bcs",
+    "Basename":"estatal_bcs",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -817,7 +817,7 @@
   },
   "86":{
     "File":"\/series-de-tiempo\/estatal\/estatal_cam.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_cam",
+    "Basename":"estatal_cam",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -829,7 +829,7 @@
   },
   "68":{
     "File":"\/series-de-tiempo\/estatal\/estatal_chh.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_chh",
+    "Basename":"estatal_chh",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -841,7 +841,7 @@
   },
   "90":{
     "File":"\/series-de-tiempo\/estatal\/estatal_chp.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_chp",
+    "Basename":"estatal_chp",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -853,7 +853,7 @@
   },
   "87":{
     "File":"\/series-de-tiempo\/estatal\/estatal_cmx.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_cmx",
+    "Basename":"estatal_cmx",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -865,7 +865,7 @@
   },
   "82":{
     "File":"\/series-de-tiempo\/estatal\/estatal_coa.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_coa",
+    "Basename":"estatal_coa",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -877,7 +877,7 @@
   },
   "78":{
     "File":"\/series-de-tiempo\/estatal\/estatal_col.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_col",
+    "Basename":"estatal_col",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -889,7 +889,7 @@
   },
   "70":{
     "File":"\/series-de-tiempo\/estatal\/estatal_dur.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_dur",
+    "Basename":"estatal_dur",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -901,7 +901,7 @@
   },
   "89":{
     "File":"\/series-de-tiempo\/estatal\/estatal_gro.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_gro",
+    "Basename":"estatal_gro",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -913,7 +913,7 @@
   },
   "76":{
     "File":"\/series-de-tiempo\/estatal\/estatal_gua.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_gua",
+    "Basename":"estatal_gua",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -925,7 +925,7 @@
   },
   "79":{
     "File":"\/series-de-tiempo\/estatal\/estatal_hid.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_hid",
+    "Basename":"estatal_hid",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -937,7 +937,7 @@
   },
   "67":{
     "File":"\/series-de-tiempo\/estatal\/estatal_jal.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_jal",
+    "Basename":"estatal_jal",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -949,7 +949,7 @@
   },
   "91":{
     "File":"\/series-de-tiempo\/estatal\/estatal_mex.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_mex",
+    "Basename":"estatal_mex",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -961,7 +961,7 @@
   },
   "69":{
     "File":"\/series-de-tiempo\/estatal\/estatal_mic.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_mic",
+    "Basename":"estatal_mic",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -973,7 +973,7 @@
   },
   "74":{
     "File":"\/series-de-tiempo\/estatal\/estatal_mor.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_mor",
+    "Basename":"estatal_mor",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -985,7 +985,7 @@
   },
   "65":{
     "File":"\/series-de-tiempo\/estatal\/estatal_nay.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_nay",
+    "Basename":"estatal_nay",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -997,7 +997,7 @@
   },
   "95":{
     "File":"\/series-de-tiempo\/estatal\/estatal_nle.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_nle",
+    "Basename":"estatal_nle",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -1009,7 +1009,7 @@
   },
   "77":{
     "File":"\/series-de-tiempo\/estatal\/estatal_oax.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_oax",
+    "Basename":"estatal_oax",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -1021,7 +1021,7 @@
   },
   "80":{
     "File":"\/series-de-tiempo\/estatal\/estatal_pue.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_pue",
+    "Basename":"estatal_pue",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -1033,7 +1033,7 @@
   },
   "92":{
     "File":"\/series-de-tiempo\/estatal\/estatal_que.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_que",
+    "Basename":"estatal_que",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -1045,7 +1045,7 @@
   },
   "85":{
     "File":"\/series-de-tiempo\/estatal\/estatal_roo.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_roo",
+    "Basename":"estatal_roo",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -1057,7 +1057,7 @@
   },
   "83":{
     "File":"\/series-de-tiempo\/estatal\/estatal_sin.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_sin",
+    "Basename":"estatal_sin",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -1069,7 +1069,7 @@
   },
   "88":{
     "File":"\/series-de-tiempo\/estatal\/estatal_slp.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_slp",
+    "Basename":"estatal_slp",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -1081,7 +1081,7 @@
   },
   "94":{
     "File":"\/series-de-tiempo\/estatal\/estatal_son.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_son",
+    "Basename":"estatal_son",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -1093,7 +1093,7 @@
   },
   "84":{
     "File":"\/series-de-tiempo\/estatal\/estatal_tab.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_tab",
+    "Basename":"estatal_tab",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -1105,7 +1105,7 @@
   },
   "75":{
     "File":"\/series-de-tiempo\/estatal\/estatal_tam.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_tam",
+    "Basename":"estatal_tam",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -1117,7 +1117,7 @@
   },
   "81":{
     "File":"\/series-de-tiempo\/estatal\/estatal_tla.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_tla",
+    "Basename":"estatal_tla",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -1129,7 +1129,7 @@
   },
   "64":{
     "File":"\/series-de-tiempo\/estatal\/estatal_ver.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_ver",
+    "Basename":"estatal_ver",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -1141,7 +1141,7 @@
   },
   "72":{
     "File":"\/series-de-tiempo\/estatal\/estatal_yuc.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_yuc",
+    "Basename":"estatal_yuc",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -1153,7 +1153,7 @@
   },
   "73":{
     "File":"\/series-de-tiempo\/estatal\/estatal_zac.csv",
-    "Basename":"www\/series-de-tiempo\/estatal\/estatal_zac",
+    "Basename":"estatal_zac",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
@@ -1165,7 +1165,7 @@
   },
   "62":{
     "File":"\/series-de-tiempo\/agregados\/federal.csv",
-    "Basename":"www\/series-de-tiempo\/agregados\/federal",
+    "Basename":"federal",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"agregados",
@@ -1177,7 +1177,7 @@
   },
   "63":{
     "File":"\/series-de-tiempo\/agregados\/totales.csv",
-    "Basename":"www\/series-de-tiempo\/agregados\/totales",
+    "Basename":"totales",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"agregados",
@@ -1189,7 +1189,7 @@
   },
   "107":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200415.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202004\/20200415",
+    "Basename":"20200415",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1201,7 +1201,7 @@
   },
   "141":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200415.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202004\/20200415",
+    "Basename":"20200415",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1213,7 +1213,7 @@
   },
   "105":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200414.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202004\/20200414",
+    "Basename":"20200414",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1225,7 +1225,7 @@
   },
   "139":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200414.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202004\/20200414",
+    "Basename":"20200414",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1237,7 +1237,7 @@
   },
   "99":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200413.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202004\/20200413",
+    "Basename":"20200413",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1249,7 +1249,7 @@
   },
   "133":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200413.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202004\/20200413",
+    "Basename":"20200413",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1261,7 +1261,7 @@
   },
   "98":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200412.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202004\/20200412",
+    "Basename":"20200412",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1273,7 +1273,7 @@
   },
   "132":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200412.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202004\/20200412",
+    "Basename":"20200412",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1285,7 +1285,7 @@
   },
   "101":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200411.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202004\/20200411",
+    "Basename":"20200411",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1297,7 +1297,7 @@
   },
   "135":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200411.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202004\/20200411",
+    "Basename":"20200411",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1309,7 +1309,7 @@
   },
   "104":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200410.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202004\/20200410",
+    "Basename":"20200410",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1321,7 +1321,7 @@
   },
   "138":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200410.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202004\/20200410",
+    "Basename":"20200410",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1333,7 +1333,7 @@
   },
   "110":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200409.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202004\/20200409",
+    "Basename":"20200409",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1345,7 +1345,7 @@
   },
   "144":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200409.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202004\/20200409",
+    "Basename":"20200409",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1357,7 +1357,7 @@
   },
   "111":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200408.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202004\/20200408",
+    "Basename":"20200408",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1369,7 +1369,7 @@
   },
   "145":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200408.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202004\/20200408",
+    "Basename":"20200408",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1381,7 +1381,7 @@
   },
   "100":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200407.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202004\/20200407",
+    "Basename":"20200407",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1393,7 +1393,7 @@
   },
   "134":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200407.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202004\/20200407",
+    "Basename":"20200407",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1405,7 +1405,7 @@
   },
   "97":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200406.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202004\/20200406",
+    "Basename":"20200406",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1417,7 +1417,7 @@
   },
   "131":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200406.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202004\/20200406",
+    "Basename":"20200406",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1429,7 +1429,7 @@
   },
   "102":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200405.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202004\/20200405",
+    "Basename":"20200405",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1441,7 +1441,7 @@
   },
   "136":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200405.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202004\/20200405",
+    "Basename":"20200405",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1453,7 +1453,7 @@
   },
   "103":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200404.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202004\/20200404",
+    "Basename":"20200404",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1465,7 +1465,7 @@
   },
   "137":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200404.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202004\/20200404",
+    "Basename":"20200404",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1477,7 +1477,7 @@
   },
   "108":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200403.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202004\/20200403",
+    "Basename":"20200403",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1489,7 +1489,7 @@
   },
   "142":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200403.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202004\/20200403",
+    "Basename":"20200403",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1501,7 +1501,7 @@
   },
   "109":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200402.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202004\/20200402",
+    "Basename":"20200402",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1513,7 +1513,7 @@
   },
   "143":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200402.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202004\/20200402",
+    "Basename":"20200402",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1525,7 +1525,7 @@
   },
   "106":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200401.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202004\/20200401",
+    "Basename":"20200401",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1537,7 +1537,7 @@
   },
   "140":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200401.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202004\/20200401",
+    "Basename":"20200401",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1549,7 +1549,7 @@
   },
   "128":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200331.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202003\/20200331",
+    "Basename":"20200331",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1561,7 +1561,7 @@
   },
   "165":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200331.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202003\/20200331",
+    "Basename":"20200331",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1573,7 +1573,7 @@
   },
   "123":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200330.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202003\/20200330",
+    "Basename":"20200330",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1585,7 +1585,7 @@
   },
   "160":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200330.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202003\/20200330",
+    "Basename":"20200330",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1597,7 +1597,7 @@
   },
   "117":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200329.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202003\/20200329",
+    "Basename":"20200329",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1609,7 +1609,7 @@
   },
   "151":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200329.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202003\/20200329",
+    "Basename":"20200329",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1621,7 +1621,7 @@
   },
   "114":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200328.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202003\/20200328",
+    "Basename":"20200328",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1633,7 +1633,7 @@
   },
   "148":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200328.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202003\/20200328",
+    "Basename":"20200328",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1645,7 +1645,7 @@
   },
   "129":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200327.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202003\/20200327",
+    "Basename":"20200327",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1657,7 +1657,7 @@
   },
   "166":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200327.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202003\/20200327",
+    "Basename":"20200327",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1669,7 +1669,7 @@
   },
   "130":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200326.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202003\/20200326",
+    "Basename":"20200326",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1681,7 +1681,7 @@
   },
   "167":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200326.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202003\/20200326",
+    "Basename":"20200326",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1693,7 +1693,7 @@
   },
   "127":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200325.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202003\/20200325",
+    "Basename":"20200325",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1705,7 +1705,7 @@
   },
   "164":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200325.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202003\/20200325",
+    "Basename":"20200325",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1717,7 +1717,7 @@
   },
   "124":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200324.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202003\/20200324",
+    "Basename":"20200324",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1729,7 +1729,7 @@
   },
   "161":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200324.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202003\/20200324",
+    "Basename":"20200324",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1741,7 +1741,7 @@
   },
   "120":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200323.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202003\/20200323",
+    "Basename":"20200323",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1753,7 +1753,7 @@
   },
   "156":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200323.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202003\/20200323",
+    "Basename":"20200323",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1765,7 +1765,7 @@
   },
   "119":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200322.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202003\/20200322",
+    "Basename":"20200322",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1777,7 +1777,7 @@
   },
   "155":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200322.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202003\/20200322",
+    "Basename":"20200322",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1789,7 +1789,7 @@
   },
   "121":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200321.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202003\/20200321",
+    "Basename":"20200321",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1801,7 +1801,7 @@
   },
   "157":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200321.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202003\/20200321",
+    "Basename":"20200321",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1813,7 +1813,7 @@
   },
   "122":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200320.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202003\/20200320",
+    "Basename":"20200320",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1825,7 +1825,7 @@
   },
   "158":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200320.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202003\/20200320",
+    "Basename":"20200320",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1837,7 +1837,7 @@
   },
   "126":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200319.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202003\/20200319",
+    "Basename":"20200319",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1849,7 +1849,7 @@
   },
   "163":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200319.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202003\/20200319",
+    "Basename":"20200319",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1861,7 +1861,7 @@
   },
   "125":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200318.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202003\/20200318",
+    "Basename":"20200318",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1873,7 +1873,7 @@
   },
   "162":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200318.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202003\/20200318",
+    "Basename":"20200318",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1885,7 +1885,7 @@
   },
   "112":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200317.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202003\/20200317",
+    "Basename":"20200317",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1897,7 +1897,7 @@
   },
   "146":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200317.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202003\/20200317",
+    "Basename":"20200317",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1909,7 +1909,7 @@
   },
   "113":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200316.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202003\/20200316",
+    "Basename":"20200316",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1921,7 +1921,7 @@
   },
   "147":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200316.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202003\/20200316",
+    "Basename":"20200316",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1933,7 +1933,7 @@
   },
   "116":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200315.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202003\/20200315",
+    "Basename":"20200315",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1945,7 +1945,7 @@
   },
   "150":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200315.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202003\/20200315",
+    "Basename":"20200315",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1957,7 +1957,7 @@
   },
   "115":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200314.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202003\/20200314",
+    "Basename":"20200314",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1969,7 +1969,7 @@
   },
   "149":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200314.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202003\/20200314",
+    "Basename":"20200314",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -1981,7 +1981,7 @@
   },
   "118":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200313.csv",
-    "Basename":"www\/tablas-diarias\/positivos\/202003\/20200313",
+    "Basename":"20200313",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"positivos",
@@ -1993,7 +1993,7 @@
   },
   "154":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200313.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202003\/20200313",
+    "Basename":"20200313",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -2005,7 +2005,7 @@
   },
   "153":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200312.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202003\/20200312",
+    "Basename":"20200312",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -2017,7 +2017,7 @@
   },
   "152":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200311.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202003\/20200311",
+    "Basename":"20200311",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
@@ -2029,7 +2029,7 @@
   },
   "159":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200308.csv",
-    "Basename":"www\/tablas-diarias\/sospechosos\/202003\/20200308",
+    "Basename":"20200308",
     "Extension":"csv",
     "Type":"tablas_diarias",
     "Subtype":"sospechosos",
