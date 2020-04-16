@@ -10,6 +10,8 @@ ROOT_DATA_DIRECTORY="${ROOT}/${DATA_DIRECTORY}/tablas-diarias"
 cd $ROOT
 
 python ./scripts/processing/download.py
+find cache/mapa/ -iname "*.txt"  -mmin -60 -print | grep -v "tasas" | xargs -I{}  python ./scripts/processing/parse_map.py {} federal.csv
+mv federal.csv www/series-de-tiempo/federal/202004/federal_20200415.csv
 
 # processing each pdf file
 for FILE in `find $ROOT_DATA_DIRECTORY -name "*.pdf" | grep -E "sospechosos|positivos" | grep -v "c.pdf"`
@@ -35,7 +37,7 @@ do
 done
 
 # processing each pdf file
-for ORIG_FILE in `find . -iname "*.pdf" -mmin -60 -print`
+for ORIG_FILE in `find . -iname "*.pdf" -mmin -60 -print | grep -v "comunicado"`
 do
     ./scripts/processing/compress.sh -s $ORIG_FILE -o 1
 done

@@ -20,6 +20,8 @@ def main(args):
     contents = load_from_file(source)
 
     df = create_dataframe_from_json(contents)
+
+    print(df)
     df = append_additional_columns(df)
 
     df.to_csv(destination, index = False)
@@ -28,7 +30,7 @@ def main(args):
 def parse_args(argv):
     if len(argv) < 2:
         print('usage: parse.py <source> <destination>')
-        print('example: python parse_map.py "20200411_14_30.txt" "federal_2020041.csv"')
+        print('example: python parse_map.py "20200411_14_30.txt" "federal_20200414.csv"')
         exit()
 
     # TODO: improve & error handling & testing
@@ -43,8 +45,9 @@ def load_from_file(file):
 
 def create_dataframe_from_json(text):
     df = pd.DataFrame(text, columns =[
-        'D1', 'Estado', 'D2', 'D3', 'Positivos', 'Negativos', 'Sospechosos', 'Defunciones'
+        'D1', 'Estado', 'D2', 'D3', 'Positivos', 'Negativos', 'Sospechosos', 'Defunciones', 'Date'
     ]) 
+
     df = df[['Estado', 'Positivos', 'Negativos', 'Sospechosos', 'Defunciones']]
     
     return df
@@ -55,7 +58,7 @@ def append_additional_columns(df):
     df['Fecha'] = date.today().strftime("%Y-%m-%d")
     df['Inconsistencias'] = None
 
-    df = df[['Estado', 'Fecha', 'Positivos', 'Sospechosos', 'Negativos', 'Defunciones', 'Inconsistencias']]
+    df = df[['Fecha', 'Estado', 'Positivos', 'Sospechosos', 'Negativos', 'Defunciones', 'Inconsistencias']]
     
     return df
 

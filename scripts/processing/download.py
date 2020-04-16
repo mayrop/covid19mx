@@ -15,11 +15,14 @@ from datetime import date
 from bs4 import BeautifulSoup
 from helpers import *
 from utils import *
-
+# http://187.191.75.115/gobmx/salud/datos_abiertos/datos_abiertos_covid19.zip
 
 def main(args):
     print('Downloding map...')
     download_map()
+
+    print('Downloding map...')
+    download_map_mortality()    
 
     print('Downloding PDF files...')
     download_pdf_files()
@@ -42,8 +45,28 @@ def download_map():
     cache_file.write_bytes(text.encode())
 
 
+def download_map_mortality():
+    url = 'https://ncov.sinave.gob.mx/MapaTasas.aspx/Grafica22'
+    headers = {'Content-Type': 'application/json; charset=UTF-8'}
+
+    # TODO - error handling
+    basename = get_map_filename()
+    cache_file = Path('{}{}{}{}.txt'.format(ROOT_DIR, CACHE_MAP_DIR, 'tasas/', basename))
+
+    if (cache_file.is_file()):
+        print('Cache file exists, skipping: {}'.format(basename))
+        return
+    
+    print('New file does not exist, retrieving from json')
+    text = requests.post(url, headers=headers).text
+    cache_file.write_bytes(text.encode())
+
+
+
 def get_map_filename():
     content = request_url_get(URL_MAP)
+
+    return '20200415_14_00'
 
     match = re.search(r'Cierre con corte a las (\d+:\d+) hrs, (\d+) de (\w+) de (\d+)', str(content))
     if match:

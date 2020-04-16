@@ -12,17 +12,27 @@ from pathlib import Path
 from utils import *
 
 
+import datetime
+
+# ...
+
 
 #  git ls-tree -r --name-only HEAD | while read filename; do echo "$(git log -1 --format="%ad" -- $filename),$filename" >> "./cache/meta/files.txt"; done
 #  
 def main(args):
-    df = pd.DataFrame(columns = ['File', 'Basename', 'Type', 'Subtype', 'Last_Modified']) 
+    df = pd.DataFrame(columns = ['File', 'Basename', 'Extension', 'Type', 'Subtype', 'Last_Modified']) 
 
-    for elem in Path('./www/').rglob('*.csv'):
+    for elem in Path('./www/').rglob('*.*'):
+        if not re.search(r'\.csv|\.zip', str(elem)):
+            continue
+
+        extension = os.path.splitext(str(elem))[1]
+
         # append new 
         df.loc[len(df)] = [
             str(elem).replace('www', ''),
-            os.path.basename(elem).replace('.csv', ''),
+            os.path.basename(elem).replace(extension, ''),            
+            extension.replace('.', ''),
             get_file_type(elem),
             get_file_subtype(elem),
             get_last_modified(elem)
@@ -32,7 +42,6 @@ def main(args):
     df['Month'] = [get_file_month(x) for x in df.Date]
     df['State'] = [get_state(x) for x in df.File]
     df['State_Name'] = [get_state_from_iso(x) for x in df.State]
-
     df = df.sort_values(['Type', 'Date', 'State'], ascending=[True, False, True])
 
     df.to_csv('./www/meta/files.csv', index=False)
@@ -40,7 +49,7 @@ def main(args):
     df.to_json('./www/meta/files.index.json', orient="index", indent=2)
     df.to_json('./www/meta/files.values.json', orient="values", indent=2)
 
-    # by group
+    # # by group
     df.groupby('Type').apply(lambda x: x.to_json('./www/meta/{}.json'.format(x.Type.iloc[0]), orient='records'))
 
 
@@ -69,7 +78,7 @@ def get_last_modified(elem):
 
 
 def get_file_date(column):
-    regex = re.compile(r'[\/_](\d{4})(\d{2})(\d{2}).csv')
+    regex = re.compile(r'[\/_](\d{4})(\d{2})(\d{2})\.\w+')
 
     matches = re.search(regex, column)
     if matches:
