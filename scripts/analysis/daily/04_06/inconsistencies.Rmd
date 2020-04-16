@@ -1,0 +1,178 @@
+---
+title: "Analisis de las inconsistencias con los datos COVID-19 en Mexico- Abril 6"
+author: "Mayra A. Valdes Ibarra - https://twitter.com/@mayrop"
+output:
+  html_document
+fontsize: '11pt'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.pos= "h")
+#knitr::opts_chunk$set(fig.pos = 'H')
+knitr::opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)
+```
+
+```{r libraries, echo = FALSE, eval = TRUE, warning = FALSE, message = FALSE}
+library(plyr)
+library(dplyr)
+library(data.table)
+library(tidyr)
+library(ggplot2)
+library(scales)
+library(kableExtra)
+library(gridExtra)
+library(grid)
+library(gtable)
+```
+
+```{r r_setup, echo = FALSE, eval = TRUE, warning = FALSE, message = FALSE}
+source("../_functions.R")
+
+rows <- read.csv("../cache/analysis.04_06.rows.04.12.csv")
+history <- read.csv("../cache/analysis.04_06.history.04.12.csv")
+inconsistencies <- read.csv("../cache/analysis.04_06.inconsistencies.04.12.csv")
+```
+
+Empezamos a ver que es lo que paso. Primero que nada, una de las tantas [limitaciones](https://serendipia) con los datos que se están proporcionando actualmente (hasta hoy Abril 13, 2020) es que los datos carecen de un ID único para cada caso. Por ejemplo, en los datos del [14 de Abril](https://datos.covid19in.mx/tablas-diarias/positivos/202003/20200314.pdf) se puede observar que "el caso 10" pertenece a una persona con las siguientes características:
+
+10 CIUDAD DE MÉXICO F 30 07/03/2020 confirmado España 06/03/2020
+
+Y se pueden observar como se agregaron nuevas filas marcadas con un color azul claro. Luego, si nos vamos a los datos del [15 de Abril](https://datos.covid19in.mx/tablas-diarias/positivos/202003/20200315.pdf) podemos observar que ahora "el caso 10" pertenece a una persona con las características:
+10 PUEBLA M 47 08/03/2020 confirmado Italia 04/03/2020
+
+El anterior caso fue entonces movido a la fila 11. De igual manera se puede observar como otra fila fue agregada para el "caso 35" y otras 3 para el "caso 43, 44 y 45". El problema con esta situación es que es imposible darle seguimiento a los casos dado que no se sabe en que fila va a estar cierto caso después de algunos días. Hasta el día de hoy sigo sin entender cual es la lógica para insertar los casos, dado que no siguen ningún orden en particular. La única forma (visual) de saber que casos fueron agregados es a través del color que le agregan a las filas. Sin embargo, esto no se puede automatizar dado que el color se pierde cuando se transforman los datos. Adicionalmente, el color no es algo muy confiable como @guzmart menciona "El día 22 de marzo, la SSalud no resaltó como nuevos casos las filas 226, 227, 228 y 229 del archivo covid_mex_20200322.xlsx."
+
+Una de mis metas iniciales era poder obtener el historial de cada persona afectada en las tablas de positivos y poder obtener su respectivo número de caso en las tablas de sospechosos. Esto nos ayudaría a cuando se detectó como sospechoso, dado que la SSA tampoco proporciona ese datos (ni la fecha de pruebas, ni la fecha de detección). La segunda meta era poder obtener el historial de cada paciente y ver como se iba modificando el # de caso de cada uno de ellos, es decir, si el día 15 de Marzo estaba en la fila 10, ver en que fila estaba el dia 20 de Marzo, etc.
+
+
+## Derrota #1 
+Y fue ahí cuando empezaron los verdaderos retos. Primero que nada, me olvide de las tablas de sospechosos al ver que tenían muchas inconsistencias y me enfoque a las tablas de los positivos. 
+
+El primer paso que hice para tratar de mapear las tablas de positivos con los negativos fue traves de la creación de un ID artificial a través de características de cada uno de los afectados:
+
+```{r cars}
+print(head(rows))
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+
+id <- "positivos_2020_04_05"
+ggplot(
+  rows[rows$file_id==id,], aes(x=age)) +
+  geom_histogram(aes(y=..density..), binwidth=5, colour="black", fill="white") +
+  geom_density(alpha=.2, fill="#FF6666") +
+  ggtitle(id)
+
+#only_on_april_06 <- april_06 %>% dplyr::anti_join(
+#  april_05, by="patient_id"
+#)
+
+#only_on_april_05 <- april_05 %>% dplyr::anti_join(
+#  april_06, by="patient_id"
+#)
+
+data <- rows %>%
+  dplyr::filter(file_id %in% c("positivos_2020_04_05", "positivos_2020_04_06")) %>%
+  dplyr::group_by(file_id, state) %>%
+  dplyr::summarise(n=dplyr::n()) %>%
+  dplyr::arrange(desc(file_id), desc(n)) %>%
+  tidyr::spread(file_id, n) %>%
+  dplyr::arrange(desc(positivos_2020_04_06)) %>%
+  dplyr::mutate(
+    diff = positivos_2020_04_06 - positivos_2020_04_05,
+    rank = dplyr::row_number()
+  ) %>%
+  tidyr::gather(file_id, n, -diff, -rank, -state) %>%
+  dplyr::mutate(
+    label = ifelse(file_id =="positivos_2020_04_05", "", paste0("+", diff)),
+    label = ifelse(diff >= 0, label, diff)
+  )
+
+ggplot(data, aes(fill=file_id, y=n, x=reorder(state, desc(rank)))) +
+  geom_bar( stat="identity", width=0.7, position = position_dodge(width=0.7)) +
+  geom_text(
+    aes(label = label),
+    hjust = -0.3,
+    position = position_dodge(width = 0),
+    size = 2.3
+  ) +
+  coord_flip() +
+  theme_bw()
+
+
+data <- rows %>%
+  dplyr::filter(file_id %in% c("positivos_2020_04_05", "positivos_2020_04_06")) %>%
+  dplyr::mutate(origin = ifelse(is.na(origin), "CONTACTO", as.character(origin))) %>%
+  dplyr::group_by(file_id, origin) %>%
+  dplyr::summarise(n=dplyr::n()) %>%
+  dplyr::arrange(desc(file_id), desc(n)) %>%
+  tidyr::spread(file_id, n) %>%
+  dplyr::mutate(
+    positivos_2020_04_05 = ifelse(is.na(positivos_2020_04_05), 0, positivos_2020_04_05),
+    positivos_2020_04_06 = ifelse(is.na(positivos_2020_04_06), 0, positivos_2020_04_06)
+  ) %>%
+  dplyr::arrange(desc(positivos_2020_04_06)) %>%
+  dplyr::mutate(
+    diff = positivos_2020_04_06 - positivos_2020_04_05,
+    rank = dplyr::row_number()
+  ) %>%
+  dplyr::filter(
+    positivos_2020_04_05 > 0,
+    diff != 0,
+    origin != "CONTACTO"
+  ) %>%
+  tidyr::gather(file_id, n, -diff, -rank, -origin) %>%
+  dplyr::mutate(
+    label = ifelse(diff >= 0, paste0("+", diff), diff),
+    label = ifelse(file_id =="positivos_2020_04_06", "", label)
+  ) %>%
+  dplyr::arrange(desc(file_id))
+
+
+ggplot(data, aes(fill=file_id, y=n, x=reorder(origin, (rank)))) +
+  geom_bar(stat="identity", width=0.5, position = "dodge") +
+  geom_text(
+    aes(label = label),
+    vjust=-1.2,
+    size=3
+  ) +
+  theme_bw()
+
+
+data <- rows %>%
+  dplyr::filter(file_id %in% c("positivos_2020_04_05", "positivos_2020_04_06")) %>%
+  dplyr::mutate(origin = ifelse(is.na(origin), "CONTACTO", as.character(origin))) %>%
+  dplyr::group_by(file_id, origin) %>%
+  dplyr::summarise(n=dplyr::n()) %>%
+  dplyr::arrange(desc(file_id), desc(n)) %>%
+  tidyr::spread(file_id, n) %>%
+  dplyr::mutate(
+    positivos_2020_04_05 = ifelse(is.na(positivos_2020_04_05), 0, positivos_2020_04_05),
+    positivos_2020_04_06 = ifelse(is.na(positivos_2020_04_06), 0, positivos_2020_04_06)
+  ) %>%
+  dplyr::arrange(desc(positivos_2020_04_06)) %>%
+  dplyr::mutate(
+    diff = positivos_2020_04_06 - positivos_2020_04_05,
+    rank = dplyr::row_number()
+  ) %>%
+  dplyr::filter(
+    positivos_2020_04_05 == 0
+  )
+
+
+ggcharts::bar_chart(data, origin, diff, bar_color = "purple") +
+  geom_text(
+    aes(label = diff),
+    hjust = -0.3,
+    position = position_dodge(width = 0),
+    size=3
+  ) +
+  theme_bw()
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

@@ -1,3 +1,4 @@
+
 # -------------------------------------------------------------------------------------
 
 source("_functions.R")
@@ -16,8 +17,6 @@ rows_orig <- setDT(rows_orig, keep.rownames = TRUE)[]
 files %>% purrr::map(., function(x) {
   length(colnames(x))
 })
-
-str(covid19mx::daily_cases("2020-04-05", type="sospechosos"))
 
 # we create an ID per patient based on different factors that stay constant between all files
 rows <- rows_orig %>%
@@ -52,6 +51,7 @@ rows <- rows %>%
     date_symptoms_id = as.character(date_symptoms)
   )
 
+print("adding the main patient ID")
 rows <- rows %>%
   dplyr::rowwise() %>%
   dplyr::mutate(
@@ -73,63 +73,17 @@ rows <- rows %>%
     by=c("file_id" = "file_id")
   )
 
-rows <- rows %>%
-  dplyr::group_by(
-    file_id, patient_id
-  ) %>%
-  dplyr::mutate(
-    patient_id_row = dplyr::row_number()
-  ) %>%
-  dplyr::ungroup() %>%
-  dplyr::rowwise() %>%
-  dplyr::mutate(
-    patient_id_unique = patient_id,
-    patient_id = paste0(patient_id, patient_id_row, sep="")
-  ) %>%
-  as.data.frame()
+print("now we separate the cases with same characteristics")
+rows <- add_patient_ids_with_rows(rows)
 
 source("_fixes.R")
 
-rows <- rows %>%
-  dplyr::mutate(
-    age_id = ifelse(is.na(age_fixed), age, age_fixed),
-    sex_id = ifelse(is.na(sex_fixed), as.character(sex), as.character(sex_fixed)),
-    origin_id = ifelse(is.na(origin_fixed), as.character(origin), as.character(origin_fixed)),
-    date_symptoms_id = ifelse(is.na(date_symptoms_fixed), as.character(date_symptoms), as.character(date_symptoms_fixed)),
-    patient_id_bak = patient_id
-  ) %>%
-  dplyr::rowwise() %>%
-  dplyr::mutate(
-    patient_id = paste0(
-      slugify(c(
-        as.character(state),
-        as.character(sex_id),
-        age_id,
-        as.character(date_symptoms_id),
-        as.character(origin_id),
-        as.character(date_arrival),
-        as.character(date_removed)
-      )), "_", collapse=""
-    ),
-    file_id = as.character(file_id)
-  ) %>%
-  as.data.frame() %>%
-  dplyr::arrange(file_date_std)
+print("after the fixes, we go back and calculate the new ids")
+rows <- add_patient_ids(rows)
 
-rows <- rows %>%
-  dplyr::group_by(
-    file_id, patient_id
-  ) %>%
-  dplyr::mutate(
-    patient_id_row = dplyr::row_number()
-  ) %>%
-  dplyr::ungroup() %>%
-  dplyr::rowwise() %>%
-  dplyr::mutate(
-    patient_id_unique = patient_id,
-    patient_id = paste0(patient_id, patient_id_row, sep="")
-  ) %>%
-  as.data.frame()
+history <- create_history_from_rows(rows)
+history <- create_inconsistencies_from_history(history)
+
 
 # we add how many rows we find per file
 rows <- rows %>%
@@ -145,6 +99,7 @@ rows <- rows %>%
   ) %>%
   dplyr::ungroup()
 
+
 # double check numbers
 rows %>%
   dplyr::group_by(
@@ -156,7 +111,6 @@ rows %>%
   View()
 
 
-source("_sanity-check.R")
 
 # we extract all the files where PatientX is listed
 rows <- rows %>%
