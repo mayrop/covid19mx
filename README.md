@@ -1,30 +1,27 @@
 # `@datos-covid19in-mx`
 
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ##### :es: Versión en Español. Ultima Actualización: 2020-04-16
 
 # COVID-19 en México 🇲🇽
 Datos de en formato PDF, CSV y TXT de los casos COVID-19 (Novel Coronavirus) en México. Datos adicionales para ayudar al análisis que incluyen las coordenadas geográficas (centroides) de cada municipio y entidad federativa, así como la proyección de población del año 2020 de cada una de ellas. Todos los datos obtenidos de fuentes oficiales. Próximamente estadísticas y análsis.
 
-## :information_source: Información
+## Información :information_source:
 * Sitio web: https://www.covid19in.mx/  
 * Repositorio para el sitio web: https://github.com/mayrop/covid19in-mx 
 * **Paquete R**: https://github.com/mayrop/datosmx
 
 Los archivos dentro de la carpeta www son accesibles por medio web a través del dominio https://datos.covid19in.mx/, por ejemplo [20200313.pdf](/www/tablas-diarias/positivos/202003/20200313.pdf) es accesible [aquí](https://datos.covid19in.mx/tablas-diarias/positivos/202003/20200313.pdf).
 
-## :chart_with_upwards_trend: Datos Disponibles
+## Datos Disponibles :chart_with_upwards_trend:
 * [Datos Abiertos - COVID-19 en México](/www/abiertos/todos/202004)
 * [Tablas Diarias de Casos Positivos y Sospechosos (Comunicado Técnico Diario)](https://www.covid19in.mx/docs/datos/tablas-casos/)
 * [Series de Tiempo](https://www.covid19in.mx/docs/datos/series-de-tiempo/)
 * Coordenadas Geográficas de cada uno de los [municipios](/www/otros/ciudades.csv) y [entidades federativas](/www/otros/estados.csv) en México
 * Población (2020) de cada uno de los [municipios](/www/otros/ciudades.csv) y [entidades federativas](/www/otros/estados.csv) en México
 
-## :memo: Fuentes:
+## Fuentes :memo:
 
 ### [Datos Abiertos - COVID-19](https://www.gob.mx/salud/documentos/datos-abiertos-152127) 
 Fuente Oficial: https://www.gob.mx/salud/documentos/datos-abiertos-152127
@@ -59,7 +56,7 @@ Disponibilidad:
 ### Marco Geoestadístico de México 🇲🇽 
 * Fuente oficial: https://www.inegi.org.mx/app/biblioteca/ficha.html?upc=889463142683
 
-Se tiene una base de datos de [2458 municipios](/www/otros/ciudades.csv) de México, y otra de las [32 entidades federativas](/www/otros/estados.csv) en México (31 estados y la Ciudad de México). Los datos presentados están en formato CSV con los las coordenadas (centroides) correspondientes cada municipio (o estado), obtenidos a partir del Marco Geoestadístico, junio 2017, diseñado por el INEGI. Los mismos datos en formato SHP pueden encontrarse en la fuente oficial.
+Se tiene una base de datos de [2458 municipios](/www/otros/ciudades.csv) de México, y otra de las [32 entidades federativas](/www/otros/estados.csv) en México (31 estados y la Ciudad de México). Los datos presentados están en formato CSV con las coordenadas (centroides) correspondientes cada municipio (o estado), obtenidos a partir del Marco Geoestadístico, junio 2017, diseñado por el INEGI. Los mismos datos en formato SHP pueden encontrarse en la fuente oficial.
 
 **Ultima Fecha de Actualización:** 2020-04-15
 
@@ -76,21 +73,21 @@ Se tiene una base datos en formato CSV de la población de [2457 municipios](/ww
 # COVID-19 in México 🇲🇽
 Data in PDF, CSV and TXT about the COVID-19 (Novel Coronavirus) cases in México. Additional data to help analysis which includes the geographic coordinates (centroids) of each city and state in México, as well as the 2020 population for each one of them. All of the obtained data comes from official sources. There will be statistics and analysis very soon.
 
-## :information_source: Information:
+## Information :information_source:
 * Website: https://www.covid19in.mx/
 * Repository for the web site: https://github.com/mayrop/covid19in-mx 
 * **R Package**: https://github.com/mayrop/datosmx
 
 The files inside the www folder can be accessed through the web through the https://datos.covid19in.mx/ domain. For example, [20200313.pdf](/www/tablas-diarias/positivos/202003/20200313.pdf) can be accessed [here](https://datos.covid19in.mx/tablas-diarias/positivos/202003/20200313.pdf).
 
-## :chart_with_upwards_trend: Available Data
+## Available Data :chart_with_upwards_trend:
 * [Open Data - COVID-19 in México](/www/abiertos/todos/202004)
 * [Daily Tables for Positive and Suspected Cases (Daily Technical Release)](https://www.covid19in.mx/docs/datos/tablas-casos/)
 * [Time Series](https://www.covid19in.mx/en/data/time-series/)
 * Geographic Coordinates for each one of the [cities](/www/otros/ciudades.csv) and [states](/www/otros/estados.csv) in México.
 * Population (2020) for each one of the [cities](/www/otros/ciudades.csv) y [states](/www/otros/estados.csv) in México.
 
-## :memo: Official Sources:
+## Official Sources :memo:
 
 ### [Open Data - COVID-19](https://www.gob.mx/salud/documentos/datos-abiertos-152127) 
 Official Source: https://www.gob.mx/salud/documentos/datos-abiertos-152127
