@@ -1,4 +1,16 @@
 {
+  "12":{
+    "File":"\/abiertos\/todos\/202004\/20200416.zip",
+    "Basename":"20200416",
+    "Extension":"zip",
+    "Type":"abiertos",
+    "Subtype":"todos",
+    "Last_Modified":"2020-04-16 19:16:10",
+    "Date":"2020-04-16",
+    "Month":"04",
+    "State":null,
+    "State_Name":null
+  },
   "10":{
     "File":"\/abiertos\/todos\/202004\/20200415.zip",
     "Basename":"20200415",
@@ -23,7 +35,7 @@
     "State":null,
     "State_Name":null
   },
-  "12":{
+  "13":{
     "File":"\/abiertos\/todos\/202004\/20200413.zip",
     "Basename":"20200413",
     "Extension":"zip",
@@ -155,19 +167,19 @@
     "State":null,
     "State_Name":null
   },
-  "96":{
+  "98":{
     "File":"\/meta\/files.csv",
     "Basename":"files",
     "Extension":"csv",
     "Type":"meta",
     "Subtype":"files",
-    "Last_Modified":"2020-04-16 18:40:06",
+    "Last_Modified":"2020-04-16 19:18:34",
     "Date":null,
     "Month":null,
     "State":null,
     "State_Name":null
   },
-  "168":{
+  "172":{
     "File":"\/otros\/estados.csv",
     "Basename":"estados",
     "Extension":"csv",
@@ -179,7 +191,7 @@
     "State":null,
     "State_Name":null
   },
-  "169":{
+  "173":{
     "File":"\/otros\/positivos.csv",
     "Basename":"positivos",
     "Extension":"csv",
@@ -191,7 +203,7 @@
     "State":null,
     "State_Name":null
   },
-  "170":{
+  "174":{
     "File":"\/otros\/ciudades.csv",
     "Basename":"ciudades",
     "Extension":"csv",
@@ -204,1002 +216,1038 @@
     "State_Name":null
   },
   "23":{
-    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200415.csv",
-    "Basename":"federal_20200415",
+    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200416.csv",
+    "Basename":"federal_20200416",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
-    "Date":"2020-04-15",
+    "Last_Modified":"2020-04-16 21:01:15",
+    "Date":"2020-04-16",
     "Month":"04",
     "State":null,
     "State_Name":null
   },
   "25":{
-    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200414.csv",
-    "Basename":"federal_20200414",
+    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200415.csv",
+    "Basename":"federal_20200415",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
-    "Date":"2020-04-14",
-    "Month":"04",
-    "State":null,
-    "State_Name":null
-  },
-  "18":{
-    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200413.csv",
-    "Basename":"federal_20200413",
-    "Extension":"csv",
-    "Type":"series_de_tiempo",
-    "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
-    "Date":"2020-04-13",
-    "Month":"04",
-    "State":null,
-    "State_Name":null
-  },
-  "19":{
-    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200412.csv",
-    "Basename":"federal_20200412",
-    "Extension":"csv",
-    "Type":"series_de_tiempo",
-    "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
-    "Date":"2020-04-12",
-    "Month":"04",
-    "State":null,
-    "State_Name":null
-  },
-  "16":{
-    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200411.csv",
-    "Basename":"federal_20200411",
-    "Extension":"csv",
-    "Type":"series_de_tiempo",
-    "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
-    "Date":"2020-04-11",
-    "Month":"04",
-    "State":null,
-    "State_Name":null
-  },
-  "13":{
-    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200410.csv",
-    "Basename":"federal_20200410",
-    "Extension":"csv",
-    "Type":"series_de_tiempo",
-    "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
-    "Date":"2020-04-10",
+    "Last_Modified":"2020-04-16 21:01:15",
+    "Date":"2020-04-15",
     "Month":"04",
     "State":null,
     "State_Name":null
   },
   "27":{
-    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200409.csv",
-    "Basename":"federal_20200409",
+    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200414.csv",
+    "Basename":"federal_20200414",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
-    "Date":"2020-04-09",
+    "Last_Modified":"2020-04-16 21:01:15",
+    "Date":"2020-04-14",
     "Month":"04",
     "State":null,
     "State_Name":null
   },
-  "26":{
-    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200408.csv",
-    "Basename":"federal_20200408",
+  "19":{
+    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200413.csv",
+    "Basename":"federal_20200413",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
-    "Date":"2020-04-08",
-    "Month":"04",
-    "State":null,
-    "State_Name":null
-  },
-  "17":{
-    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200407.csv",
-    "Basename":"federal_20200407",
-    "Extension":"csv",
-    "Type":"series_de_tiempo",
-    "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
-    "Date":"2020-04-07",
+    "Last_Modified":"2020-04-16 21:01:15",
+    "Date":"2020-04-13",
     "Month":"04",
     "State":null,
     "State_Name":null
   },
   "20":{
-    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200406.csv",
-    "Basename":"federal_20200406",
+    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200412.csv",
+    "Basename":"federal_20200412",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
-    "Date":"2020-04-06",
+    "Last_Modified":"2020-04-16 21:01:15",
+    "Date":"2020-04-12",
     "Month":"04",
     "State":null,
     "State_Name":null
   },
-  "15":{
-    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200405.csv",
-    "Basename":"federal_20200405",
+  "17":{
+    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200411.csv",
+    "Basename":"federal_20200411",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
-    "Date":"2020-04-05",
+    "Last_Modified":"2020-04-16 21:01:15",
+    "Date":"2020-04-11",
     "Month":"04",
     "State":null,
     "State_Name":null
   },
   "14":{
-    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200404.csv",
-    "Basename":"federal_20200404",
+    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200410.csv",
+    "Basename":"federal_20200410",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
-    "Date":"2020-04-04",
+    "Last_Modified":"2020-04-16 21:01:15",
+    "Date":"2020-04-10",
     "Month":"04",
     "State":null,
     "State_Name":null
   },
-  "22":{
-    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200403.csv",
-    "Basename":"federal_20200403",
+  "29":{
+    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200409.csv",
+    "Basename":"federal_20200409",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
-    "Date":"2020-04-03",
+    "Last_Modified":"2020-04-16 21:01:15",
+    "Date":"2020-04-09",
+    "Month":"04",
+    "State":null,
+    "State_Name":null
+  },
+  "28":{
+    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200408.csv",
+    "Basename":"federal_20200408",
+    "Extension":"csv",
+    "Type":"series_de_tiempo",
+    "Subtype":"federal",
+    "Last_Modified":"2020-04-16 21:01:15",
+    "Date":"2020-04-08",
+    "Month":"04",
+    "State":null,
+    "State_Name":null
+  },
+  "18":{
+    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200407.csv",
+    "Basename":"federal_20200407",
+    "Extension":"csv",
+    "Type":"series_de_tiempo",
+    "Subtype":"federal",
+    "Last_Modified":"2020-04-16 21:01:15",
+    "Date":"2020-04-07",
     "Month":"04",
     "State":null,
     "State_Name":null
   },
   "21":{
-    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200402.csv",
-    "Basename":"federal_20200402",
+    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200406.csv",
+    "Basename":"federal_20200406",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
-    "Date":"2020-04-02",
+    "Last_Modified":"2020-04-16 21:01:15",
+    "Date":"2020-04-06",
+    "Month":"04",
+    "State":null,
+    "State_Name":null
+  },
+  "16":{
+    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200405.csv",
+    "Basename":"federal_20200405",
+    "Extension":"csv",
+    "Type":"series_de_tiempo",
+    "Subtype":"federal",
+    "Last_Modified":"2020-04-16 21:01:15",
+    "Date":"2020-04-05",
+    "Month":"04",
+    "State":null,
+    "State_Name":null
+  },
+  "15":{
+    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200404.csv",
+    "Basename":"federal_20200404",
+    "Extension":"csv",
+    "Type":"series_de_tiempo",
+    "Subtype":"federal",
+    "Last_Modified":"2020-04-16 21:01:15",
+    "Date":"2020-04-04",
     "Month":"04",
     "State":null,
     "State_Name":null
   },
   "24":{
+    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200403.csv",
+    "Basename":"federal_20200403",
+    "Extension":"csv",
+    "Type":"series_de_tiempo",
+    "Subtype":"federal",
+    "Last_Modified":"2020-04-16 21:01:15",
+    "Date":"2020-04-03",
+    "Month":"04",
+    "State":null,
+    "State_Name":null
+  },
+  "22":{
+    "File":"\/series-de-tiempo\/federal\/202004\/federal_20200402.csv",
+    "Basename":"federal_20200402",
+    "Extension":"csv",
+    "Type":"series_de_tiempo",
+    "Subtype":"federal",
+    "Last_Modified":"2020-04-16 21:01:15",
+    "Date":"2020-04-02",
+    "Month":"04",
+    "State":null,
+    "State_Name":null
+  },
+  "26":{
     "File":"\/series-de-tiempo\/federal\/202004\/federal_20200401.csv",
     "Basename":"federal_20200401",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-04-01",
     "Month":"04",
     "State":null,
     "State_Name":null
   },
-  "53":{
+  "55":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200331.csv",
     "Basename":"federal_20200331",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-31",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "58":{
+  "60":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200330.csv",
     "Basename":"federal_20200330",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-30",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "28":{
+  "30":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200329.csv",
     "Basename":"federal_20200329",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-29",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "32":{
+  "34":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200328.csv",
     "Basename":"federal_20200328",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-28",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "52":{
+  "54":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200327.csv",
     "Basename":"federal_20200327",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-27",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "51":{
+  "53":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200326.csv",
     "Basename":"federal_20200326",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-26",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "54":{
+  "56":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200325.csv",
     "Basename":"federal_20200325",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-25",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "57":{
+  "59":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200324.csv",
     "Basename":"federal_20200324",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-24",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "49":{
+  "51":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200323.csv",
     "Basename":"federal_20200323",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-23",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "50":{
+  "52":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200322.csv",
     "Basename":"federal_20200322",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-22",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "47":{
+  "49":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200321.csv",
     "Basename":"federal_20200321",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-21",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "46":{
+  "48":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200320.csv",
     "Basename":"federal_20200320",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-20",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "55":{
+  "57":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200319.csv",
     "Basename":"federal_20200319",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-19",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "56":{
+  "58":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200318.csv",
     "Basename":"federal_20200318",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-18",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "35":{
+  "37":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200317.csv",
     "Basename":"federal_20200317",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-17",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "34":{
+  "36":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200316.csv",
     "Basename":"federal_20200316",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-16",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "29":{
+  "31":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200315.csv",
     "Basename":"federal_20200315",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-15",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "31":{
+  "33":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200314.csv",
     "Basename":"federal_20200314",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-14",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "38":{
+  "40":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200313.csv",
     "Basename":"federal_20200313",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-13",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "39":{
+  "41":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200312.csv",
     "Basename":"federal_20200312",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-12",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "44":{
+  "46":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200311.csv",
     "Basename":"federal_20200311",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-11",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "41":{
+  "43":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200310.csv",
     "Basename":"federal_20200310",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-10",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "48":{
+  "50":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200309.csv",
     "Basename":"federal_20200309",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-09",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "45":{
+  "47":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200308.csv",
     "Basename":"federal_20200308",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-08",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "37":{
+  "39":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200307.csv",
     "Basename":"federal_20200307",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-07",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "40":{
+  "42":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200306.csv",
     "Basename":"federal_20200306",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-06",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "43":{
+  "45":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200305.csv",
     "Basename":"federal_20200305",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-05",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "42":{
+  "44":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200304.csv",
     "Basename":"federal_20200304",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-04",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "36":{
+  "38":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200303.csv",
     "Basename":"federal_20200303",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-03",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "33":{
+  "35":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200302.csv",
     "Basename":"federal_20200302",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-02",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "30":{
+  "32":{
     "File":"\/series-de-tiempo\/federal\/202003\/federal_20200301.csv",
     "Basename":"federal_20200301",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-03-01",
     "Month":"03",
     "State":null,
     "State_Name":null
   },
-  "59":{
+  "61":{
     "File":"\/series-de-tiempo\/federal\/202002\/federal_20200229.csv",
     "Basename":"federal_20200229",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-02-29",
     "Month":"02",
     "State":null,
     "State_Name":null
   },
-  "60":{
+  "62":{
     "File":"\/series-de-tiempo\/federal\/202002\/federal_20200228.csv",
     "Basename":"federal_20200228",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-02-28",
     "Month":"02",
     "State":null,
     "State_Name":null
   },
-  "61":{
+  "63":{
     "File":"\/series-de-tiempo\/federal\/202002\/federal_20200227.csv",
     "Basename":"federal_20200227",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"federal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":"2020-02-27",
     "Month":"02",
     "State":null,
     "State_Name":null
   },
-  "66":{
+  "68":{
     "File":"\/series-de-tiempo\/estatal\/estatal_agu.csv",
     "Basename":"estatal_agu",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"agu",
     "State_Name":"Aguascalientes"
   },
-  "71":{
+  "73":{
     "File":"\/series-de-tiempo\/estatal\/estatal_bcn.csv",
     "Basename":"estatal_bcn",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"bcn",
     "State_Name":"Baja California"
   },
-  "93":{
+  "95":{
     "File":"\/series-de-tiempo\/estatal\/estatal_bcs.csv",
     "Basename":"estatal_bcs",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"bcs",
     "State_Name":"Baja California Sur"
   },
-  "86":{
+  "88":{
     "File":"\/series-de-tiempo\/estatal\/estatal_cam.csv",
     "Basename":"estatal_cam",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"cam",
     "State_Name":"Campeche"
   },
-  "68":{
+  "70":{
     "File":"\/series-de-tiempo\/estatal\/estatal_chh.csv",
     "Basename":"estatal_chh",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"chh",
     "State_Name":"Chihuahua"
   },
-  "90":{
+  "92":{
     "File":"\/series-de-tiempo\/estatal\/estatal_chp.csv",
     "Basename":"estatal_chp",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"chp",
     "State_Name":"Chiapas"
   },
-  "87":{
+  "89":{
     "File":"\/series-de-tiempo\/estatal\/estatal_cmx.csv",
     "Basename":"estatal_cmx",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"cmx",
     "State_Name":"Ciudad de M\u00e9xico"
   },
-  "82":{
+  "84":{
     "File":"\/series-de-tiempo\/estatal\/estatal_coa.csv",
     "Basename":"estatal_coa",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"coa",
     "State_Name":"Coahuila de Zaragoza"
   },
-  "78":{
+  "80":{
     "File":"\/series-de-tiempo\/estatal\/estatal_col.csv",
     "Basename":"estatal_col",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"col",
     "State_Name":"Colima"
   },
-  "70":{
+  "72":{
     "File":"\/series-de-tiempo\/estatal\/estatal_dur.csv",
     "Basename":"estatal_dur",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"dur",
     "State_Name":"Durango"
   },
-  "89":{
+  "91":{
     "File":"\/series-de-tiempo\/estatal\/estatal_gro.csv",
     "Basename":"estatal_gro",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"gro",
     "State_Name":"Guerrero"
   },
-  "76":{
+  "78":{
     "File":"\/series-de-tiempo\/estatal\/estatal_gua.csv",
     "Basename":"estatal_gua",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"gua",
     "State_Name":"Guanajuato"
   },
-  "79":{
+  "81":{
     "File":"\/series-de-tiempo\/estatal\/estatal_hid.csv",
     "Basename":"estatal_hid",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"hid",
     "State_Name":"Hidalgo"
   },
-  "67":{
+  "69":{
     "File":"\/series-de-tiempo\/estatal\/estatal_jal.csv",
     "Basename":"estatal_jal",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"jal",
     "State_Name":"Jalisco"
   },
-  "91":{
+  "93":{
     "File":"\/series-de-tiempo\/estatal\/estatal_mex.csv",
     "Basename":"estatal_mex",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"mex",
     "State_Name":"Estado de M\u00e9xico"
   },
-  "69":{
+  "71":{
     "File":"\/series-de-tiempo\/estatal\/estatal_mic.csv",
     "Basename":"estatal_mic",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"mic",
     "State_Name":"Michoac\u00e1n"
   },
-  "74":{
+  "76":{
     "File":"\/series-de-tiempo\/estatal\/estatal_mor.csv",
     "Basename":"estatal_mor",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"mor",
     "State_Name":"Morelos"
   },
-  "65":{
+  "67":{
     "File":"\/series-de-tiempo\/estatal\/estatal_nay.csv",
     "Basename":"estatal_nay",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"nay",
     "State_Name":"Nayarit"
   },
-  "95":{
+  "97":{
     "File":"\/series-de-tiempo\/estatal\/estatal_nle.csv",
     "Basename":"estatal_nle",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"nle",
     "State_Name":"Nuevo Le\u00f3n"
   },
-  "77":{
+  "79":{
     "File":"\/series-de-tiempo\/estatal\/estatal_oax.csv",
     "Basename":"estatal_oax",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"oax",
     "State_Name":"Oaxaca"
   },
-  "80":{
+  "82":{
     "File":"\/series-de-tiempo\/estatal\/estatal_pue.csv",
     "Basename":"estatal_pue",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"pue",
     "State_Name":"Puebla"
   },
-  "92":{
+  "94":{
     "File":"\/series-de-tiempo\/estatal\/estatal_que.csv",
     "Basename":"estatal_que",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"que",
     "State_Name":"Quer\u00e9taro"
   },
-  "85":{
+  "87":{
     "File":"\/series-de-tiempo\/estatal\/estatal_roo.csv",
     "Basename":"estatal_roo",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"roo",
     "State_Name":"Quintana Roo"
   },
-  "83":{
+  "85":{
     "File":"\/series-de-tiempo\/estatal\/estatal_sin.csv",
     "Basename":"estatal_sin",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"sin",
     "State_Name":"Sinaloa"
   },
-  "88":{
+  "90":{
     "File":"\/series-de-tiempo\/estatal\/estatal_slp.csv",
     "Basename":"estatal_slp",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"slp",
     "State_Name":"San Luis Potos\u00ed"
   },
-  "94":{
+  "96":{
     "File":"\/series-de-tiempo\/estatal\/estatal_son.csv",
     "Basename":"estatal_son",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"son",
     "State_Name":"Sonora"
   },
-  "84":{
+  "86":{
     "File":"\/series-de-tiempo\/estatal\/estatal_tab.csv",
     "Basename":"estatal_tab",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"tab",
     "State_Name":"Tabasco"
   },
-  "75":{
+  "77":{
     "File":"\/series-de-tiempo\/estatal\/estatal_tam.csv",
     "Basename":"estatal_tam",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"tam",
     "State_Name":"Tamaulipas"
   },
-  "81":{
+  "83":{
     "File":"\/series-de-tiempo\/estatal\/estatal_tla.csv",
     "Basename":"estatal_tla",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"tla",
     "State_Name":"Tlaxcala"
   },
-  "64":{
+  "66":{
     "File":"\/series-de-tiempo\/estatal\/estatal_ver.csv",
     "Basename":"estatal_ver",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"ver",
     "State_Name":"Veracruz"
   },
-  "72":{
+  "74":{
     "File":"\/series-de-tiempo\/estatal\/estatal_yuc.csv",
     "Basename":"estatal_yuc",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"yuc",
     "State_Name":"Yucat\u00e1n"
   },
-  "73":{
+  "75":{
     "File":"\/series-de-tiempo\/estatal\/estatal_zac.csv",
     "Basename":"estatal_zac",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"estatal",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":"zac",
     "State_Name":"Zacatecas"
   },
-  "62":{
+  "64":{
     "File":"\/series-de-tiempo\/agregados\/federal.csv",
     "Basename":"federal",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"agregados",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:14",
     "Date":null,
     "Month":null,
     "State":null,
     "State_Name":null
   },
-  "63":{
+  "65":{
     "File":"\/series-de-tiempo\/agregados\/totales.csv",
     "Basename":"totales",
     "Extension":"csv",
     "Type":"series_de_tiempo",
     "Subtype":"agregados",
-    "Last_Modified":"2020-04-15 19:27:54",
+    "Last_Modified":"2020-04-16 21:01:15",
     "Date":null,
     "Month":null,
     "State":null,
     "State_Name":null
   },
-  "107":{
+  "111":{
+    "File":"\/tablas-diarias\/positivos\/202004\/20200416.csv",
+    "Basename":"20200416",
+    "Extension":"csv",
+    "Type":"tablas_diarias",
+    "Subtype":"positivos",
+    "Last_Modified":"2020-04-16 19:12:22",
+    "Date":"2020-04-16",
+    "Month":"04",
+    "State":null,
+    "State_Name":null
+  },
+  "146":{
+    "File":"\/tablas-diarias\/sospechosos\/202004\/20200416.csv",
+    "Basename":"20200416",
+    "Extension":"csv",
+    "Type":"tablas_diarias",
+    "Subtype":"sospechosos",
+    "Last_Modified":"2020-04-16 19:12:26",
+    "Date":"2020-04-16",
+    "Month":"04",
+    "State":null,
+    "State_Name":null
+  },
+  "109":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200415.csv",
     "Basename":"20200415",
     "Extension":"csv",
@@ -1211,7 +1259,7 @@
     "State":null,
     "State_Name":null
   },
-  "141":{
+  "144":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200415.csv",
     "Basename":"20200415",
     "Extension":"csv",
@@ -1223,7 +1271,7 @@
     "State":null,
     "State_Name":null
   },
-  "105":{
+  "107":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200414.csv",
     "Basename":"20200414",
     "Extension":"csv",
@@ -1235,7 +1283,7 @@
     "State":null,
     "State_Name":null
   },
-  "139":{
+  "142":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200414.csv",
     "Basename":"20200414",
     "Extension":"csv",
@@ -1247,7 +1295,7 @@
     "State":null,
     "State_Name":null
   },
-  "99":{
+  "101":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200413.csv",
     "Basename":"20200413",
     "Extension":"csv",
@@ -1259,7 +1307,7 @@
     "State":null,
     "State_Name":null
   },
-  "133":{
+  "136":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200413.csv",
     "Basename":"20200413",
     "Extension":"csv",
@@ -1271,7 +1319,7 @@
     "State":null,
     "State_Name":null
   },
-  "98":{
+  "100":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200412.csv",
     "Basename":"20200412",
     "Extension":"csv",
@@ -1283,7 +1331,7 @@
     "State":null,
     "State_Name":null
   },
-  "132":{
+  "135":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200412.csv",
     "Basename":"20200412",
     "Extension":"csv",
@@ -1295,7 +1343,7 @@
     "State":null,
     "State_Name":null
   },
-  "101":{
+  "103":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200411.csv",
     "Basename":"20200411",
     "Extension":"csv",
@@ -1307,7 +1355,7 @@
     "State":null,
     "State_Name":null
   },
-  "135":{
+  "138":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200411.csv",
     "Basename":"20200411",
     "Extension":"csv",
@@ -1319,7 +1367,7 @@
     "State":null,
     "State_Name":null
   },
-  "104":{
+  "106":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200410.csv",
     "Basename":"20200410",
     "Extension":"csv",
@@ -1331,7 +1379,7 @@
     "State":null,
     "State_Name":null
   },
-  "138":{
+  "141":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200410.csv",
     "Basename":"20200410",
     "Extension":"csv",
@@ -1343,7 +1391,7 @@
     "State":null,
     "State_Name":null
   },
-  "110":{
+  "113":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200409.csv",
     "Basename":"20200409",
     "Extension":"csv",
@@ -1355,7 +1403,7 @@
     "State":null,
     "State_Name":null
   },
-  "144":{
+  "148":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200409.csv",
     "Basename":"20200409",
     "Extension":"csv",
@@ -1367,7 +1415,7 @@
     "State":null,
     "State_Name":null
   },
-  "111":{
+  "114":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200408.csv",
     "Basename":"20200408",
     "Extension":"csv",
@@ -1379,7 +1427,7 @@
     "State":null,
     "State_Name":null
   },
-  "145":{
+  "149":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200408.csv",
     "Basename":"20200408",
     "Extension":"csv",
@@ -1391,7 +1439,7 @@
     "State":null,
     "State_Name":null
   },
-  "100":{
+  "102":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200407.csv",
     "Basename":"20200407",
     "Extension":"csv",
@@ -1403,7 +1451,7 @@
     "State":null,
     "State_Name":null
   },
-  "134":{
+  "137":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200407.csv",
     "Basename":"20200407",
     "Extension":"csv",
@@ -1415,7 +1463,7 @@
     "State":null,
     "State_Name":null
   },
-  "97":{
+  "99":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200406.csv",
     "Basename":"20200406",
     "Extension":"csv",
@@ -1427,7 +1475,7 @@
     "State":null,
     "State_Name":null
   },
-  "131":{
+  "134":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200406.csv",
     "Basename":"20200406",
     "Extension":"csv",
@@ -1439,7 +1487,7 @@
     "State":null,
     "State_Name":null
   },
-  "102":{
+  "104":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200405.csv",
     "Basename":"20200405",
     "Extension":"csv",
@@ -1451,7 +1499,7 @@
     "State":null,
     "State_Name":null
   },
-  "136":{
+  "139":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200405.csv",
     "Basename":"20200405",
     "Extension":"csv",
@@ -1463,7 +1511,7 @@
     "State":null,
     "State_Name":null
   },
-  "103":{
+  "105":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200404.csv",
     "Basename":"20200404",
     "Extension":"csv",
@@ -1475,7 +1523,7 @@
     "State":null,
     "State_Name":null
   },
-  "137":{
+  "140":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200404.csv",
     "Basename":"20200404",
     "Extension":"csv",
@@ -1487,7 +1535,7 @@
     "State":null,
     "State_Name":null
   },
-  "108":{
+  "110":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200403.csv",
     "Basename":"20200403",
     "Extension":"csv",
@@ -1499,7 +1547,7 @@
     "State":null,
     "State_Name":null
   },
-  "142":{
+  "145":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200403.csv",
     "Basename":"20200403",
     "Extension":"csv",
@@ -1511,7 +1559,7 @@
     "State":null,
     "State_Name":null
   },
-  "109":{
+  "112":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200402.csv",
     "Basename":"20200402",
     "Extension":"csv",
@@ -1523,7 +1571,7 @@
     "State":null,
     "State_Name":null
   },
-  "143":{
+  "147":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200402.csv",
     "Basename":"20200402",
     "Extension":"csv",
@@ -1535,7 +1583,7 @@
     "State":null,
     "State_Name":null
   },
-  "106":{
+  "108":{
     "File":"\/tablas-diarias\/positivos\/202004\/20200401.csv",
     "Basename":"20200401",
     "Extension":"csv",
@@ -1547,7 +1595,7 @@
     "State":null,
     "State_Name":null
   },
-  "140":{
+  "143":{
     "File":"\/tablas-diarias\/sospechosos\/202004\/20200401.csv",
     "Basename":"20200401",
     "Extension":"csv",
@@ -1559,7 +1607,7 @@
     "State":null,
     "State_Name":null
   },
-  "128":{
+  "131":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200331.csv",
     "Basename":"20200331",
     "Extension":"csv",
@@ -1571,7 +1619,7 @@
     "State":null,
     "State_Name":null
   },
-  "165":{
+  "169":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200331.csv",
     "Basename":"20200331",
     "Extension":"csv",
@@ -1583,7 +1631,7 @@
     "State":null,
     "State_Name":null
   },
-  "123":{
+  "126":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200330.csv",
     "Basename":"20200330",
     "Extension":"csv",
@@ -1595,7 +1643,7 @@
     "State":null,
     "State_Name":null
   },
-  "160":{
+  "164":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200330.csv",
     "Basename":"20200330",
     "Extension":"csv",
@@ -1607,7 +1655,7 @@
     "State":null,
     "State_Name":null
   },
-  "117":{
+  "120":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200329.csv",
     "Basename":"20200329",
     "Extension":"csv",
@@ -1619,7 +1667,7 @@
     "State":null,
     "State_Name":null
   },
-  "151":{
+  "155":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200329.csv",
     "Basename":"20200329",
     "Extension":"csv",
@@ -1631,7 +1679,7 @@
     "State":null,
     "State_Name":null
   },
-  "114":{
+  "117":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200328.csv",
     "Basename":"20200328",
     "Extension":"csv",
@@ -1643,7 +1691,7 @@
     "State":null,
     "State_Name":null
   },
-  "148":{
+  "152":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200328.csv",
     "Basename":"20200328",
     "Extension":"csv",
@@ -1655,7 +1703,7 @@
     "State":null,
     "State_Name":null
   },
-  "129":{
+  "132":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200327.csv",
     "Basename":"20200327",
     "Extension":"csv",
@@ -1667,7 +1715,7 @@
     "State":null,
     "State_Name":null
   },
-  "166":{
+  "170":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200327.csv",
     "Basename":"20200327",
     "Extension":"csv",
@@ -1679,7 +1727,7 @@
     "State":null,
     "State_Name":null
   },
-  "130":{
+  "133":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200326.csv",
     "Basename":"20200326",
     "Extension":"csv",
@@ -1691,7 +1739,7 @@
     "State":null,
     "State_Name":null
   },
-  "167":{
+  "171":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200326.csv",
     "Basename":"20200326",
     "Extension":"csv",
@@ -1703,7 +1751,7 @@
     "State":null,
     "State_Name":null
   },
-  "127":{
+  "130":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200325.csv",
     "Basename":"20200325",
     "Extension":"csv",
@@ -1715,7 +1763,7 @@
     "State":null,
     "State_Name":null
   },
-  "164":{
+  "168":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200325.csv",
     "Basename":"20200325",
     "Extension":"csv",
@@ -1727,7 +1775,7 @@
     "State":null,
     "State_Name":null
   },
-  "124":{
+  "127":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200324.csv",
     "Basename":"20200324",
     "Extension":"csv",
@@ -1739,7 +1787,7 @@
     "State":null,
     "State_Name":null
   },
-  "161":{
+  "165":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200324.csv",
     "Basename":"20200324",
     "Extension":"csv",
@@ -1751,7 +1799,7 @@
     "State":null,
     "State_Name":null
   },
-  "120":{
+  "123":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200323.csv",
     "Basename":"20200323",
     "Extension":"csv",
@@ -1763,7 +1811,7 @@
     "State":null,
     "State_Name":null
   },
-  "156":{
+  "160":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200323.csv",
     "Basename":"20200323",
     "Extension":"csv",
@@ -1775,7 +1823,7 @@
     "State":null,
     "State_Name":null
   },
-  "119":{
+  "122":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200322.csv",
     "Basename":"20200322",
     "Extension":"csv",
@@ -1787,7 +1835,7 @@
     "State":null,
     "State_Name":null
   },
-  "155":{
+  "159":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200322.csv",
     "Basename":"20200322",
     "Extension":"csv",
@@ -1799,7 +1847,7 @@
     "State":null,
     "State_Name":null
   },
-  "121":{
+  "124":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200321.csv",
     "Basename":"20200321",
     "Extension":"csv",
@@ -1811,7 +1859,7 @@
     "State":null,
     "State_Name":null
   },
-  "157":{
+  "161":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200321.csv",
     "Basename":"20200321",
     "Extension":"csv",
@@ -1823,7 +1871,7 @@
     "State":null,
     "State_Name":null
   },
-  "122":{
+  "125":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200320.csv",
     "Basename":"20200320",
     "Extension":"csv",
@@ -1835,7 +1883,7 @@
     "State":null,
     "State_Name":null
   },
-  "158":{
+  "162":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200320.csv",
     "Basename":"20200320",
     "Extension":"csv",
@@ -1847,7 +1895,7 @@
     "State":null,
     "State_Name":null
   },
-  "126":{
+  "129":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200319.csv",
     "Basename":"20200319",
     "Extension":"csv",
@@ -1859,7 +1907,7 @@
     "State":null,
     "State_Name":null
   },
-  "163":{
+  "167":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200319.csv",
     "Basename":"20200319",
     "Extension":"csv",
@@ -1871,7 +1919,7 @@
     "State":null,
     "State_Name":null
   },
-  "125":{
+  "128":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200318.csv",
     "Basename":"20200318",
     "Extension":"csv",
@@ -1883,7 +1931,7 @@
     "State":null,
     "State_Name":null
   },
-  "162":{
+  "166":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200318.csv",
     "Basename":"20200318",
     "Extension":"csv",
@@ -1895,7 +1943,7 @@
     "State":null,
     "State_Name":null
   },
-  "112":{
+  "115":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200317.csv",
     "Basename":"20200317",
     "Extension":"csv",
@@ -1907,7 +1955,7 @@
     "State":null,
     "State_Name":null
   },
-  "146":{
+  "150":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200317.csv",
     "Basename":"20200317",
     "Extension":"csv",
@@ -1919,7 +1967,7 @@
     "State":null,
     "State_Name":null
   },
-  "113":{
+  "116":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200316.csv",
     "Basename":"20200316",
     "Extension":"csv",
@@ -1931,7 +1979,7 @@
     "State":null,
     "State_Name":null
   },
-  "147":{
+  "151":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200316.csv",
     "Basename":"20200316",
     "Extension":"csv",
@@ -1943,7 +1991,7 @@
     "State":null,
     "State_Name":null
   },
-  "116":{
+  "119":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200315.csv",
     "Basename":"20200315",
     "Extension":"csv",
@@ -1955,7 +2003,7 @@
     "State":null,
     "State_Name":null
   },
-  "150":{
+  "154":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200315.csv",
     "Basename":"20200315",
     "Extension":"csv",
@@ -1967,7 +2015,7 @@
     "State":null,
     "State_Name":null
   },
-  "115":{
+  "118":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200314.csv",
     "Basename":"20200314",
     "Extension":"csv",
@@ -1979,7 +2027,7 @@
     "State":null,
     "State_Name":null
   },
-  "149":{
+  "153":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200314.csv",
     "Basename":"20200314",
     "Extension":"csv",
@@ -1991,7 +2039,7 @@
     "State":null,
     "State_Name":null
   },
-  "118":{
+  "121":{
     "File":"\/tablas-diarias\/positivos\/202003\/20200313.csv",
     "Basename":"20200313",
     "Extension":"csv",
@@ -2003,7 +2051,7 @@
     "State":null,
     "State_Name":null
   },
-  "154":{
+  "158":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200313.csv",
     "Basename":"20200313",
     "Extension":"csv",
@@ -2015,7 +2063,7 @@
     "State":null,
     "State_Name":null
   },
-  "153":{
+  "157":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200312.csv",
     "Basename":"20200312",
     "Extension":"csv",
@@ -2027,7 +2075,7 @@
     "State":null,
     "State_Name":null
   },
-  "152":{
+  "156":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200311.csv",
     "Basename":"20200311",
     "Extension":"csv",
@@ -2039,7 +2087,7 @@
     "State":null,
     "State_Name":null
   },
-  "159":{
+  "163":{
     "File":"\/tablas-diarias\/sospechosos\/202003\/20200308.csv",
     "Basename":"20200308",
     "Extension":"csv",
