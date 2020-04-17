@@ -30,7 +30,8 @@ Disponibilidad:
 **Ultima Fecha de Actualización:** 2020-04-16
 
 ### [Comunicado Técnico Diario (COVID-19)](https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449) 
-Fuente Oficial: https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+Fuente Oficial: https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449  
+
 Usado para las tablas diarias de casos positivos y sospechosos. Detalles [aquí](https://www.covid19in.mx/docs/datos/tablas-casos/).
 Disponibilidad: 
 * Datos diarios en formato PDF, CSV y TXT para casos positivos, desde el 13 de Marzo de 2020.
@@ -39,7 +40,8 @@ Disponibilidad:
 **Ultima Fecha de Actualización:** 2020-04-16
 
 ### [Mapa Interactivo de México (COVID-19)](https://ncov.sinave.gob.mx/mapa.aspx) 
-Fuente Oficial: https://ncov.sinave.gob.mx/mapa.aspx
+Fuente Oficial: https://ncov.sinave.gob.mx/mapa.aspx  
+
 Usado para obtener las series diarias de datos. Detalles [aquí](https://www.covid19in.mx/docs/datos/series-de-tiempo/).
 Disponibilidad: 
 * Datos segregados por fecha y estados en formato CSV para casos positivos y sospechosos están disponibles desde el 13/03/2020. Dichos datos fueron obtenidos a partir del Comunicado Técnico Diario.
@@ -94,7 +96,8 @@ Availability:
 **Last Updated:** 2020-04-16
 
 ### [Daily Technical Release (COVID-19)](https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449) 
-Official Source: https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+Official Source: https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449  
+
 Used for the daily tables of positive and suspected cases. Details [aquí](https://www.covid19in.mx/en/data/cases-tables/).
 
 Availability: 
@@ -104,7 +107,8 @@ Availability:
 **Last Updated:** 2020-04-16
 
 ### [Interactive Map of México (COVID-19)](https://ncov.sinave.gob.mx/mapa.aspx) 
-Official Source: https://ncov.sinave.gob.mx/mapa.aspx
+Official Source: https://ncov.sinave.gob.mx/mapa.aspx  
+
 Used to obtain daily timeseries. Details [here](https://www.covid19in.mx/en/data/time-series/).
 
 Availability: 
@@ -113,7 +117,7 @@ Availability:
 
 **Last Updated:** 2020-04-16
 
-### Marco Geoestadístico de México 🇲🇽 
+### Geostatistical Data de México 🇲🇽 
 Official Source: https://www.inegi.org.mx/app/biblioteca/ficha.html?upc=889463142683
 
 Data base with [2458 cities](/www/otros/ciudades.csv) in México, and a different one for the [32 states](/www/otros/estados.csv) in México. Data is presented in CSV format with the geographical coordinates (centroids) for each city and state. Data obtained from the  obtenidos a partir del Geostatistical Data, June 2017, from INEGI. Complete data SHP format can be obtained from the original source.
