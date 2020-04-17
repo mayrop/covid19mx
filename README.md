@@ -1,7 +1,11 @@
-##### :es: Versión en Español. Ultima Actualización: 2020-04-16
+# `@datos-covid19in-mx`
+
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+
+##### :es: Versión en Español. Ultima Actualización: 2020-04-16
 
 # COVID-19 en México 🇲🇽
 Datos de en formato PDF, CSV y TXT de los casos COVID-19 (Novel Coronavirus) en México. Datos adicionales para ayudar al análisis que incluyen las coordenadas geográficas (centroides) de cada municipio y entidad federativa, así como la proyección de población del año 2020 de cada una de ellas. Todos los datos obtenidos de fuentes oficiales. Próximamente estadísticas y análsis.
