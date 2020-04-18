@@ -90,4 +90,4 @@ def normalize_sex(text):
 
 def normalize_date(text):
     text = convert_na(text)
-    return re.sub('(\d+)/(\d+)/(\d+)', '\\3-\\2-\\1', text)
+    return re.sub(r'(\d+)/(\d+)/(\d+)', '\\3-\\2-\\1', text)

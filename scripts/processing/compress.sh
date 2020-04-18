@@ -6,20 +6,20 @@ do
 key="$1"
 case $key in
     -s|--source)
-    SOURCE="$2"; shift;;
+    source_file="$2"; shift;;
     -o|--overwrite)
-    OVERWRITE="$2"; shift;;  
+    overwrite="$2"; shift;;  
 esac
 shift
 done 
 
 
-COMPRESSED=$(echo ${SOURCE} | sed -e "s/\.pdf/-c.pdf/")
+compressed_file=$(echo ${source_file} | sed -e "s/\.pdf/-c.pdf/")
 
 # compressing the pdf file if it does not exist
-if [ ! -f $COMPRESSED ]; then
+if [ ! -f $compressed_file ]; then
     # see https://stackoverflow.com/questions/16530510/pdf-compression-like-smallpdf-com-programmatically-in-c-sharp
-    echo "Compressing ${SOURCE} into ${COMPRESSED}"
+    echo "Compressing ${source_file} into ${compressed}"
 
     gs -q -dNOPAUSE -dBATCH -dSAFER \
         -sDEVICE=pdfwrite \
@@ -33,21 +33,21 @@ if [ ! -f $COMPRESSED ]; then
         -dGrayImageResolution=144 \
         -dMonoImageDownsampleType=/Bicubic \
         -dMonoImageResolution=144 \
-        -sOutputFile=$COMPRESSED $SOURCE
+        -sOutputFile=$compressed_file $source_file
 
-    SIZE_COMPRESSED=$(du -h "$COMPRESSED" | cut -f1)
-    SIZE_SOURCE=$(du -h "$SOURCE" | cut -f1)
+    size_compressed_file=$(du -h "$compressed_file" | cut -f1)
+    size_source_file=$(du -h "$source_file" | cut -f1)
 
-    echo "Source file size: ${SIZE_SOURCE}" 
-    echo "Compressed file size: ${SIZE_COMPRESSED}"
+    echo "source_file file size: ${size_source_file}" 
+    echo "compressed file size: ${size_compressed_file}"
 fi
 
 
 # overwriting original file if required
-if [[ $OVERWRITE ]]; then
-    if [ -f $COMPRESSED ]; then
-        echo "Overwritring ${SOURCE} with compressed ${COMPRESSED}"
-        rm $SOURCE
-        mv $COMPRESSED $SOURCE
+if [[ $overwrite ]]; then
+    if [ -f $compressed_file ]; then
+        echo "Overwritring ${source_file} with compressed ${compressed}"
+        rm $source_file
+        mv $compressed_file $source_file
     fi
 fi

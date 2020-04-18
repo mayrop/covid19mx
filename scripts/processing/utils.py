@@ -11,6 +11,8 @@ CACHE_DIR = 'cache'
 CACHE_MAP_DIR = '/cache/mapa/'
 
 URL_PDFS = 'https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449'
-URL_MAP = 'https://ncov.sinave.gob.mx/Mapa.aspx/Grafica22'
+
+URL_CASES_MAP = 'https://covid19.sinave.gob.mx/Log.aspx/Grafica22'
+URL_VALUATION_MAP = 'https://covid19.sinave.gob.mx/MapaTasas.aspx/Grafica22'
 
 URL_ZIP = 'https://www.gob.mx/salud/documentos/datos-abiertos-152127'

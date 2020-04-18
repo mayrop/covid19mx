@@ -102,14 +102,12 @@ def regex_filter(val, regex):
         mo = re.search(regex, val, re.IGNORECASE)
         if mo:
             return True
-        else:
-            return False
-    else:
-        return False    
+
+    return False    
 
 
 #----------------------------------------------------------------
-# S t r i n g s
+# D a t e
 #----------------------------------------------------------------
 
 # replacing excel dates
@@ -128,13 +126,7 @@ def get_fixed_date(text):
 
 
 def is_date_in_excel_format(text):
-    match = re.search(r'(\d{5})', text)
-    
-    if match:
-        return True
-    
-    return False
-
+    return re.search(r'(\d{5})', text)
 
 #----------------------------------------------------------------
 # C o n t e x t
