@@ -1,8 +1,8 @@
 # `@datos-covid19in-mx`
 
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)<!-- ALL-CONTRIBUTORS-BADGE:END -->
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-##### :es: Versión en Español. Ultima Actualización: 2020-04-16
+##### :es: Versión en Español. Ultima Actualización: 2020-04-17
 
 # COVID-19 en México 🇲🇽
 Datos de en formato PDF, CSV y TXT de los casos COVID-19 (Novel Coronavirus) en México. Datos adicionales para ayudar al análisis que incluyen las coordenadas geográficas (centroides) de cada municipio y entidad federativa, así como la proyección de población del año 2020 de cada una de ellas. Todos los datos obtenidos de fuentes oficiales. Próximamente estadísticas y análsis.
@@ -31,7 +31,7 @@ Datos abiertos de los casos COVID-19 Novel Coronavirus en México.
 Disponibilidad:
 * Datos disponibles en formato ZIP desde el 13/04/2020 después de que el Director General de Promoción de la Salud del Gobierno de México, [Ricardo Cortes Alcala](https://twitter.com/RicardoDGPS) anunciara [su disponibilidad](https://twitter.com/RicardoDGPS/status/1249864573936644096)
 
-**Ultima Fecha de Actualización:** 2020-04-16
+**Ultima Fecha de Actualización:** 2020-04-17
 
 ### [Comunicado Técnico Diario (COVID-19)](https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449) 
 Fuente Oficial: https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449  
@@ -41,7 +41,7 @@ Disponibilidad:
 * Datos diarios en formato PDF, CSV y TXT para casos positivos, desde el 13 de Marzo de 2020.
 * Datos diarios en formato PDF, CSV y TXT para casos sospechosos, desde el 11 de Marzo de 2020. Se cuenta ademas con la tabla del dia 8 de Marzo, 2020.
 
-**Ultima Fecha de Actualización:** 2020-04-16
+**Ultima Fecha de Actualización:** 2020-04-17
 
 ### [Mapa Interactivo de México (COVID-19)](https://ncov.sinave.gob.mx/mapa.aspx) 
 Fuente Oficial: https://ncov.sinave.gob.mx/mapa.aspx  
@@ -51,7 +51,7 @@ Disponibilidad:
 * Datos segregados por fecha y estados en formato CSV para casos positivos y sospechosos están disponibles desde el 13/03/2020. Dichos datos fueron obtenidos a partir del Comunicado Técnico Diario.
 * Datos segregados por fecha y estados en formato CSV por fecha y estados para casos positivos, sospechosos, negativos y defunciones a partir del mapa están disponibles desde el 4 de Abril de 2020. Los datos acumulados para los casos negativos y defunciones antes del 4 de Abril fueron capturados manualmente a partir del Comunicado Técnico Diario. Favor de reportar cualquier error via  [Twitter](https://twitter.com/mayrop) o como un issue en Github.
 
-**Ultima Fecha de Actualización:** 2020-04-16
+**Ultima Fecha de Actualización:** 2020-04-17
 
 ### Marco Geoestadístico de México 🇲🇽 
 * Fuente oficial: https://www.inegi.org.mx/app/biblioteca/ficha.html?upc=889463142683
@@ -68,7 +68,7 @@ Se tiene una base datos en formato CSV de la población de [2457 municipios](/ww
 **Ultima Fecha de Actualización:** 2020-04-15
 
 ------------------------------------------ 
-##### :uk: English Version. Last Updated: 2020-04-16
+##### :uk: English Version. Last Updated: 2020-04-17
 
 # COVID-19 in México 🇲🇽
 Data in PDF, CSV and TXT about the COVID-19 (Novel Coronavirus) cases in México. Additional data to help analysis which includes the geographic coordinates (centroids) of each city and state in México, as well as the 2020 population for each one of them. All of the obtained data comes from official sources. There will be statistics and analysis very soon.
@@ -97,7 +97,7 @@ Open Data in ZIP/CSV format for the COVID-19 Novel Coronavirus cases in México.
 Availability:
 * Data available in ZIP format since April 13 2020, after [Ricardo Cortes Alcala](https://twitter.com/RicardoDGPS), General Director of Health Promotion of the Government of Mexico, announced [its availability](https://twitter.com/RicardoDGPS/status/1249864573936644096)
 
-**Last Updated:** 2020-04-16
+**Last Updated:** 2020-04-17
 
 ### [Daily Technical Release (COVID-19)](https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449) 
 Official Source: https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449  
@@ -108,7 +108,7 @@ Availability:
 * Daily data in PDF, CSV and TXT format for positive cases, since March 13, 2020.
 * Daily data in PDF, CSV and TXT format for suspected cases, since March 11, 2020. An addition of the data is available too for March 8, 2020.
 
-**Last Updated:** 2020-04-16
+**Last Updated:** 2020-04-17
 
 ### [Interactive Map of México (COVID-19)](https://ncov.sinave.gob.mx/mapa.aspx) 
 Official Source: https://ncov.sinave.gob.mx/mapa.aspx  
@@ -119,7 +119,7 @@ Availability:
 * Data segregated by date and state in CSV format for positive and suspected caes since March 13, 2020. Data obtained from Daily Technical Release.
 * Data segrated by date and state in CSV format for positive, suspected, negative and deaths form the map since April 4, 2020. Accumulated data for deaths and negative cases prior to April 4, 2020 was captured manually from the Daily Technical Release. Please report any error through [Twitter](https://twitter.com/mayrop) or through a Github issue.
 
-**Last Updated:** 2020-04-16
+**Last Updated:** 2020-04-17
 
 ### Geostatistical Data de México 🇲🇽 
 Official Source: https://www.inegi.org.mx/app/biblioteca/ficha.html?upc=889463142683
