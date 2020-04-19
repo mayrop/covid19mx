@@ -1,4 +1,5 @@
 File,Basename,Extension,Type,Subtype,Last_Modified,Date,Month,State,State_Name
+/abiertos/todos/202004/20200418.zip,20200418,zip,abiertos,todos,2020-04-18 22:44:29,2020-04-18,04,,
 /abiertos/todos/202004/20200417.zip,20200417,zip,abiertos,todos,2020-04-18 02:16:48,2020-04-17,04,,
 /abiertos/todos/202004/20200416.zip,20200416,zip,abiertos,todos,2020-04-16 19:16:10,2020-04-16,04,,
 /abiertos/todos/202004/20200415.zip,20200415,zip,abiertos,todos,2020-04-15 19:08:44,2020-04-15,04,,
@@ -14,10 +15,11 @@ File,Basename,Extension,Type,Subtype,Last_Modified,Date,Month,State,State_Name
 /abiertos/descriptores/origen.csv,origen,csv,abiertos,descriptores,2020-04-13 23:13:05,,,,
 /abiertos/descriptores/resultado.csv,resultado,csv,abiertos,descriptores,2020-04-13 23:13:04,,,,
 /abiertos/descriptores/si_no.csv,si_no,csv,abiertos,descriptores,2020-04-14 00:07:24,,,,
-/meta/files.csv,files,csv,meta,files,2020-04-18 02:16:52,,,,
+/meta/files.csv,files,csv,meta,files,2020-04-18 22:37:43,,,,
 /otros/estados.csv,estados,csv,otros,estados,2020-04-16 18:44:15,,,,
 /otros/positivos.csv,positivos,csv,otros,positivos,2020-04-06 21:39:56,,,,
 /otros/ciudades.csv,ciudades,csv,otros,ciudades,2020-04-16 18:44:15,,,,
+/series-de-tiempo/federal/202004/federal_20200418.csv,federal_20200418,csv,series_de_tiempo,federal,2020-04-18 22:37:16,2020-04-18,04,,
 /series-de-tiempo/federal/202004/federal_20200417.csv,federal_20200417,csv,series_de_tiempo,federal,2020-04-18 01:43:49,2020-04-17,04,,
 /series-de-tiempo/federal/202004/federal_20200416.csv,federal_20200416,csv,series_de_tiempo,federal,2020-04-18 00:22:03,2020-04-16,04,,
 /series-de-tiempo/federal/202004/federal_20200415.csv,federal_20200415,csv,series_de_tiempo,federal,2020-04-18 00:22:03,2020-04-15,04,,
@@ -103,6 +105,8 @@ File,Basename,Extension,Type,Subtype,Last_Modified,Date,Month,State,State_Name
 /series-de-tiempo/estatal/estatal_zac.csv,estatal_zac,csv,series_de_tiempo,estatal,2020-04-18 00:22:03,,,zac,Zacatecas
 /series-de-tiempo/agregados/federal.csv,federal,csv,series_de_tiempo,agregados,2020-04-18 00:22:03,,,,
 /series-de-tiempo/agregados/totales.csv,totales,csv,series_de_tiempo,agregados,2020-04-18 00:23:17,,,,
+/tablas-diarias/positivos/202004/20200418.csv,20200418,csv,tablas_diarias,positivos,2020-04-18 22:37:19,2020-04-18,04,,
+/tablas-diarias/sospechosos/202004/20200418.csv,20200418,csv,tablas_diarias,sospechosos,2020-04-18 22:37:23,2020-04-18,04,,
 /tablas-diarias/positivos/202004/20200417.csv,20200417,csv,tablas_diarias,positivos,2020-04-18 00:16:15,2020-04-17,04,,
 /tablas-diarias/sospechosos/202004/20200417.csv,20200417,csv,tablas_diarias,sospechosos,2020-04-18 00:16:20,2020-04-17,04,,
 /tablas-diarias/positivos/202004/20200416.csv,20200416,csv,tablas_diarias,positivos,2020-04-16 19:12:22,2020-04-16,04,,
