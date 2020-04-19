@@ -72,11 +72,11 @@
     "State_Name":null
   },
   "0":{
-    "File":"\/abiertos\/catalogo.csv",
-    "Basename":"catalogo",
+    "File":"\/abiertos\/descriptores.csv",
+    "Basename":"descriptores",
     "Extension":"csv",
     "Type":"abiertos",
-    "Subtype":"catalogo",
+    "Subtype":"descriptores",
     "Last_Modified":"2020-04-13 21:43:56",
     "Date":null,
     "Month":null,
@@ -84,11 +84,11 @@
     "State_Name":null
   },
   "1":{
-    "File":"\/abiertos\/descriptores\/sexo.csv",
+    "File":"\/abiertos\/catalogos\/sexo.csv",
     "Basename":"sexo",
     "Extension":"csv",
     "Type":"abiertos",
-    "Subtype":"descriptores",
+    "Subtype":"catalogos",
     "Last_Modified":"2020-04-13 23:13:00",
     "Date":null,
     "Month":null,
@@ -96,11 +96,11 @@
     "State_Name":null
   },
   "2":{
-    "File":"\/abiertos\/descriptores\/nacionalidad.csv",
+    "File":"\/abiertos\/catalogos\/nacionalidad.csv",
     "Basename":"nacionalidad",
     "Extension":"csv",
     "Type":"abiertos",
-    "Subtype":"descriptores",
+    "Subtype":"catalogos",
     "Last_Modified":"2020-04-13 23:13:07",
     "Date":null,
     "Month":null,
@@ -108,11 +108,11 @@
     "State_Name":null
   },
   "3":{
-    "File":"\/abiertos\/descriptores\/sector.csv",
+    "File":"\/abiertos\/catalogos\/sector.csv",
     "Basename":"sector",
     "Extension":"csv",
     "Type":"abiertos",
-    "Subtype":"descriptores",
+    "Subtype":"catalogos",
     "Last_Modified":"2020-04-13 23:13:02",
     "Date":null,
     "Month":null,
@@ -120,11 +120,11 @@
     "State_Name":null
   },
   "4":{
-    "File":"\/abiertos\/descriptores\/tipo_paciente.csv",
+    "File":"\/abiertos\/catalogos\/tipo_paciente.csv",
     "Basename":"tipo_paciente",
     "Extension":"csv",
     "Type":"abiertos",
-    "Subtype":"descriptores",
+    "Subtype":"catalogos",
     "Last_Modified":"2020-04-13 23:12:57",
     "Date":null,
     "Month":null,
@@ -132,11 +132,11 @@
     "State_Name":null
   },
   "5":{
-    "File":"\/abiertos\/descriptores\/entidades.csv",
+    "File":"\/abiertos\/catalogos\/entidades.csv",
     "Basename":"entidades",
     "Extension":"csv",
     "Type":"abiertos",
-    "Subtype":"descriptores",
+    "Subtype":"catalogos",
     "Last_Modified":"2020-04-13 21:48:57",
     "Date":null,
     "Month":null,
@@ -144,11 +144,11 @@
     "State_Name":null
   },
   "6":{
-    "File":"\/abiertos\/descriptores\/municipios.csv",
+    "File":"\/abiertos\/catalogos\/municipios.csv",
     "Basename":"municipios",
     "Extension":"csv",
     "Type":"abiertos",
-    "Subtype":"descriptores",
+    "Subtype":"catalogos",
     "Last_Modified":"2020-04-13 21:49:10",
     "Date":null,
     "Month":null,
@@ -156,11 +156,11 @@
     "State_Name":null
   },
   "7":{
-    "File":"\/abiertos\/descriptores\/origen.csv",
+    "File":"\/abiertos\/catalogos\/origen.csv",
     "Basename":"origen",
     "Extension":"csv",
     "Type":"abiertos",
-    "Subtype":"descriptores",
+    "Subtype":"catalogos",
     "Last_Modified":"2020-04-13 23:13:05",
     "Date":null,
     "Month":null,
@@ -168,11 +168,11 @@
     "State_Name":null
   },
   "8":{
-    "File":"\/abiertos\/descriptores\/resultado.csv",
+    "File":"\/abiertos\/catalogos\/resultado.csv",
     "Basename":"resultado",
     "Extension":"csv",
     "Type":"abiertos",
-    "Subtype":"descriptores",
+    "Subtype":"catalogos",
     "Last_Modified":"2020-04-13 23:13:04",
     "Date":null,
     "Month":null,
@@ -180,11 +180,11 @@
     "State_Name":null
   },
   "9":{
-    "File":"\/abiertos\/descriptores\/si_no.csv",
+    "File":"\/abiertos\/catalogos\/si_no.csv",
     "Basename":"si_no",
     "Extension":"csv",
     "Type":"abiertos",
-    "Subtype":"descriptores",
+    "Subtype":"catalogos",
     "Last_Modified":"2020-04-14 00:07:24",
     "Date":null,
     "Month":null,
@@ -197,7 +197,7 @@
     "Extension":"csv",
     "Type":"meta",
     "Subtype":"files",
-    "Last_Modified":"2020-04-18 22:44:42",
+    "Last_Modified":"2020-04-18 22:52:03",
     "Date":null,
     "Month":null,
     "State":null,

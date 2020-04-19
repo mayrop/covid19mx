@@ -72,11 +72,11 @@
     null
   ],
   [
-    "\/abiertos\/catalogo.csv",
-    "catalogo",
+    "\/abiertos\/descriptores.csv",
+    "descriptores",
     "csv",
     "abiertos",
-    "catalogo",
+    "descriptores",
     "2020-04-13 21:43:56",
     null,
     null,
@@ -84,11 +84,11 @@
     null
   ],
   [
-    "\/abiertos\/descriptores\/sexo.csv",
+    "\/abiertos\/catalogos\/sexo.csv",
     "sexo",
     "csv",
     "abiertos",
-    "descriptores",
+    "catalogos",
     "2020-04-13 23:13:00",
     null,
     null,
@@ -96,11 +96,11 @@
     null
   ],
   [
-    "\/abiertos\/descriptores\/nacionalidad.csv",
+    "\/abiertos\/catalogos\/nacionalidad.csv",
     "nacionalidad",
     "csv",
     "abiertos",
-    "descriptores",
+    "catalogos",
     "2020-04-13 23:13:07",
     null,
     null,
@@ -108,11 +108,11 @@
     null
   ],
   [
-    "\/abiertos\/descriptores\/sector.csv",
+    "\/abiertos\/catalogos\/sector.csv",
     "sector",
     "csv",
     "abiertos",
-    "descriptores",
+    "catalogos",
     "2020-04-13 23:13:02",
     null,
     null,
@@ -120,11 +120,11 @@
     null
   ],
   [
-    "\/abiertos\/descriptores\/tipo_paciente.csv",
+    "\/abiertos\/catalogos\/tipo_paciente.csv",
     "tipo_paciente",
     "csv",
     "abiertos",
-    "descriptores",
+    "catalogos",
     "2020-04-13 23:12:57",
     null,
     null,
@@ -132,11 +132,11 @@
     null
   ],
   [
-    "\/abiertos\/descriptores\/entidades.csv",
+    "\/abiertos\/catalogos\/entidades.csv",
     "entidades",
     "csv",
     "abiertos",
-    "descriptores",
+    "catalogos",
     "2020-04-13 21:48:57",
     null,
     null,
@@ -144,11 +144,11 @@
     null
   ],
   [
-    "\/abiertos\/descriptores\/municipios.csv",
+    "\/abiertos\/catalogos\/municipios.csv",
     "municipios",
     "csv",
     "abiertos",
-    "descriptores",
+    "catalogos",
     "2020-04-13 21:49:10",
     null,
     null,
@@ -156,11 +156,11 @@
     null
   ],
   [
-    "\/abiertos\/descriptores\/origen.csv",
+    "\/abiertos\/catalogos\/origen.csv",
     "origen",
     "csv",
     "abiertos",
-    "descriptores",
+    "catalogos",
     "2020-04-13 23:13:05",
     null,
     null,
@@ -168,11 +168,11 @@
     null
   ],
   [
-    "\/abiertos\/descriptores\/resultado.csv",
+    "\/abiertos\/catalogos\/resultado.csv",
     "resultado",
     "csv",
     "abiertos",
-    "descriptores",
+    "catalogos",
     "2020-04-13 23:13:04",
     null,
     null,
@@ -180,11 +180,11 @@
     null
   ],
   [
-    "\/abiertos\/descriptores\/si_no.csv",
+    "\/abiertos\/catalogos\/si_no.csv",
     "si_no",
     "csv",
     "abiertos",
-    "descriptores",
+    "catalogos",
     "2020-04-14 00:07:24",
     null,
     null,
@@ -197,7 +197,7 @@
     "csv",
     "meta",
     "files",
-    "2020-04-18 22:44:42",
+    "2020-04-18 22:52:03",
     null,
     null,
     null,
