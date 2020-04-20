@@ -1,5 +1,17 @@
 [
   [
+    "\/abiertos\/todos\/202004\/20200419.zip",
+    "20200419",
+    "zip",
+    "abiertos",
+    "todos",
+    "2020-04-19 19:18:37",
+    "2020-04-19",
+    "04",
+    null,
+    null
+  ],
+  [
     "\/abiertos\/todos\/202004\/20200418.zip",
     "20200418",
     "zip",
@@ -192,12 +204,36 @@
     null
   ],
   [
+    "\/geo\/estados.zip",
+    "estados",
+    "zip",
+    "geo",
+    "estados",
+    "2020-04-19 14:55:00",
+    null,
+    null,
+    null,
+    null
+  ],
+  [
+    "\/geo\/municipios.zip",
+    "municipios",
+    "zip",
+    "geo",
+    "municipios",
+    "2020-04-19 14:54:50",
+    null,
+    null,
+    null,
+    null
+  ],
+  [
     "\/meta\/files.csv",
     "files",
     "csv",
     "meta",
     "files",
-    "2020-04-18 22:52:03",
+    "2020-04-19 19:15:18",
     null,
     null,
     null,
@@ -209,7 +245,7 @@
     "csv",
     "otros",
     "estados",
-    "2020-04-16 18:44:15",
+    "2020-04-19 15:27:26",
     null,
     null,
     null,
@@ -228,14 +264,62 @@
     null
   ],
   [
+    "\/otros\/municipios.csv",
+    "municipios",
+    "csv",
+    "otros",
+    "municipios",
+    "2020-04-19 15:27:17",
+    null,
+    null,
+    null,
+    null
+  ],
+  [
+    "\/otros\/municipios_segregados.csv",
+    "municipios_segregados",
+    "csv",
+    "otros",
+    "municipios_segregados",
+    "2020-04-19 15:27:23",
+    null,
+    null,
+    null,
+    null
+  ],
+  [
     "\/otros\/ciudades.csv",
     "ciudades",
     "csv",
     "otros",
     "ciudades",
-    "2020-04-16 18:44:15",
+    "2020-04-19 15:27:16",
     null,
     null,
+    null,
+    null
+  ],
+  [
+    "\/otros\/estados_segregados.csv",
+    "estados_segregados",
+    "csv",
+    "otros",
+    "estados_segregados",
+    "2020-04-19 15:27:26",
+    null,
+    null,
+    null,
+    null
+  ],
+  [
+    "\/series-de-tiempo\/federal\/202004\/federal_20200419.csv",
+    "federal_20200419",
+    "csv",
+    "series_de_tiempo",
+    "federal",
+    "2020-04-19 19:15:13",
+    "2020-04-19",
+    "04",
     null,
     null
   ],
