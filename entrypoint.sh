@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
 
-./usr/app/scripts/processing/run.sh
+./scripts/processing/run.sh
