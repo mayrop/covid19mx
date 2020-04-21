@@ -44,7 +44,6 @@ jobs:
         assignees: mayrop
         reviewers: mayrop
         branch: create-pull-request/patch
-        branch-suffix: short-commit-hash
         base: master
         request-to-parent: false
     - name: Check outputs
