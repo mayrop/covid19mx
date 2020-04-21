@@ -63,34 +63,34 @@ do
 done
 
 # # processing each pdf file
-echo "Processing positive and suspected PDF files"
-for file in `find $root_cases_dir -name "*.pdf" | grep -E "sospechosos|positivos" | grep -v "c.pdf"`
-do
-    basename="$(basename -- $file)"
+# echo "Processing positive and suspected PDF files"
+# for file in `find $root_cases_dir -name "*.pdf" | grep -E "sospechosos|positivos" | grep -v "c.pdf"`
+# do
+#     basename="$(basename -- $file)"
 
-    txt_file=$(echo ${file} | sed -e "s/\.pdf/.txt/")
-    csv_file=$(echo ${file} | sed -e "s/\.pdf/.csv/")
+#     txt_file=$(echo ${file} | sed -e "s/\.pdf/.txt/")
+#     csv_file=$(echo ${file} | sed -e "s/\.pdf/.csv/")
 
-    # creating the txt file
-    if [ ! -f $txt_file ]; then
-        echo "Creating ${txt_file}"
-        pdftotext -layout $file $txt_file
-    fi
+#     # creating the txt file
+#     if [ ! -f $txt_file ]; then
+#         echo "Creating ${txt_file}"
+#         pdftotext -layout $file $txt_file
+#     fi
 
-    # processing the html file
-    if [ ! -f $csv_file ]; then
-        echo "Creating ${csv_file}"
-        echo "python ./scripts/processing/parse.py \"${txt_file}\" \"${csv_file}\""
-        python ./scripts/processing/parse_pdf.py "${txt_file}" "${csv_file}"
-    fi
-done
+#     # processing the html file
+#     if [ ! -f $csv_file ]; then
+#         echo "Creating ${csv_file}"
+#         echo "python ./scripts/processing/parse.py \"${txt_file}\" \"${csv_file}\""
+#         python ./scripts/processing/parse_pdf.py "${txt_file}" "${csv_file}"
+#     fi
+# done
 
 # # processing each pdf file
-echo "Compressing PDF files created in the last 10 mins!"
-for orig_file in `find . -iname "*.pdf" -mmin -10 -print | grep -v "comunicado"`
-do
-    ./scripts/processing/compress.sh -s $orig_file -o 1
-done
+# echo "Compressing PDF files created in the last 10 mins!"
+# for orig_file in `find . -iname "*.pdf" -mmin -10 -print | grep -v "comunicado"`
+# do
+#     ./scripts/processing/compress.sh -s $orig_file -o 1
+# done
 
 # # generating the meta data files
 echo "Generating meta data files!"

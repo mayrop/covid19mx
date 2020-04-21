@@ -11,10 +11,7 @@ from utils import *
 
 def main(args):
     print('Downloding map...')
-    download_map(URL_CASES_MAP)
-
-    print('Downloding map...')
-    download_map(URL_VALUATION_MAP, 'tasas/')    
+    download_map(URL_MAP)
 
     print('Downloding PDF files...')
     download_pdfs(URL_PDFS)
