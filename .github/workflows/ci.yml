@@ -11,22 +11,22 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Handle Repo1
-      uses: actions/checkout@v1.0.0
+    - name: Checkout Repository
+      uses: actions/checkout@v2
       with:
         ref: refs/heads/test
     - name: Run Crawler
       uses: ./
-    - name: Generate and commit files
+    - name: Commit files
       run: |
         echo ${{ github.ref }}
         git add .
         git status
         git config --local user.email "action@github.com"
         git config --local user.name "Github Action"
-        git commit -m "ci: Automated build push" -a | exit 0
+        git commit -m "ci: automated build push" -a | exit 0
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
         branch: test
-        github_token: ${{ secrets.GITHUB_TOKEN }}      
+        github_token: ${{ secrets.GITHUB_TOKEN }}       
