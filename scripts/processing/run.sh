@@ -85,13 +85,6 @@ done
 #     fi
 # done
 
-# # processing each pdf file
-# echo "Compressing PDF files created in the last 10 mins!"
-# for orig_file in `find . -iname "*.pdf" -mmin -10 -print | grep -v "comunicado"`
-# do
-#     ./scripts/processing/compress.sh -s $orig_file -o 1
-# done
-
 # # generating the meta data files
 echo "Generating meta data files!"
 python ./scripts/processing/generate_meta_data.py 
