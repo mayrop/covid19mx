@@ -12,7 +12,7 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
       with:
-        ref: refs/heads/master
+        ref: refs/heads/test
     - name: Run Crawler
       uses: ./        
     - name: Get current date
