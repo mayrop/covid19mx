@@ -5,7 +5,7 @@ on:
     branches:
       - test
   schedule:
-    - cron: "0/5 * * * *"
+    - cron: "0 20,21 * * *"
 
 jobs:
   build:
@@ -15,6 +15,18 @@ jobs:
       uses: actions/checkout@v1.0.0
       with:
         ref: refs/heads/test
-    - name: Test Run
+    - name: Run Crawler
       uses: ./
-      
+    - name: Generate and commit files
+      run: |
+        echo ${{ github.ref }}
+        git add .
+        git status
+        git config --local user.email "action@github.com"
+        git config --local user.name "Github Action"
+        git commit -m "ci: Automated build push" -a | exit 0
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        branch: test
+        github_token: ${{ secrets.GITHUB_TOKEN }}      
