@@ -6,7 +6,7 @@ from utils import *
 def download_zip(url):
     contents = request_url_get(url)
     
-    match = re.search(r'<p>(\d{2})/(\d{2})/(\d{2})</p>.*?<a href="([^"]+\.zip)">VER</a>', str(contents))
+    match = re.search(r'(\d{2})/(\d{2})/(\d{4})</td>.*?<a href="([^"]+\.zip)">VER</a>', str(contents))
 
     if match:
         url = match[4]
@@ -27,8 +27,9 @@ def download_zip(url):
 def get_zip_file(match, suffix=''):
 
     prefix = '{}/www/abiertos/todos/'.format(ROOT_DIR)
-    year_month = '{}20{}'.format(match[3], match[2])
+    year_month = '{}{}'.format(match[3], match[2])
     path = '{}{}/{}{}{}.zip'.format(prefix, year_month, year_month, match[1], suffix)
     print('Path for ZIP: {}'.format(path))
 
     return Path(path)
+
