@@ -1,33 +1,33 @@
-"Clave","Nombre","Nombre_Mayuscula","Nombre_Completo","Abreviatura","ISO_3","Longitud","Latitud","Poblacion_2019"
-1,"Aguascalientes","AGUASCALIENTES","Aguascalientes","Ags.","AGU",-102.3619377,22.0064411,1415421
-2,"Baja California","BAJA CALIFORNIA","Baja California","B. C.","BCN",-115.0970657,30.5515922,3578561
-3,"Baja California Sur","BAJA CALIFORNIA SUR","Baja California Sur","B. C. S.","BCS",-112.0662031,25.9187109,788119
-4,"Campeche","CAMPECHE","Campeche","Camp.","CAM",-90.3602773,18.8405542,984046
-5,"Coahuila","COAHUILA","Coahuila de Zaragoza","Coah.","COA",-102.0440387,27.295443,3175643
-6,"Colima","COLIMA","Colima","Col.","COL",-104.1151154,19.1306833,772842
-7,"Chiapas","CHIAPAS","Chiapas","Chis.","CHP",-92.4729118,16.4852399,5647532
-8,"Chihuahua","CHIHUAHUA","Chihuahua","Chih.","CHH",-106.4689395,28.8085381,3765325
-9,"Ciudad de México","CIUDAD DE MEXICO","Ciudad de México","CDMX","CMX",-99.1394112,19.2768896,9031213
-10,"Durango","DURANGO","Durango","Dgo.","DUR",-104.9133986,24.9236104,1852952
-11,"Guanajuato","GUANAJUATO","Guanajuato","Gto.","GUA",-101.0126144,20.905432,6173718
-12,"Guerrero","GUERRERO","Guerrero","Gro.","GRO",-99.9218338,17.6680028,3643974
-13,"Hidalgo","HIDALGO","Hidalgo","Hgo.","HID",-98.8871131,20.4795567,3050720
-14,"Jalisco","JALISCO","Jalisco","Jal.","JAL",-103.6132361,20.5807652,8325800
-15,"Edo. de México","MEXICO","Estado de México","Méx.","MEX",-99.6453738,19.355957,17245551
-16,"Michoacán","MICHOACAN","Michoacán de Ocampo","Mich.","MIC",-101.8781133,19.2070961,4791977
-17,"Morelos","MORELOS","Morelos","Mor.","MOR",-99.0749623,18.7420779,2022568
-18,"Nayarit","NAYARIT","Nayarit","Nay.","NAY",-104.8549659,21.802079,1270646
-19,"Nuevo León","NUEVO LEON","Nuevo León","N. L.","NLE",-99.9689699,25.5725903,5533147
-20,"Oaxaca","OAXACA","Oaxaca","Oax.","OAX",-96.4301302,16.9614432,4120741
-21,"Puebla","PUEBLA","Puebla","Pue.","PUE",-97.9000945,19.0060693,6542484
-22,"Querétaro","QUERETARO","Querétaro","Qro.","QUE",-99.8457964,20.8551761,2239112
-23,"Quintana Roo","QUINTANA ROO","Quintana Roo","Q. R.","ROO",-88.1116704,19.6013221,1684541
-24,"San Luis Potosí","SAN LUIS POTOSI","San Luis Potosí","S. L. P.","SLP",-100.4165087,22.5854598,2845959
-25,"Sinaloa","SINALOA","Sinaloa","Sin.","SIN",-107.5091507,25.0014395,3131012
-26,"Sonora","SONORA","Sonora","Son.","SON",-110.8099475,29.6877029,3037752
-27,"Tabasco","TABASCO","Tabasco","Tab.","TAB",-92.593987,17.9376914,2544372
-28,"Tamaulipas","TAMAULIPAS","Tamaulipas","Tamps.","TAM",-98.6408944,24.2910116,3620910
-29,"Tlaxcala","TLAXCALA","Tlaxcala","Tlax.","TLA",-98.1685494,19.4285756,1364147
-30,"Veracruz","VERACRUZ","Veracruz de Ignacio de la Llave","Ver.","VER",-96.4185589,19.392958,8488447
-31,"Yucatán","YUCATAN","Yucatán","Yuc.","YUC",-88.9261759,20.7574411,2233866
-32,"Zacatecas","ZACATECAS","Zacatecas","Zac.","ZAC",-102.6605573,23.2890189,1654593
+"Clave","Nombre","Nombre_Mayuscula","Nombre_Completo","Abreviatura","ISO_3","RENAPO","Longitud","Latitud","Poblacion_2019"
+1,"Aguascalientes","AGUASCALIENTES","Aguascalientes","Ags.","AGU","AS",-102.3619377,22.0064411,1415421
+2,"Baja California","BAJA CALIFORNIA","Baja California","B. C.","BCN","BC",-115.0970657,30.5515922,3578561
+3,"Baja California Sur","BAJA CALIFORNIA SUR","Baja California Sur","B. C. S.","BCS","BS",-112.0662031,25.9187109,788119
+4,"Campeche","CAMPECHE","Campeche","Camp.","CAM","CC",-90.3602773,18.8405542,984046
+5,"Coahuila","COAHUILA","Coahuila de Zaragoza","Coah.","COA","CL",-102.0440387,27.295443,3175643
+6,"Colima","COLIMA","Colima","Col.","COL","CM",-104.1151154,19.1306833,772842
+7,"Chiapas","CHIAPAS","Chiapas","Chis.","CHP","CS",-92.4729118,16.4852399,5647532
+8,"Chihuahua","CHIHUAHUA","Chihuahua","Chih.","CHH","CH",-106.4689395,28.8085381,3765325
+9,"Ciudad de México","CIUDAD DE MEXICO","Ciudad de México","CDMX","CMX","DF",-99.1394112,19.2768896,9031213
+10,"Durango","DURANGO","Durango","Dgo.","DUR","DG",-104.9133986,24.9236104,1852952
+11,"Guanajuato","GUANAJUATO","Guanajuato","Gto.","GUA","GT",-101.0126144,20.905432,6173718
+12,"Guerrero","GUERRERO","Guerrero","Gro.","GRO","GR",-99.9218338,17.6680028,3643974
+13,"Hidalgo","HIDALGO","Hidalgo","Hgo.","HID","HG",-98.8871131,20.4795567,3050720
+14,"Jalisco","JALISCO","Jalisco","Jal.","JAL","JC",-103.6132361,20.5807652,8325800
+15,"Edo. de México","MEXICO","Estado de México","Méx.","MEX","MC",-99.6453738,19.355957,17245551
+16,"Michoacán","MICHOACAN","Michoacán de Ocampo","Mich.","MIC","MN",-101.8781133,19.2070961,4791977
+17,"Morelos","MORELOS","Morelos","Mor.","MOR","MS",-99.0749623,18.7420779,2022568
+18,"Nayarit","NAYARIT","Nayarit","Nay.","NAY","NT",-104.8549659,21.802079,1270646
+19,"Nuevo León","NUEVO LEON","Nuevo León","N. L.","NLE","NL",-99.9689699,25.5725903,5533147
+20,"Oaxaca","OAXACA","Oaxaca","Oax.","OAX","OC",-96.4301302,16.9614432,4120741
+21,"Puebla","PUEBLA","Puebla","Pue.","PUE","PL",-97.9000945,19.0060693,6542484
+22,"Querétaro","QUERETARO","Querétaro","Qro.","QUE","QT",-99.8457964,20.8551761,2239112
+23,"Quintana Roo","QUINTANA ROO","Quintana Roo","Q. R.","ROO","QR",-88.1116704,19.6013221,1684541
+24,"San Luis Potosí","SAN LUIS POTOSI","San Luis Potosí","S. L. P.","SLP","SP",-100.4165087,22.5854598,2845959
+25,"Sinaloa","SINALOA","Sinaloa","Sin.","SIN","SL",-107.5091507,25.0014395,3131012
+26,"Sonora","SONORA","Sonora","Son.","SON","SR",-110.8099475,29.6877029,3037752
+27,"Tabasco","TABASCO","Tabasco","Tab.","TAB","TC",-92.593987,17.9376914,2544372
+28,"Tamaulipas","TAMAULIPAS","Tamaulipas","Tamps.","TAM","TS",-98.6408944,24.2910116,3620910
+29,"Tlaxcala","TLAXCALA","Tlaxcala","Tlax.","TLA","TL",-98.1685494,19.4285756,1364147
+30,"Veracruz","VERACRUZ","Veracruz de Ignacio de la Llave","Ver.","VER","VZ",-96.4185589,19.392958,8488447
+31,"Yucatán","YUCATAN","Yucatán","Yuc.","YUC","YN",-88.9261759,20.7574411,2233866
+32,"Zacatecas","ZACATECAS","Zacatecas","Zac.","ZAC","ZS",-102.6605573,23.2890189,1654593
