@@ -16,21 +16,6 @@ cd $root
 echo "Downloading files ;)"
 python ./scripts/processing/download.py
 
-echo "Parsing maps if any!"
-for file in `find $root_maps_dir -iname "*.txt" -mmin -10 -print | grep -v "tasas"`
-do
-    basename="$(basename -- $file)"
-    target=$(echo ${basename} | sed -E "s/_[0-9]+_[0-9]+.txt/\.csv/")
-    target=$(echo ${target} | sed -E "s/([0-9]{4}[0-9]{2})([0-9]{2})\./\1\/federal_\1\2\./")
-    target="${root_timeseries_dir}${target}"
-
-    if [ ! -f $target ]; then
-        echo "Creating csv file from map ${target}"
-        python ./scripts/processing/parse_map.py $file $target
-    fi
-done
-
-
 # processing each pdf file
 echo "Processing ZIP files!"
 for file in `find $root_zips_dir -name "*orig.zip"`

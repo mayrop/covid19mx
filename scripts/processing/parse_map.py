@@ -45,7 +45,7 @@ def load_from_file(file):
 def create_dataframe_from_json(text):
     first_row = text[0]
 
-    if len(first_row) not in [9, 10]:
+    if len(first_row) not in [9, 10, 11]:
         error = 'Could not parse map... length of text not valid {}'.format(first_row)
         raise Exception(error)
 
@@ -56,7 +56,11 @@ def create_dataframe_from_json(text):
     if len(first_row) == 10:
         columns.append('Date')
 
-    match = re.search(r'(\d+) de (\w+) de (\d+)', str(first_row[-1:]))
+    if len(first_row) == 11:
+        columns.append('Date')
+        columns.append('Unknown')
+
+    match = re.search(r'(\d+) de (\w+) de (\d+)', str(first_row[-2:]))
     
     if match:
         month = es_months().get(match[2].lower(), match[2].lower())

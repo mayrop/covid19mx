@@ -14,6 +14,9 @@ def main(args):
     download_map(URL_MAP)
 
     print('Downloding PDF files...')
+    download_map(URL_T_MAP, '/tasas/')    
+
+    print('Downloding PDF files...')
     download_pdfs(URL_PDFS)
 
     print('Downloding ZIP...')
