@@ -1,35 +1,36 @@
 Nº,NOMBRE DE VARIABLE,DESCRIPCIÓN DE VARIABLE,FORMATO O FUENTE
 1,FECHA_ACTUALIZACION,"La base de datos se alimenta diariamente, esta variable permite identificar la fecha de la ultima actualizacion.",AAAA-MM-DD
-2,ORIGEN,"La vigilancia centinela se realiza a través del sistema de unidades de salud monitoras de enfermedades respiratorias (USMER). Las USMER incluyen unidades médicas del primer, segundo o tercer nivel de atención y también participan como USMER las unidades de tercer nivel que por sus características contribuyen a ampliar el panorama de información epidemiológica, entre ellas las que cuenten con especialidad de neumología, infectología o pediatría. (Categorías en Catalógo Anexo).",CATÁLOGO: ORIGEN                                                              
-3,SECTOR,Identifica el tipo de institución del Sistema Nacional de Salud que brindó la atención.,CATÁLOGO: SECTOR                                                               
-4,ENTIDAD_UM,Identifica la entidad donde se ubica la unidad medica que brindó la atención.,CATALÓGO: ENTIDADES
-5,SEXO,Identifica al sexo del paciente.,CATÁLOGO: SEXO                              
-6,ENTIDAD_NAC,Identifica la entidad de nacimiento del paciente.,CATALÓGO: ENTIDADES
-7,ENTIDAD_RES,Identifica la entidad de residencia del paciente.,CATALÓGO: ENTIDADES
-8,MUNICIPIO_RES,Identifica el municipio de residencia del paciente.,CATALÓGO: MUNICIPIOS
-9,TIPO_PACIENTE,Identifica el tipo de atención que recibió el paciente en la unidad. Se denomina como ambulatorio si regresó a su casa o se denomina como hospitalizado si fue ingresado a hospitalización.,CATÁLOGO: TIPO_PACIENTE 
-10,FECHA_INGRESO,Identifica la fecha de ingreso del paciente a la unidad de atención.,AAAA-MM-DD
-11,FECHA_SINTOMAS,Idenitifica la fecha en que inició la sintomatología del paciente.,AAAA-MM-DD
-12,FECHA_DEF,Identifica la fecha en que el paciente falleció.,AAAA-MM-DD
-13,INTUBADO,Identifica si el paciente requirió de intubación.,CATÁLOGO: SI_ NO                                                                  
-14,NEUMONIA,Identifica si al paciente se le diagnosticó con neumonía.,CATÁLOGO: SI_ NO                                                                  
-15,EDAD,Identifica la edad del paciente.,NÚMERICA EN AÑOS
-16,NACIONALIDAD,Identifica si el paciente es mexicano o extranjero.,CATÁLOGO: NACIONALIDAD 
-17,EMBARAZO,Identifica si la paciente está embarazada.,CATÁLOGO: SI_ NO                                                                  
-18,HABLA_LENGUA_INDIG,Identifica si el paciente habla lengua índigena.,CATÁLOGO: SI_ NO                                                                  
-19,DIABETES,Identifica si el paciente tiene un diagnóstico de diabetes. ,CATÁLOGO: SI_ NO                                                                  
-20,EPOC,Identifica si el paciente tiene un diagnóstico de EPOC. ,CATÁLOGO: SI_ NO                                                                  
-21,ASMA,Identifica si el paciente tiene un diagnóstico de asma. ,CATÁLOGO: SI_ NO                                                                  
-22,INMUSUPR,Identifica si el paciente presenta inmunosupresión.,CATÁLOGO: SI_ NO                                                                  
-23,HIPERTENSION,Identifica si el paciente tiene un diagnóstico de hipertensión. ,CATÁLOGO: SI_ NO                                                                  
-24,OTRAS_COM,Identifica si el paciente tiene diagnóstico de otras enfermedades.,CATÁLOGO: SI_ NO                                                                  
-25,CARDIOVASCULAR,Identifica si el paciente tiene un diagnóstico de enfermedades cardiovasculares. ,CATÁLOGO: SI_ NO                                                                  
-26,OBESIDAD,Identifica si el paciente tiene diagnóstico de obesidad.,CATÁLOGO: SI_ NO                                                                  
-27,RENAL_CRONICA,Identifica si el paciente tiene diagnóstico de insuficiencia renal crónica.,CATÁLOGO: SI_ NO                                                                  
-28,TABAQUISMO,Identifica si el paciente tiene hábito de tabaquismo.,CATÁLOGO: SI_ NO                                                                  
-29,OTRO_CASO,Identifica si el paciente tuvo contacto con algún otro caso diagnósticado con SARS CoV-2,CATÁLOGO: SI_ NO                                                                  
-30,RESULTADO,"Identifica el resultado del análisis de la muestra reportado por el  laboratorio de la Red Nacional de Laboratorios de Vigilancia Epidemiológica (INDRE, LESP y LAVE). (Catálogo de resultados diagnósticos anexo).",CATÁLOGO: RESULTADO
-31,MIGRANTE,Identifica si el paciente es una persona migrante.,CATÁLOGO: SI_ NO                                                                  
-32,PAIS_NACIONALIDAD,Identifica la nacionalidad del paciente.,"TEXTO, 99= SE IGNORA"
-33,PAIS_ORIGEN,Identifica el país del que partió el paciente rumbo a México.,"TEXTO, 97= NO APLICA"
-34,UCI,Identifica si el paciente requirió ingresar a una Unidad de Cuidados Intensivos.,CATÁLOGO: SI_ NO                                                                  
+2,ID_REGISTRO,Número identificador del caso,TEXTO 
+3,ORIGEN,"La vigilancia centinela se realiza a través del sistema de unidades de salud monitoras de enfermedades respiratorias (USMER). Las USMER incluyen unidades médicas del primer, segundo o tercer nivel de atención y también participan como USMER las unidades de tercer nivel que por sus características contribuyen a ampliar el panorama de información epidemiológica, entre ellas las que cuenten con especialidad de neumología, infectología o pediatría. (Categorías en Catalógo Anexo).",CATÁLOGO: ORIGEN                                                              
+4,SECTOR,Identifica el tipo de institución del Sistema Nacional de Salud que brindó la atención.,CATÁLOGO: SECTOR                                                               
+5,ENTIDAD_UM,Identifica la entidad donde se ubica la unidad medica que brindó la atención.,CATALÓGO: ENTIDADES
+6,SEXO,Identifica al sexo del paciente.,CATÁLOGO: SEXO                              
+7,ENTIDAD_NAC,Identifica la entidad de nacimiento del paciente.,CATALÓGO: ENTIDADES
+8,ENTIDAD_RES,Identifica la entidad de residencia del paciente.,CATALÓGO: ENTIDADES
+9,MUNICIPIO_RES,Identifica el municipio de residencia del paciente.,CATALÓGO: MUNICIPIOS
+10,TIPO_PACIENTE,Identifica el tipo de atención que recibió el paciente en la unidad. Se denomina como ambulatorio si regresó a su casa o se denomina como hospitalizado si fue ingresado a hospitalización.,CATÁLOGO: TIPO_PACIENTE 
+11,FECHA_INGRESO,Identifica la fecha de ingreso del paciente a la unidad de atención.,AAAA-MM-DD
+12,FECHA_SINTOMAS,Idenitifica la fecha en que inició la sintomatología del paciente.,AAAA-MM-DD
+13,FECHA_DEF,Identifica la fecha en que el paciente falleció.,AAAA-MM-DD
+14,INTUBADO,Identifica si el paciente requirió de intubación.,CATÁLOGO: SI_ NO                                                                  
+15,NEUMONIA,Identifica si al paciente se le diagnosticó con neumonía.,CATÁLOGO: SI_ NO                                                                  
+16,EDAD,Identifica la edad del paciente.,NÚMERICA EN AÑOS
+17,NACIONALIDAD,Identifica si el paciente es mexicano o extranjero.,CATÁLOGO: NACIONALIDAD 
+18,EMBARAZO,Identifica si la paciente está embarazada.,CATÁLOGO: SI_ NO                                                                  
+19,HABLA_LENGUA_INDIG,Identifica si el paciente habla lengua índigena.,CATÁLOGO: SI_ NO                                                                  
+20,DIABETES,Identifica si el paciente tiene un diagnóstico de diabetes. ,CATÁLOGO: SI_ NO                                                                  
+21,EPOC,Identifica si el paciente tiene un diagnóstico de EPOC. ,CATÁLOGO: SI_ NO                                                                  
+22,ASMA,Identifica si el paciente tiene un diagnóstico de asma. ,CATÁLOGO: SI_ NO                                                                  
+23,INMUSUPR,Identifica si el paciente presenta inmunosupresión.,CATÁLOGO: SI_ NO                                                                  
+24,HIPERTENSION,Identifica si el paciente tiene un diagnóstico de hipertensión. ,CATÁLOGO: SI_ NO                                                                  
+25,OTRAS_COM,Identifica si el paciente tiene diagnóstico de otras enfermedades.,CATÁLOGO: SI_ NO                                                                  
+26,CARDIOVASCULAR,Identifica si el paciente tiene un diagnóstico de enfermedades cardiovasculares. ,CATÁLOGO: SI_ NO                                                                  
+27,OBESIDAD,Identifica si el paciente tiene diagnóstico de obesidad.,CATÁLOGO: SI_ NO                                                                  
+28,RENAL_CRONICA,Identifica si el paciente tiene diagnóstico de insuficiencia renal crónica.,CATÁLOGO: SI_ NO                                                                  
+29,TABAQUISMO,Identifica si el paciente tiene hábito de tabaquismo.,CATÁLOGO: SI_ NO                                                                  
+30,OTRO_CASO,Identifica si el paciente tuvo contacto con algún otro caso diagnósticado con SARS CoV-2,CATÁLOGO: SI_ NO                                                                  
+31,RESULTADO,"Identifica el resultado del análisis de la muestra reportado por el  laboratorio de la Red Nacional de Laboratorios de Vigilancia Epidemiológica (INDRE, LESP y LAVE). (Catálogo de resultados diagnósticos anexo).",CATÁLOGO: RESULTADO
+32,MIGRANTE,Identifica si el paciente es una persona migrante.,CATÁLOGO: SI_ NO                                                                  
+33,PAIS_NACIONALIDAD,Identifica la nacionalidad del paciente.,"TEXTO, 99= SE IGNORA"
+34,PAIS_ORIGEN,Identifica el país del que partió el paciente rumbo a México.,"TEXTO, 97= NO APLICA"
+35,UCI,Identifica si el paciente requirió ingresar a una Unidad de Cuidados Intensivos.,CATÁLOGO: SI_ NO                                                                  
