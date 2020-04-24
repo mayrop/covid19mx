@@ -38,8 +38,6 @@ do
         mv $source $target
         zip -9 -r $new_file $target
 
-        echo 
-
         echo "Removing temp files..."
         rm $file
         rm $target
