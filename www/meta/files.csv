@@ -1,6 +1,5 @@
 File,Basename,Extension,Type,Subtype,Last_Modified,Date,Month,State,State_Name
 /abiertos/todos/202004/20200423.zip,20200423,zip,abiertos,todos,2020-04-23 19:23:24,2020-04-23,04,,
-/abiertos/todos/202004/20200423.csv,20200423,csv,abiertos,todos,2020-04-23 13:24:20,2020-04-23,04,,
 /abiertos/todos/202004/20200422.zip,20200422,zip,abiertos,todos,2020-04-22 19:13:59,2020-04-22,04,,
 /abiertos/todos/202004/20200421.zip,20200421,zip,abiertos,todos,2020-04-21 19:32:04,2020-04-21,04,,
 /abiertos/todos/202004/20200420.zip,20200420,zip,abiertos,todos,2020-04-21 18:28:08,2020-04-20,04,,
@@ -25,7 +24,7 @@ File,Basename,Extension,Type,Subtype,Last_Modified,Date,Month,State,State_Name
 /abiertos/catalogos/si_no.csv,si_no,csv,abiertos,catalogos,2020-04-14 00:07:24,,,,
 /geo/estados.zip,estados,zip,geo,estados,2020-04-19 14:55:00,,,,
 /geo/municipios.zip,municipios,zip,geo,municipios,2020-04-19 14:54:50,,,,
-/meta/files.csv,files,csv,meta,files,2020-04-23 19:23:24,,,,
+/meta/files.csv,files,csv,meta,files,2020-04-23 21:04:17,,,,
 /otros/estados.csv,estados,csv,otros,estados,2020-04-21 23:24:10,,,,
 /otros/positivos.csv,positivos,csv,otros,positivos,2020-04-06 21:39:56,,,,
 /otros/municipios.csv,municipios,csv,otros,municipios,2020-04-19 15:27:17,,,,
