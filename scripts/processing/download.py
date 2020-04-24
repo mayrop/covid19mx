@@ -11,10 +11,13 @@ from utils import *
 
 def main(args):
     print('Downloding map...')
-    download_map(URL_MAP)
+    download_map(URL_MAP, '/all/')
 
-    print('Downloding PDF files...')
-    download_map(URL_T_MAP, '/tasas/')    
+    print('Downloding map by population...')
+    download_map(URL_T_MAP, '/tasas/')   
+
+    print('Downloding map by active cases...')
+    download_map(URL_A_MAP, '/active/')    
 
     print('Downloding PDF files...')
     download_pdfs(URL_PDFS)
