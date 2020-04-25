@@ -15,10 +15,10 @@ Datos de en formato PDF, CSV y TXT de los casos COVID-19 (Novel Coronavirus) en 
 Los archivos dentro de la carpeta www son accesibles por medio web a través del dominio https://datos.covid19in.mx/, por ejemplo [20200313.pdf](/www/tablas-diarias/positivos/202003/20200313.pdf) es accesible [aquí](https://datos.covid19in.mx/tablas-diarias/positivos/202003/20200313.pdf).
 
 ## Datos Disponibles :chart_with_upwards_trend:
-* [Datos Abiertos - COVID-19 en México](/www/abiertos/todos/202004). <!-- UPDATE-OPENDATA_ES:START - Do not remove or modify this section -->Última Actualización: 2020-04-24<!-- UPDATE-OPENDATA_ES:END -->  
-  ** [Series de Tiempo](https://www.covid19in.mx/datos/series-de-tiempo/). Construidas a partir de los datos abiertos (desde el 12 de Abril de 2020), y del mapa interactivo antes para datos antes del 12 de Abril de 2020. <!-- UPDATE-TIMESERIES_ES:START - Do not remove or modify this section -->Última Actualización: 2020-04-24<!-- UPDATE-TIMESERIES_ES:END -->
+* [Datos Abiertos - COVID-19 en México](/www/abiertos/todos/202004). _<!-- UPDATE-OPENDATA_ES:START - Do not remove or modify this section -->Última Actualización: 2020-04-24<!-- UPDATE-OPENDATA_ES:END -->_  
+  * [Series de Tiempo](https://www.covid19in.mx/datos/series-de-tiempo/). Construidas a partir de los datos abiertos (desde el 12 de Abril de 2020), y del mapa interactivo antes para datos antes del 12 de Abril de 2020. _<!-- UPDATE-TIMESERIES_ES:START - Do not remove or modify this section -->Última Actualización: 2020-04-24<!-- UPDATE-TIMESERIES_ES:END -->_  
 * [Tablas Diarias de Casos Positivos y Sospechosos (Comunicado Técnico Diario)](https://www.covid19in.mx/docs/datos/tablas-casos/).  
-  ** Las cuales fueron deprecadas el 19 de Abril de 2020, cuando la SSa dejó de publicarlas. 
+  * Las cuales fueron deprecadas el 19 de Abril de 2020, cuando la SSa dejó de publicarlas. 
 * Coordenadas Geográficas de cada uno de los [municipios](/www/otros/ciudades.csv) y [entidades federativas](/www/otros/estados.csv) en México.
 * Población (2019) de cada uno de los [municipios](/www/otros/ciudades.csv) y [entidades federativas](/www/otros/estados.csv) en México.
 
@@ -75,9 +75,9 @@ Data in PDF, CSV and TXT about the COVID-19 (Novel Coronavirus) cases in México
 The files inside the www folder can be accessed through the web through the https://datos.covid19in.mx/ domain. For example, [20200313.pdf](/www/tablas-diarias/positivos/202003/20200313.pdf) can be accessed [here](https://datos.covid19in.mx/tablas-diarias/positivos/202003/20200313.pdf).
 
 ## Available Data :chart_with_upwards_trend:
-* [Open Data - COVID-19 in México](/www/abiertos/todos/202004). <!-- UPDATE-OPENDATA_ES:START - Do not remove or modify this section -->Última Actualización: 2020-04-24<!-- UPDATE-OPENDATA_ES:END -->
+* [Open Data - COVID-19 in México](/www/abiertos/todos/202004). <!-- UPDATE-OPENDATA_EN:START - Do not remove or modify this section -->Last Update: 2020-04-24<!-- UPDATE-OPENDATA_EN:END -->  
+  * [Time Series](https://www.covid19in.mx/en/data/time-series/)
 * [Daily Tables for Positive and Suspected Cases (Daily Technical Release)](https://www.covid19in.mx/docs/datos/tablas-casos/)
-* [Time Series](https://www.covid19in.mx/en/data/time-series/)
 * Geographic Coordinates for each one of the [cities](/www/otros/ciudades.csv) and [states](/www/otros/estados.csv) in México.
 * Population (2020) for each one of the [cities](/www/otros/ciudades.csv) y [states](/www/otros/estados.csv) in México.
 
