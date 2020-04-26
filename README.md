@@ -16,7 +16,7 @@ Los archivos dentro de la carpeta www son accesibles por medio web a través del
 
 ## Datos Disponibles :chart_with_upwards_trend:
 * [Datos Abiertos - COVID-19 en México](/www/abiertos/todos/202004). _<!-- UPDATE-OPENDATA_ES:START - Do not remove or modify this section -->Última Actualización: 2020-04-25<!-- UPDATE-OPENDATA_ES:END -->_  
-  * [Series de Tiempo](https://www.covid19in.mx/datos/series-de-tiempo/). Construidas a partir de los datos abiertos (desde el 12 de Abril de 2020), y del mapa interactivo antes para datos antes del 12 de Abril de 2020. _<!-- UPDATE-TIMESERIES_ES:START - Do not remove or modify this section -->Última Actualización: 2020-04-24<!-- UPDATE-TIMESERIES_ES:END -->_  
+  * [Series de Tiempo](https://www.covid19in.mx/datos/series-de-tiempo/). Construidas a partir de los datos abiertos (desde el 12 de Abril de 2020), y del mapa interactivo antes para datos antes del 12 de Abril de 2020. _<!-- UPDATE-TIMESERIES_ES:START - Do not remove or modify this section -->Última Actualización: 2020-04-25<!-- UPDATE-TIMESERIES_ES:END -->_  
 * [Tablas Diarias de Casos Positivos y Sospechosos (Comunicado Técnico Diario)](https://www.covid19in.mx/docs/datos/tablas-casos/).  
   * Las cuales fueron deprecadas el 19 de Abril de 2020, cuando la SSa dejó de publicarlas. 
 * Coordenadas Geográficas de cada uno de los [municipios](/www/otros/ciudades.csv) y [entidades federativas](/www/otros/estados.csv) en México.
