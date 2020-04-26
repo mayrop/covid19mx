@@ -9,8 +9,6 @@ setwd(dirname(rprojroot::thisfile()))
 # L o a d i n g . h a z e l . p a c k a g e...
 # https://stackoverflow.com/questions/1815606/determine-path-of-the-executing-script
 
-# https://stackoverflow.com/questions/1815606/determine-path-of-the-executing-script
-
 ###################################
 # F u n c t i o n s
 print("Loading Functions")
@@ -38,6 +36,3 @@ data <- list(
   covid = init_files(config$data$covid_folder),
   daily_tables = init_files(config$data$daily_tables_folder)
 )
-
-print("data now available in `data` varaible")
-print(names(data))

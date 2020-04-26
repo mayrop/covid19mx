@@ -1,17 +1,18 @@
 default:
   seed: 2019
-  n_resampling: 10 
+  n_resampling: 10
   print: TRUE
   data:
     daily_tables_folder: "../../www/tablas-diarias"
     covid_folder: "../../www/datos-abiertos/diarios"
     covid_descriptions: "../../www/datos-abiertos/descriptores.yaml"
     geo:
-      state: "../../data/geo/conjunto_de_datos/areas_geoestadisticas_estatales.shp"
-      city: "../../data/geo/conjunto_de_datos/areas_geoestadisticas_municipales.shp"
+      state: "../../data/geo/simple/estados.shp"
+      city: "../../data/geo/simple/municipios.shp"
     summary:
       cities: "../../www/otros/ciudades.csv"
-      cities_segregated: "../../www/otros/ciudades_segregados.csv"
+      cities_es: "../../www/otros/municipios.csv"
+      cities_segregated: "../../www/otros/municipios_segregados.csv"
       states: "../../www/otros/estados.csv"
       states_segregated: "../../www/otros/estados_segregados.csv"
   settings:
@@ -29,7 +30,7 @@ default:
         "config"
       )
     github: !expr c(
-        "mayrop/covid19mx"
+        "mayrop/datosmx"
       )
     sources: !expr c()
   theme:
@@ -46,9 +47,9 @@ default:
     # brewer.pal(n=10, name="RdYlBu")
     # caching...
     correlations: !expr c(
-        "#A50026", "#D73027", 
-        "#F46D43", "#FDAE61", 
-        "#FEE090", "#E0F3F8", 
-        "#ABD9E9", "#74ADD1", 
+        "#A50026", "#D73027",
+        "#F46D43", "#FDAE61",
+        "#FEE090", "#E0F3F8",
+        "#ABD9E9", "#74ADD1",
         "#4575B4", "#313695"
       )
