@@ -27,7 +27,7 @@ generate_all_federal <- function(df, destination) {
     date_file <- gsub("-", "", unique(DF$Fecha))
     month <- gsub("(\\d{4})(\\d{2})(\\d{2})", "\\1\\2", date_file)
 
-    write.csv(DF, paste0(destination, "federal/", month, "/federal_", date_file,".csv"), row.names = FALSE, na = "")
+    write.csv(DF, paste0(destination, "federal/", month, "/federal_", date_file,".csv"), quote = FALSE, row.names = FALSE, na = "")
     return(DF)
   }
 
@@ -39,7 +39,7 @@ generate_all_federal <- function(df, destination) {
 
 generate_all_state <- function(df, destination) {
   customFun  = function(DF) {
-    write.csv(DF, paste0(destination, "estatal/estatal_", tolower(unique(DF$Estado)),".csv"), row.names = FALSE, na = "")
+    write.csv(DF, paste0(destination, "estatal/estatal_", tolower(unique(DF$Estado)),".csv"), quote = FALSE, row.names = FALSE, na = "")
     return(DF)
   }
 
@@ -47,6 +47,7 @@ generate_all_state <- function(df, destination) {
     dplyr::group_by(Estado) %>%
     dplyr::do(customFun(.))
 }
+
 
 generate_main_file <- function(destination) {
   files <- init_files(paste0(destination, "federal/"))
@@ -114,7 +115,7 @@ generate_main_file <- function(destination) {
       dplyr::everything()
     ) 
 
-  write.csv(rows, paste0(destination, "/agregados/federal.csv"), row.names = FALSE, na = "")
+  write.csv(rows, paste0(destination, "/agregados/federal.csv"), quote = FALSE, row.names = FALSE, na = "")
   
   rows
 }
@@ -187,7 +188,7 @@ generate_aggregated_file <- function(df, destination) {
       dplyr::everything()
     )
 
-  write.csv(df, paste0(destination, "/agregados/totales.csv"), row.names = FALSE)
+  write.csv(df, paste0(destination, "/agregados/totales.csv"), quote = FALSE, row.names = FALSE)
   df
 }
 
@@ -205,4 +206,9 @@ df <- read.csv(paste0(destination, "agregados/federal.csv"))
 df <- fix_na_in_rows(df)
 generate_all(df, destination)
 generate_aggregated_file(df, destination)
+
+
+
+
+
 
