@@ -1,5 +1,6 @@
 import datetime
 import re
+import os
 import requests
 import hashlib
 from urllib.request import Request, urlopen
@@ -10,25 +11,7 @@ from pathlib import Path
 # F i l  e s
 #----------------------------------------------------------------
 
-def _get_from_cache(url, name=''):
-    file = cache_file(url, name)
-
-    if file.is_file():
-        return file.read_text()
-
-
-def cache_file(url, name=''):
-    if not name:
-        name = '{}'.format(
-            hashlib.sha224(url.encode()).hexdigest()
-        )
-
-    path = 'cache/ignore/{}.txt'.format(name)
-    
-    return Path(path)
-
-
-def _get_from_remote_get(url):
+def request_url_get(url, name='', force=True):
     headers = {
         'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) ' 
         'AppleWebKit/537.11 (KHTML, like Gecko) '
@@ -42,30 +25,17 @@ def _get_from_remote_get(url):
 
     req = Request(url=url, headers=headers)
     
-    return urlopen(req).read()  
+    return urlopen(req).read() 
 
 
-def request_url_get(url, name='', force=True):
-    content = ''
+def create_file_dir(file):
+    outdir = os.path.dirname(file)
 
-    if not force:
-        content = _get_from_cache(url, name)
+    if not os.path.exists(outdir): 
+        output_dir = Path(outdir)
 
-    if not content:
-        content = _get_from_remote_get(url)
-        cache_file(url, name).write_bytes(content)
-
-    return content  
-
-
-# https://stackoverflow.com/questions/9419162/download-returned-zip-file-from-url
-def request_zip(url, save_path, chunk_size=128):
-    r = requests.get(url, stream=True)
-    with open(save_path, 'wb') as fd:
-        for chunk in r.iter_content(chunk_size=chunk_size):
-            fd.write(chunk)
-
-
+        print("Creating folder: {}".format(outdir))
+        output_dir.mkdir(parents=True, exist_ok=True)
 
 #----------------------------------------------------------------
 # S t r i n g s
