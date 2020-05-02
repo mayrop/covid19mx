@@ -2,6 +2,16 @@ import re
 from helpers import *
 from utils import *
 
+def create_file_dir(file):
+    outdir = os.path.dirname(file)
+
+    if not os.path.exists(outdir): 
+        output_dir = Path(outdir)
+
+        print("Creating folder: {}".format(outdir))
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+
 # http://187.191.75.115/gobmx/salud/datos_abiertos/datos_abiertos_covid19.zip
 def download_zip(url):
     contents = request_url_get(url)
@@ -12,6 +22,9 @@ def download_zip(url):
         url = match[4]
         file = get_zip_file(match, '_orig')
         new_file = get_zip_file(match)
+
+        create_file_dir(file)
+        create_file_dir(new_file)
 
         if file.is_file() or new_file.is_file():
             print('ZIP file exists, skipping')

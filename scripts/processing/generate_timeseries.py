@@ -61,7 +61,18 @@ def main(args):
     summary_df = summary_df.merge(last_14_days, on='Estado', how='left')
     summary_df = summary_df.merge(last_7_days, on='Estado', how='left')
 
+    create_file_dir(destination)
     summary_df.to_csv(destination, index=False)  
+
+
+def create_file_dir(file):
+    outdir = os.path.dirname(file)
+
+    if not os.path.exists(outdir): 
+        output_dir = Path(outdir)
+
+        print("Creating folder: {}".format(outdir))
+        output_dir.mkdir(parents=True, exist_ok=True)
 
 
 def get_main_series(df, field='ENTIDAD_UM', value='ALL_TIME', prefix='', suffix=''):
