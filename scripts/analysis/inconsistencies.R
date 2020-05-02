@@ -27,6 +27,7 @@ first_in_row <- function(row, default = NA) {
   return(default)
 }
 
+
 get_by_state <- function(df, status) {
   lapply(apply(df == status, 1, which), names) %>% 
     sapply(first_in_row) %>%
@@ -60,6 +61,17 @@ situation <- paste0("ARCHIVO_", gsub("-", "_", max(rows$ARCHIVO)))
 # getting the latest updates of files
 max_date <- max(rows$ARCHIVO)
 
+
+# getting total days 
+total_days <- rows %>% 
+  dplyr::select(ARCHIVO) %>%
+  dplyr::mutate(ARCHIVO = paste0("ARCHIVO_", gsub("-", "_", ARCHIVO))) %>%
+  dplyr::arrange(ARCHIVO) %>%
+  unique(.) %>%
+  dplyr::mutate(
+    DIA_PRIMERA_APARICION = 1:(dplyr::n())
+  )
+
 # creating df by patient
 df <- rows %>% 
   dplyr::select(ARCHIVO, ID_REGISTRO, RESULTADO) %>%
@@ -69,13 +81,23 @@ df <- rows %>%
 # creating all the metadata for each patient
 df <- df %>%
   dplyr::mutate(
+    ARCHIVO_PRIMERA_APARICION = lapply(apply(df == 1 | df == 2 | df == 3, 1, which), names) %>% 
+      sapply(first_in_row),
+    DIAS_TOTALES = lapply(apply(df == 1 | df == 2 | df == 3, 1, which), names) %>% 
+      sapply(length)
+  ) %>% 
+  dplyr::left_join(
+    total_days, by = c("ARCHIVO_PRIMERA_APARICION" = "ARCHIVO")
+  ) %>%
+  dplyr::mutate(
     FECHA_SOSPECHOSO = get_by_state(df, 3),
     FECHA_POSITIVO = get_by_state(df, 1),
     FECHA_NEGATIVO = get_by_state(df, 2),
     # didn't work with %in% ?
-    ULTIMA_APARICION_COL = lapply(apply(df == 1 | df == 2 | df == 3, 1, which), names) %>% 
+    ARCHIVO_ULTIMA_APARICION = lapply(apply(df == 1 | df == 2 | df == 3, 1, which), names) %>% 
       sapply(last_in_row),
-    ULTIMA_APARICION = ULTIMA_APARICION_COL %>% convert_to_date(.),
+    PRIMERA_APARICION = ARCHIVO_PRIMERA_APARICION %>% convert_to_date(.),
+    ULTIMA_APARICION = ARCHIVO_ULTIMA_APARICION %>% convert_to_date(.),
     # remember !! is to evaluate right away
     SITUACION_ACTUAL = !!rlang::sym(situation),
     ULTIMA_SITUACION = NA,
@@ -86,6 +108,7 @@ df <- df %>%
       TRUE ~ ""
     ),
     REMOVIDO = as.character(ULTIMA_APARICION) != max_date,
+    REMOVIDO_PARCIALMENTE  = DIAS_TOTALES + DIA_PRIMERA_APARICION != (dim(total_days)[1] + 1)
   )
 
 # took me ages!
@@ -94,7 +117,7 @@ df <- df %>%
 df$ULTIMA_SITUACION = sapply( 
   seq_len(nrow(df)), 
   function(i) { 
-    df[i, df$ULTIMA_APARICION_COL[[i]], drop = TRUE]
+    df[i, df$ARCHIVO_ULTIMA_APARICION[[i]], drop = TRUE]
   })
 
 df <- df %>%
@@ -104,13 +127,21 @@ df <- df %>%
   )
 
 
-inconsistencies <- df %>% dplyr::filter(REMOVIDO == TRUE | INCONSISTENCIA == TRUE)
+df_2 <- df %>%
+  dplyr::select(
+    ID_REGISTRO,
+    dplyr::starts_with("ARCHIVO_2020")
+  ) %>%
+  tidyr::gather(ARCHIVO, VALOR, -ID_REGISTRO)
+
+inconsistencies <- df %>% dplyr::filter(REMOVIDO == TRUE | INCONSISTENCIA == TRUE | REMOVIDO_PARCIALMENTE == TRUE)
 
 # results
 table(df$REMOVIDO)
 table(df$ULTIMA_APARICION) %>% as.data.frame() %>% dplyr::filter(Var1 != max_date)
 df %>% dplyr::filter(CAMBIO != "") %>% dplyr::pull(CAMBIO) %>% table(.)
 table(inconsistencies %>% dplyr::filter(REMOVIDO == TRUE) %>% dplyr::pull(ULTIMA_SITUACION_FACTOR))
+table(df$REMOVIDO_PARCIALMENTE)
 
 write.csv(inconsistencies, "bak/inconstencias_04_27.csv", quote = FALSE)
           
