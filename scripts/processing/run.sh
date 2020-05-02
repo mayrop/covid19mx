@@ -64,7 +64,7 @@ echo "Generating meta data files!"
 python ./scripts/processing/generate_meta_data.py 
 
 echo "Updating the last update time for open data!"
-last_update_od=$(find $root_zips_dir -iname \*.zip | sort -r | head -n 1 | sed -E "s@.*/([0-9]{4})([0-4]{2})([0-9]+).zip@\1-\2-\3@g")
+last_update_od=$(find $root_zips_dir -iname \*.zip | sort -r | head -n 1 | sed -E "s@.*/([0-9]{4})([0-9]{2})([0-9]+).zip@\1-\2-\3@g")
 
 # spanish updates
 sed -ri -- "s@(<!-- UPDATE_ES:START.*>).*?(<!-- UPDATE_ES:END -->)@\1Última Actualización: ${last_update_od}\2@g" README.md
