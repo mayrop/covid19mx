@@ -1,0 +1,37 @@
+data:
+  extract:
+    map:
+      active:
+        output: /cache/mapa/active/{{Y}}{{m}}{{d}}_{{time}}.txt
+        source: https://covid19.sinave.gob.mx/mapaactivos.aspx/Grafica22
+      all:
+        output: /cache/mapa/all/{{Y}}{{m}}{{d}}_{{time}}.txt
+        source: https://covid19.sinave.gob.mx/Log.aspx/Grafica22
+      population:
+        output: /cache/mapa/tasas/{{Y}}{{m}}{{d}}_{{time}}.txt
+        source: https://covid19.sinave.gob.mx/Mapatasas.aspx/Grafica22
+    pdf:
+      output: /www/tablas-diarias/comunicado/{{Y}}{{m}}/{{Y}}{{m}}{{d}}.pdf
+      source: https://www.gob.mx/salud/documentos/coronavirus-covid-19-comunicado-tecnico-diario-238449
+    zip:
+      output: /cache/zips/{{Y}}{{m}}/{{Y}}{{m}}{{d}}.zip
+      source: https://www.gob.mx/salud/documentos/datos-abiertos-152127
+  transform:
+    meta:
+      output: /www/meta/
+    timeseries:
+      state_um:
+        field: ENTIDAD_UM
+        output: /www/series-de-tiempo/estatal/estatal_{{iso}}.csv
+      national_um:
+        field: ENTIDAD_UM
+        output: /www/series-de-tiempo/federal/{{Y}}{{m}}/federal_{{Y}}{{m}}{{d}}.csv
+        aggregated: /www/series-de-tiempo/agregados/federal.csv
+        totals: /www/series-de-tiempo/agregados/totales.csv
+      state_res:
+        field: ENTIDAD_RES
+        files: /www/series-de-tiempo/estatal_res/estatal_{{iso}}.csv
+      national_res:
+        field: ENTIDAD_RES
+        files: /www/series-de-tiempo/federal_res/{{Y}}{{m}}/federal_{{Y}}{{m}}{{d}}.csv
+  last: 'ymlfinal'
