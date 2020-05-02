@@ -6,6 +6,8 @@ on:
       - ci
   schedule:
     - cron: "0,5,10,15,20,25,30 0 * * *"      
+  repository_dispatch:
+    types: [updated]
 
 jobs:
   build:
