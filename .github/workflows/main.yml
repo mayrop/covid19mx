@@ -1,3 +1,5 @@
+name: triggers an update for the covid19in.mx site
+
 on:
   # Trigger the workflow on push or pull request,
   # but only for the master branch
