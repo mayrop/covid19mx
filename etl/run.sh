@@ -29,29 +29,66 @@ parse_yaml() {
 init_root
 
 # include custom functions
-. $root/etl/functions.sh
+. ${root}/etl/functions.sh
 
 # read yaml file
-eval $(parse_yaml "$root/config.yml" "config_")
+eval $(parse_yaml "${root}/config.yml" "config_")
 
 echo "Moving to the root of the repo!"
 cd $root
 
+# echo "Running Extraction Scripts"
+# # loop through all configuration extract scripts and execute them
+# for source_var in `compgen -A variable | grep "extract" | grep "source"`
+# do
+#    source="${!source_var}"
+   
+#    destination_var=$(echo ${source_var} | sed -e "s/source/output/")
+#    destination="${!destination_var}"
+
+#    handler_var=$(echo ${source_var} | sed -e "s/source/handler/")
+#    handler="${!handler_var}"
+
+#    data_type=$(echo ${source_var} | sed -e "s/config_data_extract_//" | cut -d'_' -f 1)
+
+#    echo "Running: ${data_type} $source ${root}${destination}"
+#    python ${root}/etl/download.py ${data_type} ${source} ${root}${destination}
+# done
+
+
+echo "Running Transforming Scripts (ZIP)"
 # loop through all configuration extract scripts and execute them
-for source_var in `compgen -A variable | grep "extract" | grep "source"`
+zips=$(compgen -A variable | grep "transform" | grep "zip")
+source=$(echo ${zips} | tr " " "\n" | grep "source")
+output=$(echo ${zips} | tr " " "\n" | grep "output")
+pattern=$(echo ${zips} | tr " " "\n" | grep "pattern")
+
+for file in `find ${root}${!source} -name "*.zip"`
 do
-    source="${!source_var}"
-    
-    destination_var=$(echo ${source_var} | sed -e "s/source/output/")
-    destination="${!destination_var}"
-
-    handler_var=$(echo ${source_var} | sed -e "s/source/handler/")
-    handler="${!handler_var}"
-
-    data_type=$(echo ${source_var} | sed -e "s/config_data_extract_//" | cut -d'_' -f 1)
-
-    python ${root}/etl/download.py $data_type $source ${root}${destination}
+   echo "Moving ZIP file..."
+   python ${root}/etl/transform.py --type zip -s ${file} -d ${root}${!output} -p ${!pattern}
 done
+# echo ${!source}
+# echo ${!pattern}
+# echo ${!output}
+# for source_var in ``
+# do
+#    source="${!source_var}"
+
+#    echo $source_var | cut -d'_' -f 5
+   
+#    # destination_var=$(echo ${source_var} | sed -e "s/source/output/")
+#    # destination="${!destination_var}"
+
+#    # handler_var=$(echo ${source_var} | sed -e "s/source/handler/")
+#    # handler="${!handler_var}"
+
+#    # data_type=$(echo ${source_var} | sed -e "s/config_data_extract_//" | cut -d'_' -f 1)
+
+#    # echo "Running: ${data_type} $source ${root}${destination}"
+#    # python ${root}/etl/download.py ${data_type} ${source} ${root}${destination}
+# done
+
 
 # readme_file="${root}/README.md"
 
