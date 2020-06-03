@@ -1,8 +1,18 @@
 #!/bin/bash
 
-tmpfile=$(mktemp)
-declare -p > "$tmpfile"
+#Accept Arguments
+while [[ $# -gt 1 ]]
+do
+key="$1"
+case $key in
+   -e|--extract)
+   EXTRACT="$2"; shift;; 
+esac
+shift
+done
 
+# -- .- -.-- .-. --- .--. # .-- .- ... # .... . .-. .
+# Functions
 init_root() {
    directory=$(cd `dirname $0` && pwd)
    root=$(dirname $directory)
@@ -24,37 +34,40 @@ parse_yaml() {
       }
    }'
 }
+# -- .- -.-- .-. --- .--. # .-- .- ... # .... . .-. .
 
-# evaluate 
+# Evaluate
 init_root
-
-# include custom functions
-. ${root}/etl/functions.sh
-
-# read yaml file
+# Read yaml file
 eval $(parse_yaml "${root}/config.yml" "config_")
 
 echo "Moving to the root of the repo!"
 cd $root
 
-# echo "Running Extraction Scripts"
-# # loop through all configuration extract scripts and execute them
-# for source_var in `compgen -A variable | grep "extract" | grep "source"`
-# do
-#    source="${!source_var}"
-   
-#    destination_var=$(echo ${source_var} | sed -e "s/source/output/")
-#    destination="${!destination_var}"
+# -- .- -.-- .-. --- .--. # .-- .- ... # .... . .-. .
 
-#    handler_var=$(echo ${source_var} | sed -e "s/source/handler/")
-#    handler="${!handler_var}"
+# Downloading files
+if [[ $EXTRACT ]]; then
+   echo "Running Extraction Scripts"
+   # loop through all configuration extract scripts and execute them
+   for source_var in `compgen -A variable | grep "extract" | grep "source"`
+   do
+      source="${!source_var}"
+      
+      destination_var=$(echo ${source_var} | sed -e "s/source/output/")
+      destination="${!destination_var}"
 
-#    data_type=$(echo ${source_var} | sed -e "s/config_data_extract_//" | cut -d'_' -f 1)
+      handler_var=$(echo ${source_var} | sed -e "s/source/handler/")
+      handler="${!handler_var}"
 
-#    echo "Running: ${data_type} $source ${root}${destination}"
-#    python ${root}/etl/download.py ${data_type} ${source} ${root}${destination}
-# done
+      data_type=$(echo ${source_var} | sed -e "s/config_data_extract_//" | cut -d'_' -f 1)
 
+      echo "Running: ${data_type} $source ${root}${destination}"
+      python ${root}/etl/download.py ${data_type} ${source} ${root}${destination}
+   done
+fi
+
+# -- .- -.-- .-. --- .--. # .-- .- ... # .... . .-. .
 
 echo "Running Transforming Scripts (ZIP)"
 # loop through all configuration extract scripts and execute them
@@ -158,6 +171,4 @@ done
 # sed -ri -- "s@(<!-- UPDATE-OPENDATA_EN:START.*>).*?(<!-- UPDATE-OPENDATA_EN:END -->)@\1Last Update: ${last_update_od}\2@g" README.md
 # sed -ri -- "s@(<!-- UPDATE-TIMESERIES_EN:START.*>).*?(<!-- UPDATE-TIMESERIES_EN:END -->)@\1Last Update: ${last_update_od}\2@g" README.md
 
-
 # declare -p | diff "$tmpfile" -
-rm -f "$tmpfile"
