@@ -3,7 +3,7 @@ import requests
 import sys
 
 from pathlib import Path
-from helpers import logger, es_months, request_url_get, create_file_dir
+from helpers import logger, es_months, request_url_get, create_file_dir, interpolate_date
 
 # http://187.191.75.115/gobmx/salud/datos_abiertos/datos_abiertos_covid19.zip
 def download_zip(source, destination):
@@ -14,10 +14,11 @@ def download_zip(source, destination):
         cache_file = Path('{}'.format(zip_path))
 
         if cache_file.is_file():
-            logger.debug('ZIP file exists, skipping {}'.format(cache_file))
-        else:
-            logger.debug('ZIP file does not exist, downloading')
-            request_zip(zip_url, cache_file)
+            logger.debug('ZIP file exists. Skipping {}'.format(cache_file))
+            return
+
+        logger.debug('ZIP file does not exist, downloading...')
+        request_zip(zip_url, cache_file)
 
     except BaseException as error:
         logger.error('ZIP could not be downloaded: {}'.format(error))
@@ -28,17 +29,15 @@ def get_zip_path_and_url(destination, text):
     regex = r'(\d{2})/(\d{2})/(\d{4})</td>.*?<a href="([^"]+\.zip)">VER</a>'
     match = re.search(regex, str(text))
 
-    if match:
-        url = match[4]
-        year, month, day = get_zip_date(match)
+    if not match:
+        raise Exception('No match found for ZIP in text...')
 
-        destination = re.sub(r'{{Y}}', year, destination)
-        destination = re.sub(r'{{m}}', month, destination)
-        destination = re.sub(r'{{d}}', day, destination)  
+    url = match[4]
+    year, month, day = get_zip_date(match)
 
-        return destination, url
-    
-    raise Exception('No match found for ZIP')
+    destination = interpolate_date(destination, year, month, day)
+
+    return destination, url    
 
 
 def get_zip_date(match):

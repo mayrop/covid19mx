@@ -25,28 +25,6 @@ def download_pdf(source, destination):
 
         logger.debug('Found {} target files'.format(len(links)))
 
-        for link in links:
-            try:
-                url = '{}{}'.format('https://www.gob.mx', link.get('href'))
-                pdf_path = get_pdf_file(url, destination)
-
-                cache_file = Path('{}'.format(pdf_path))
-
-                if (cache_file.is_file()):
-                    logger.debug('Cache file exists, skipping: {}'.format(pdf_path))
-                
-                else:
-                    logger.debug('PDF file does not exist, downloading')
-                    create_file_dir(cache_file)
-
-                    response = requests.get(url)
-
-                    cache_file.write_bytes(response.content)
-
-            except BaseException as error:
-                logger.error('Exception found for {}'.format(link.get('href')))
-                logger.error('{}'.format(error))
-
     except BaseException as error:
         logger.error('Exception found: {}'.format(error))
 
@@ -78,3 +56,24 @@ def get_pdf_date(text):
     raise Exception('No date found in text {}'.format(text))
 
 
+def process_links(links, destination):
+    for link in links:
+        try:
+            url = '{}{}'.format('https://www.gob.mx', link.get('href'))
+            pdf_path = get_pdf_file(url, destination)
+
+            cache_file = Path('{}'.format(pdf_path))
+
+            if cache_file.is_file():
+                logger.debug('Cache file exists, skipping: {}'.format(pdf_path))
+                continue
+
+            logger.debug('PDF file does not exist, downloading')
+            
+            create_file_dir(cache_file)
+            response = requests.get(url)
+            cache_file.write_bytes(response.content)
+
+        except BaseException as error:
+            logger.error('Exception found for {}'.format(link.get('href')))
+            logger.error('{}'.format(error))
