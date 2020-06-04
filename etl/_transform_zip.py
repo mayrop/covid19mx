@@ -1,6 +1,7 @@
 import re
 import zipfile
 import os
+import sys
 
 from exceptions import AlreadyProcessedError
 from pathlib import Path
@@ -17,7 +18,8 @@ def transform_zip(source, destination, opts):
         logger.debug(error)
 
     except BaseException as error:
-        logger.error('Error: {}'.format(error))
+        logger.error(error)
+        sys.exit(1)
     
 
 

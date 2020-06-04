@@ -1,5 +1,6 @@
 import re
 import requests
+import sys
 
 from pathlib import Path
 from helpers import logger, es_months, request_url_get, create_file_dir
@@ -20,6 +21,7 @@ def download_zip(source, destination):
 
     except BaseException as error:
         logger.error('ZIP could not be downloaded: {}'.format(error))
+        sys.exit(1)
 
 
 def get_zip_path_and_url(destination, text):
