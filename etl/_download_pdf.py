@@ -7,7 +7,7 @@ import requests
 from pathlib import Path
         
 from bs4 import BeautifulSoup
-from helpers import request_url_get, create_file_dir
+from helpers import logger, request_url_get, create_file_dir
 
 def download_pdf(source, destination):
     try:
@@ -18,12 +18,12 @@ def download_pdf(source, destination):
         html = soup.find_all('div', {'class': 'table-responsive'})
 
         if len(html) == 0:
-            print('No links found...')
+            logger.error('No links found...')
             return
 
         links = html[0].find_all('a')
 
-        print('Found {} target files'.format(len(links)))
+        logger.debug('Found {} target files'.format(len(links)))
 
         for link in links:
             try:
@@ -33,10 +33,10 @@ def download_pdf(source, destination):
                 cache_file = Path('{}'.format(pdf_path))
 
                 if (cache_file.is_file()):
-                    print('>>Cache file exists, skipping: {}'.format(pdf_path))
+                    logger.debug('Cache file exists, skipping: {}'.format(pdf_path))
                 
                 else:
-                    print('>>PDF file does not exist, downloading')
+                    logger.debug('PDF file does not exist, downloading')
                     create_file_dir(cache_file)
 
                     response = requests.get(url)
@@ -44,11 +44,11 @@ def download_pdf(source, destination):
                     cache_file.write_bytes(response.content)
 
             except BaseException as error:
-                print('Exception found for {}'.format(link.get('href')))
-                print('Error {}'.format(error))
+                logger.error('Exception found for {}'.format(link.get('href')))
+                logger.error('{}'.format(error))
 
     except BaseException as error:
-        print('Exception found while trying to get pdfs {}'.format(error))
+        logger.error('Exception found: {}'.format(error))
 
 
 def get_pdf_file(url, destination):

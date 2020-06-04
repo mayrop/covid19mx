@@ -3,9 +3,17 @@ import re
 import os
 import requests
 import hashlib
-from urllib.request import Request, urlopen
 
+from urllib.request import Request, urlopen
 from pathlib import Path
+
+#----------------------------------------------------------------
+# L o g g e r
+#----------------------------------------------------------------
+import logging
+log_format = '%(asctime)s - {%(filename)s:%(lineno)d} - %(levelname)s: %(message)s'
+logger = logging
+logger.basicConfig(format=log_format, datefmt='%d-%b-%y %H:%M:%S', level=logging.DEBUG)
 
 #----------------------------------------------------------------
 # F i l  e s
@@ -97,6 +105,15 @@ def get_fixed_date(text):
 
 def is_date_in_excel_format(text):
     return re.search(r'(\d{5})', text)
+
+
+def interpolate_date(string, year, month, day):
+    string = re.sub(r'{{Y}}', year, string)
+    string = re.sub(r'{{y}}', str(year)[-2:], string)
+    string = re.sub(r'{{m}}', month, string)
+    string = re.sub(r'{{d}}', day, string)
+
+    return string
 
 #----------------------------------------------------------------
 # C o n t e x t

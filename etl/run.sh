@@ -38,6 +38,19 @@ parse_yaml() {
 
 # Evaluate
 init_root
+
+log_file=${root}/log.txt
+# see https://unix.stackexchange.com/questions/440426/how-to-prefix-any-output-in-a-bash-script
+
+echo "" >> ${log_file}
+echo "" >> ${log_file}
+# exec > >(sed 's/^/$: /' | tee -a ${log_file} )
+# exec 2> >(sed 's/^/$: (err) /' | tee -a ${log_file} >&2)
+
+echo "-- .- -.-- .-. --- .--. # .-- .- ... # .... . .-. ."
+echo $(date)
+echo "-- .- -.-- .-. --- .--. # .-- .- ... # .... . .-. ."
+
 # Read yaml file
 eval $(parse_yaml "${root}/config.yml" "config_")
 
