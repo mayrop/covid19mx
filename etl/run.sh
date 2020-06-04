@@ -76,6 +76,7 @@ if [[ $EXTRACT ]]; then
       data_type=$(echo ${source_var} | sed -e "s/config_data_extract_//" | cut -d'_' -f 1)
 
       echo "Running: ${data_type} $source ${root}${destination}"
+      echo "> python ${root}/etl/download.py ${data_type} ${source} ${root}${destination}"
       python ${root}/etl/download.py ${data_type} ${source} ${root}${destination}
    done
 fi
@@ -92,28 +93,21 @@ pattern=$(echo ${zips} | tr " " "\n" | grep "pattern")
 for file in `find ${root}${!source} -name "*.zip"`
 do
    echo "Moving ZIP file..."
+   echo "> python ${root}/etl/transform.py --type zip -s ${file} -d ${root}${!output} -p ${!pattern}"
    python ${root}/etl/transform.py --type zip -s ${file} -d ${root}${!output} -p ${!pattern}
 done
-# echo ${!source}
-# echo ${!pattern}
-# echo ${!output}
-# for source_var in ``
-# do
-#    source="${!source_var}"
 
-#    echo $source_var | cut -d'_' -f 5
-   
-#    # destination_var=$(echo ${source_var} | sed -e "s/source/output/")
-#    # destination="${!destination_var}"
+# -- .- -.-- .-. --- .--. # .-- .- ... # .... . .-. .
 
-#    # handler_var=$(echo ${source_var} | sed -e "s/source/handler/")
-#    # handler="${!handler_var}"
+echo "Generating timeseries"
 
-#    # data_type=$(echo ${source_var} | sed -e "s/config_data_extract_//" | cut -d'_' -f 1)
+# loop through all timeseries
+for source_var in `compgen -A variable | grep "transform" | grep "timeseries" | grep "output"`
+do
+   source="${!source_var}"
 
-#    # echo "Running: ${data_type} $source ${root}${destination}"
-#    # python ${root}/etl/download.py ${data_type} ${source} ${root}${destination}
-# done
+   echo $source_var
+done
 
 
 # readme_file="${root}/README.md"
@@ -151,16 +145,6 @@ done
 #         python $timeseries_script $target "${root_timeseries_dir}/${timeseries_folder}/federal_${target}" $states_file ENTIDAD_UM
 #         python $timeseries_script $target "${root_timeseries_dir}_res/${timeseries_folder}/federal_${target}" $states_file ENTIDAD_RES
 
-#         zip -9 -r $new_file $target
-
-#         echo "Removing temp files..."
-#         rm $file
-#         rm $target
-#     else
-#         echo "Source file does not match pattern, check!"
-#     fi
-
-#     cd $root
 # done
 
 # echo "Generating aggregated time series!"

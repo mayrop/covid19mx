@@ -17,6 +17,7 @@ def main():
                              args.destination_file, 
                              {'pattern': args.pattern})
 
+    # > python ./etl/transform.py --type zip -s ./cache/zips//202004/20200430.zip -d ./www/abiertos/todos/{{Y}}{{m}}/{{Y}}{{m}}{{d}}.zip -p {{y}}{{m}}{{d}}COVID19MEXICO.csv
     elif args.type == 'zip':
         logger.info('Downloding ZIP')
         transform_zip(args.source_file, args.destination_file, {'pattern': args.pattern})
@@ -35,11 +36,6 @@ def parse_args():
     parser.add_argument('-p', action='store', dest='pattern',
                         help='The pattern for the source file', required=True)                                                
 
-    # parser.add_argument('-options', action='append', dest='options',
-    #                     default=[],
-    #                     help='Add options to the list',
-    #                     )
-                        
     args = parser.parse_args()
 
     return args
