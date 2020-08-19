@@ -2,7 +2,7 @@
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-##### :es: Versión en Español. <!-- UPDATE_ES:START - Do not remove or modify this section -->Última Actualización: 2020-08-16<!-- UPDATE_ES:END -->
+##### :es: Versión en Español. <!-- UPDATE_ES:START - Do not remove or modify this section -->Última Actualización: 2020-08-17<!-- UPDATE_ES:END -->
 
 # COVID-19 en México 🇲🇽
 Datos de en formato PDF, CSV y TXT de los casos COVID-19 (Novel Coronavirus) en México. Datos adicionales para ayudar al análisis que incluyen las coordenadas geográficas (centroides) de cada municipio y entidad federativa, así como la proyección de población del año 2020 de cada una de ellas. Todos los datos obtenidos de fuentes oficiales. Próximamente estadísticas y análsis.
@@ -15,8 +15,8 @@ Datos de en formato PDF, CSV y TXT de los casos COVID-19 (Novel Coronavirus) en 
 Los archivos dentro de la carpeta www son accesibles por medio web a través del dominio https://datos.covid19in.mx/, por ejemplo [20200313.pdf](/www/tablas-diarias/positivos/202003/20200313.pdf) es accesible [aquí](https://datos.covid19in.mx/tablas-diarias/positivos/202003/20200313.pdf).
 
 ## Datos Disponibles :chart_with_upwards_trend:
-* [Datos Abiertos - COVID-19 en México](/www/abiertos/todos/202004). _<!-- UPDATE-OPENDATA_ES:START - Do not remove or modify this section -->Última Actualización: 2020-08-16<!-- UPDATE-OPENDATA_ES:END -->_  
-  * [Series de Tiempo](https://www.covid19in.mx/datos/series-de-tiempo/). Construidas a partir de los datos abiertos (desde el 12 de Abril de 2020), y del mapa interactivo antes para datos antes del 12 de Abril de 2020. _<!-- UPDATE-TIMESERIES_ES:START - Do not remove or modify this section -->Última Actualización: 2020-08-16<!-- UPDATE-TIMESERIES_ES:END -->_  
+* [Datos Abiertos - COVID-19 en México](/www/abiertos/todos/202004). _<!-- UPDATE-OPENDATA_ES:START - Do not remove or modify this section -->Última Actualización: 2020-08-17<!-- UPDATE-OPENDATA_ES:END -->_  
+  * [Series de Tiempo](https://www.covid19in.mx/datos/series-de-tiempo/). Construidas a partir de los datos abiertos (desde el 12 de Abril de 2020), y del mapa interactivo antes para datos antes del 12 de Abril de 2020. _<!-- UPDATE-TIMESERIES_ES:START - Do not remove or modify this section -->Última Actualización: 2020-08-17<!-- UPDATE-TIMESERIES_ES:END -->_  
 * [Tablas Diarias de Casos Positivos y Sospechosos (Comunicado Técnico Diario)](https://www.covid19in.mx/docs/datos/tablas-casos/).  
   * Las cuales fueron deprecadas el 19 de Abril de 2020, cuando la SSa dejó de publicarlas. 
 * Coordenadas Geográficas de cada uno de los [municipios](/www/otros/ciudades.csv) y [entidades federativas](/www/otros/estados.csv) en México.
@@ -62,7 +62,7 @@ Se tiene una base de datos de [2458 municipios](/www/otros/ciudades.csv) de Méx
 Se tiene una base datos en formato CSV de la población de [2457 municipios](/www/otros/ciudades.csv) y [32 entidades federativas](/www/otros/estados.csv) de México del año 2019. Obtenida de las [Proyecciones de la Población de los Municipios de México, 2015-2030](https://datos.gob.mx/busca/dataset/proyecciones-de-la-poblacion-de-mexico-y-de-las-entidades-federativas-2016-2050/resource/0cda121e-5e8f-48a0-9468-d2cc921f3f3c?inner_span=True) generada por el Consejo Nacional de Población (CONAPO). Descargada el día 15/04/2020 (en donde los datos tienen fecha última de actualización del 23 de Agosto de 2019). **_Nota:_** _Existe un municipio (Puerto Morelos, Quintana Roo), el cual no esta disponible en la base de datos de las proyecciones de población, pero esta disponible en la base de datos del Marco Geoestadístico de México. Al parecer se encuentra [en vigor desde](https://es.wikipedia.org/wiki/Municipio_de_Puerto_Morelos) el 2016 (documento [oficial](https://web.archive.org/web/20151222080644/http://www.congresoqroo.gob.mx/historial/14_legislatura/decretos/3anio/1PO/dec342/D1420151029342.pdf))_.
 
 ------------------------------------------ 
-##### :uk: English Version. <!-- UPDATE_EN:START - Do not remove or modify this section -->Last Update: 2020-08-16<!-- UPDATE_EN:END -->
+##### :uk: English Version. <!-- UPDATE_EN:START - Do not remove or modify this section -->Last Update: 2020-08-17<!-- UPDATE_EN:END -->
 
 # COVID-19 in México 🇲🇽
 Data in PDF, CSV and TXT about the COVID-19 (Novel Coronavirus) cases in México. Additional data to help analysis which includes the geographic coordinates (centroids) of each city and state in México, as well as the 2020 population for each one of them. All of the obtained data comes from official sources. There will be statistics and analysis very soon.
@@ -75,7 +75,7 @@ Data in PDF, CSV and TXT about the COVID-19 (Novel Coronavirus) cases in México
 The files inside the www folder can be accessed through the web through the https://datos.covid19in.mx/ domain. For example, [20200313.pdf](/www/tablas-diarias/positivos/202003/20200313.pdf) can be accessed [here](https://datos.covid19in.mx/tablas-diarias/positivos/202003/20200313.pdf).
 
 ## Available Data :chart_with_upwards_trend:
-* [Open Data - COVID-19 in México](/www/abiertos/todos/202004). <!-- UPDATE-OPENDATA_EN:START - Do not remove or modify this section -->Last Update: 2020-08-16<!-- UPDATE-OPENDATA_EN:END -->  
+* [Open Data - COVID-19 in México](/www/abiertos/todos/202004). <!-- UPDATE-OPENDATA_EN:START - Do not remove or modify this section -->Last Update: 2020-08-17<!-- UPDATE-OPENDATA_EN:END -->  
   * [Time Series](https://www.covid19in.mx/en/data/time-series/)
 * [Daily Tables for Positive and Suspected Cases (Daily Technical Release)](https://www.covid19in.mx/docs/datos/tablas-casos/)
 * Geographic Coordinates for each one of the [cities](/www/otros/ciudades.csv) and [states](/www/otros/estados.csv) in México.
